@@ -18,6 +18,9 @@ import {
   Coffee,
 } from "lucide-react";
 import bussinesspic from "../assets/ESPACETV1.jpg";
+import img53 from "../assets/img53.jpg";
+import img59 from "../assets/img59.jpg";
+import img77 from "../assets/img77.jpg";
 
 export default function BusinessCenter() {
   const features = [
@@ -108,8 +111,8 @@ export default function BusinessCenter() {
 
         <div className="container relative z-10 px-4 md:px-6 py-20">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#d9ac6f]/10 border border-[#d9ac6f]/20 backdrop-blur-sm animate-fade-in-up">
-              <Building2 className="w-4 h-4 text-[#d9ac6f]" />
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#328a93]/20 backdrop-blur-sm animate-fade-in-up">
+              <Building2 className="w-4 h-4 text-[#f1c692]" />
               <span className="text-sm font-medium text-white">
                 Commercial Real Estate
               </span>
@@ -117,7 +120,7 @@ export default function BusinessCenter() {
 
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white animate-fade-in-up animation-delay-100">
               Tasnime{" "}
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-[#d9ac6f] via-[#d9ac6f] to-[#d9ac6f]">
+              <span className="text-transparent bg-clip-text bg-linear-to-r  from-[#328a93] via-[#328a93] to-[#328a93]">
                 Business Center
               </span>
             </h1>
@@ -131,7 +134,7 @@ export default function BusinessCenter() {
             <Button
               asChild
               size="lg"
-              className="group px-8 py-6 bg-primary text-primary-foreground font-semibold rounded-xl hover:bg-primary/90 transition-all duration-300 shadow-xl shadow-primary/20 hover:shadow-primary/40 hover:scale-105 text-md animate-fade-in-up animation-delay-300"
+              className="group px-8 py-6 bg-primary text-white font-semibold rounded-xl hover:bg-primary/90 transition-all duration-300 shadow-xl shadow-primary/20 hover:shadow-primary/40 hover:scale-105 text-md animate-fade-in-up animation-delay-300"
             >
               <Link to="/contact" className="flex items-center gap-2">
                 Request More Information
@@ -167,10 +170,10 @@ export default function BusinessCenter() {
       <section className="py-20 relative">
         <div className="container px-4 md:px-6">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+            <h2 className="text-4xl md:text-5xl font-bold text-white">
               Premium Features
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-[#f1c692] max-w-2xl mx-auto">
               Everything your business needs to thrive in a modern, sustainable
               environment.
             </p>
@@ -180,15 +183,15 @@ export default function BusinessCenter() {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="group p-8 rounded-2xl bg-[#292727f4] border border-gray-200 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1"
+                className="group p-8 rounded-2xl bg-white/70 border border-gray-200 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1"
               >
-                <div className="w-14 h-14 rounded-xl bg-white/10 flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-colors">
-                  <feature.icon className="w-7 h-7 text-white" />
+                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-colors">
+                  <feature.icon className="w-7 h-7 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-primary">
+                <h3 className="text-xl font-bold mb-3 text-black ">
                   {feature.title}
                 </h3>
-                <p className="text-gray-200 leading-relaxed">
+                <p className="text-black leading-relaxed">
                   {feature.description}
                 </p>
               </div>
@@ -201,10 +204,10 @@ export default function BusinessCenter() {
       <section className="py-20 relative ">
         <div className="container px-4 md:px-6">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+            <h2 className="text-4xl md:text-5xl font-bold text-white">
               World-Class Amenities
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-[#f5c386] max-w-2xl mx-auto">
               Designed for convenience, comfort, and productivity.
             </p>
           </div>
@@ -212,15 +215,154 @@ export default function BusinessCenter() {
             {amenities.map((item, index) => (
               <div
                 key={index}
-                className="text-center p-6 rounded-2xl bg-[#292727f4] border border-white/10 hover:border-primary/30 hover:shadow-lg transition-all duration-300"
+                className="text-center p-6 rounded-2xl bg-white/70 border border-white/10 hover:border-primary/30 hover:shadow-lg transition-all duration-300"
               >
-                <div className="w-12 h-12 mx-auto rounded-full bg-white/10 shadow-md flex items-center justify-center mb-4 text-white">
+                <div className="w-12 h-12 mx-auto rounded-full bg-primary shadow-md flex items-center justify-center mb-4 text-white">
                   <item.icon className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-primary mb-2">
+                <h3 className="text-lg font-bold text-black mb-2">
                   {item.title}
                 </h3>
-                <p className="text-gray-300 text-sm">{item.description}</p>
+                <p className="text-black text-sm">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* RÉSIDENCES TASNIME Section */}
+      <section className="py-20 relative border-t border-white/10">
+        <div className="container px-4 md:px-6 space-y-16">
+          {/* Preamble */}
+          <div className="max-w-4xl mx-auto text-center space-y-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-white">
+              PRÉAMBULE
+            </h2>
+            <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
+            <p className="text-lg text-white leading-relaxed">
+              Au cœur de la ville de Marrakech, Tasnime immobilier acteur de
+              référence dans le domaine de l'immobilier lance deux projets
+              exceptionnels résolument pensés dans une architecture
+              contemporaine et érigés autour des valeurs de développement
+              durable, qualité, innovation, et modernité : Le centre d'affaires
+              TASNIME et Les résidences TASNIME.
+            </p>
+          </div>
+
+          {/* Residences Content */}
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            <div className="space-y-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#f1c692]">
+                RÉSIDENCES TASNIME
+              </h2>
+              <p className="text-white text-lg leading-relaxed">
+                Les résidences Tasnime se distinguent par la convivialité des
+                espaces, la durabilité des matériaux de construction ainsi que
+                la qualité des finitions. Le projet prévoit la réalisation de
+                plus de 40 magasins et showrooms en RDC pour l'animation
+                commerciale des résidences dont un supermarché (MARJANE market).
+              </p>
+              <p className="text-white leading-relaxed">
+                Les résidences TASNIME sont des résidences sécurisées conçues
+                selon une architecture sobre et raffinée offrant une expérience
+                de vie exceptionnelle. Ces résidences Premium sont animées par
+                un jeu de jardins et piscines constituant une symphonie
+                d'élégance et de confort.
+              </p>
+
+              <div className="bg-white/70 p-6 rounded-2xl border border-white/10">
+                <h3 className="text-xl font-bold text-black mb-4 flex items-center gap-2">
+                  <CheckCircle2 className="w-6 h-6 text-primary" />
+                  Points Forts Développement Durable
+                </h3>
+                <ul className="space-y-3">
+                  {[
+                    "Isolation thermique et phonique avec double vitrage",
+                    "Structures en dalle pleine (inertie thermique)",
+                    "Climatisation INVERTER",
+                    "Eclairage LED",
+                    "Detecteurs de présence dans les circulations",
+                    "Ascenseurs de marque international KONE",
+                  ].map((item, i) => (
+                    <li
+                      key={i}
+                      className="flex items-center gap-3 text-black text-sm"
+                    >
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div className="space-y-8">
+              {/* Typologies Card */}
+              <div className="bg-white/70 p-8 rounded-3xl border border-white/10 shadow-xl">
+                <h3 className="text-2xl font-bold text-black mb-6">
+                  Typologies & Superficies
+                </h3>
+                <div className="space-y-6">
+                  <div className="space-y-2">
+                    <h2 className="text-black font-bold">
+                      Studios & F2
+                    </h2>
+                    <p className="text-black font-semibold text-sm">
+                      1 chambre, salon et cuisine à l'américaine (36 m² à 55 m²)
+                    </p>
+                  </div>
+                  <div className="w-full h-px bg-white/10" />
+                  <div className="space-y-2">
+                    <h2 className="text-black font-bold">
+                      Appartements F3
+                    </h2>
+                    <p className="text-black font-semibold text-sm">
+                      2 chambres, salon et cuisine (68 m² à 85 m²)
+                    </p>
+                  </div>
+                  <div className="w-full h-px bg-white/10" />
+                  <div className="space-y-2">
+                    <h2 className="text-black font-bold">
+                      Appartements F4
+                    </h2>
+                    <p className="text-black font-semibold text-sm">
+                      3 chambres, salon et cuisine (108 m² à 112 m²)
+                    </p>
+                  </div>
+                  <div className="w-full h-px bg-white/10" />
+                  <div className="space-y-2">
+                    <h2 className="text-black font-bold">Duplexes</h2>
+                    <p className="text-black font-semibold text-sm">
+                      2 salons, 3 ou 4 chambres à coucher (96 m² à 186 m²).
+                      Certains avec piscines privatives.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Additional Feature Highlight */}
+              <div className="p-6 rounded-2xl bg-white/70 border border-white/10">
+                <p className="text-black font-semibold italic text-center">
+                  "L'efficacité énergétique est au cœur de la conception
+                  architecturale et technique du projet."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Image Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[img53, img59, img77].map((img, idx) => (
+              <div
+                key={idx}
+                className="group relative aspect-[4/3] overflow-hidden rounded-2xl border border-white/10 shadow-2xl"
+              >
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-300 z-10" />
+                <img
+                  src={img}
+                  alt={`Tasnime Residence View ${idx + 1}`}
+                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
+                />
               </div>
             ))}
           </div>
@@ -232,10 +374,10 @@ export default function BusinessCenter() {
         <div className="container relative px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center space-y-4 mb-12">
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+              <h2 className="text-4xl md:text-5xl font-bold text-white">
                 Strategic Location
               </h2>
-              <p className="text-lg text-gray-600">
+              <p className="text-lg text-white">
                 Perfectly positioned for business success
               </p>
             </div>
@@ -244,12 +386,12 @@ export default function BusinessCenter() {
               {locationBenefits.map((benefit, index) => (
                 <div
                   key={index}
-                  className="flex items-center gap-4 p-6 rounded-2xl bg-[#292727] border border-white/10 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.01]"
+                  className="flex items-center gap-4 p-6 rounded-2xl bg-white/60 border border-white/10 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.01]"
                 >
                   <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
                     <benefit.icon className="w-6 h-6 text-primary" />
                   </div>
-                  <p className="text-lg text-white font-medium">
+                  <p className="text-lg text-black font-medium">
                     {benefit.text}
                   </p>
                 </div>
@@ -299,10 +441,10 @@ export default function BusinessCenter() {
 
         <div className="container relative px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center space-y-8">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+            <h2 className="text-4xl md:text-5xl font-bold text-white">
               Ready to Elevate Your Business?
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-white">
               Contact us today to schedule a visit and discover how Tasnime
               Business Center can transform your workspace.
             </p>
@@ -310,7 +452,7 @@ export default function BusinessCenter() {
               <Button
                 asChild
                 size="lg"
-                className="group px-8 py-6 bg-primary text-primary-foreground rounded-xl hover:bg-primary/90 transition-all duration-300 shadow-xl shadow-primary/20 hover:shadow-primary/40 hover:scale-105 text-md"
+                className="group px-8 py-6 bg-primary text-white rounded-xl hover:bg-primary/90 transition-all duration-300 shadow-xl shadow-primary/20 hover:shadow-primary/40 hover:scale-105 text-md"
               >
                 <Link to="/contact" className="flex items-center gap-2">
                   Contact Us

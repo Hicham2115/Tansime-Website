@@ -56,7 +56,7 @@ function Footer() {
               </Link>
               <div className="w-16 h-1 bg-gradient-to-r from-primary to-primary/50 mt-4 rounded-full" />
             </div>
-            <p className="text-muted-foreground leading-relaxed mb-6 text-sm">
+            <p className="text-white/80 leading-relaxed mb-6 text-sm">
               A leading real estate developer in Marrakech, delivering
               exceptional residential and business projects with sustainability,
               quality, and modernity at the forefront.
@@ -89,7 +89,7 @@ function Footer() {
                 <li key={index}>
                   <Link
                     to={link.href}
-                    className="text-muted-foreground hover:text-primary transition-all duration-300 flex items-center group text-sm"
+                    className="text-white/80 hover:text-primary transition-all duration-300 flex items-center group text-sm"
                   >
                     <span className="w-0 group-hover:w-2 h-0.5 bg-primary mr-0 group-hover:mr-2 transition-all duration-300 rounded-full" />
                     {link.name}
@@ -110,7 +110,7 @@ function Footer() {
                 <li key={index}>
                   <Link
                     to={project.href}
-                    className="text-muted-foreground hover:text-primary transition-all duration-300 flex items-center gap-2 group text-sm"
+                    className="text-white/80 hover:text-primary transition-all duration-300 flex items-center gap-2 group text-sm"
                   >
                     <project.icon className="w-4 h-4 text-primary/60 group-hover:text-primary transition-colors" />
                     {project.name}
@@ -127,7 +127,7 @@ function Footer() {
               <span className="absolute -bottom-2 left-0 w-12 h-0.5 bg-primary rounded-full" />
             </h3>
             <ul className="space-y-4">
-              <li className="flex items-start gap-3 text-muted-foreground text-sm group">
+              <li className="flex items-start gap-3 text-white/80 text-sm group">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5 group-hover:text-primary/80 transition-colors" />
                 <span className="group-hover:text-foreground transition-colors">
                   Intersection of Bd de Safi & Av Charaf
@@ -135,7 +135,7 @@ function Footer() {
                   Marrakech, Morocco
                 </span>
               </li>
-              <li className="flex items-center gap-3 text-muted-foreground text-sm group">
+              <li className="flex items-center gap-3 text-white/80 text-sm group">
                 <Phone className="w-5 h-5 text-primary shrink-0 group-hover:text-primary/80 transition-colors" />
                 <a
                   href="tel:+212XXXXXXXXX"
@@ -144,7 +144,7 @@ function Footer() {
                   +212 XXX XXX XXX
                 </a>
               </li>
-              <li className="flex items-center gap-3 text-muted-foreground text-sm group">
+              <li className="flex items-center gap-3 text-white/80 text-sm group">
                 <Mail className="w-5 h-5 text-primary shrink-0 group-hover:text-primary/80 transition-colors" />
                 <a
                   href="mailto:contact@tasnime-immobilier.ma"
@@ -172,7 +172,7 @@ function Footer() {
                     aria-label={social.label}
                     className="w-10 h-10 rounded-lg bg-card border border-border hover:bg-primary hover:border-primary flex items-center justify-center transition-all duration-300 hover:scale-110 group"
                   >
-                    <social.icon className="w-5 h-5 text-muted-foreground group-hover:text-primary-foreground transition-colors" />
+                    <social.icon className="w-5 h-5 text-white/80 group-hover:text-primary-foreground transition-colors" />
                   </a>
                 ))}
               </div>
@@ -183,26 +183,26 @@ function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-border pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-muted-foreground text-sm text-center md:text-left">
+            <p className="text-white/80 text-sm text-center md:text-left">
               &copy; {currentYear} Tasnime Immobilier. All rights reserved.
             </p>
 
             <div className="flex flex-wrap justify-center md:justify-end gap-6 text-sm">
               <a
                 href="/privacy"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-white/80 hover:text-primary transition-colors"
               >
                 Privacy Policy
               </a>
               <a
                 href="/terms"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-white/80 hover:text-primary transition-colors"
               >
                 Terms of Service
               </a>
               <a
                 href="/cookies"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-white/80 hover:text-primary transition-colors"
               >
                 Cookie Policy
               </a>

@@ -49,8 +49,8 @@
   --card-foreground: #f8f9fa;
   --popover: #1a1f2e;
   --popover-foreground: #f8f9fa;
-  --primary: #c9a961;
-  --primary-foreground: #0a0e1a;
+  --primary: #225f66;
+  --primary-foreground:#rgb(255, 255, 255)
   --secondary: #1e2738;
   --secondary-foreground: #f8f9fa;
   --muted: #1e2738;
@@ -117,4 +117,9 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
 }

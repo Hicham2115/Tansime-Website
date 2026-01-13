@@ -23,7 +23,7 @@ const navigationLinks = [
 
 export default function Component() {
   return (
-    <header className="px-4 md:px-6 sticky top-0 z-50 backdrop-blur-xl bg-gradient-to-r from-[#fef9f3]/90 via-[#f5e6d3]/85 to-[#fef9f3]/90 border-b border-[#d9ac6f]/20 shadow-lg shadow-[#d9ac6f]/5">
+    <header className="px-4 md:px-6 sticky top-0 z-50 backdrop-blur-xl bg-white/80 border-b border-[#d9ac6f]/20 shadow-lg shadow-[#d9ac6f]/5">
       <div className="flex h-16 items-center justify-between gap-4">
         {/* Left side  */}
         <div className="flex items-center gap-2 flex-1">
@@ -68,8 +68,7 @@ export default function Component() {
                   {navigationLinks.map((link, _index) => (
                     <NavigationMenuItem className="w-full" key={link.href}>
                       <NavigationMenuLink
-                        active={link.active}
-                        className="py-1.5"
+                        className="py-1.5 hover:bg-transparent focus:bg-transparent data-[active]:bg-transparent hover:text-black focus:text-black data-[active]:text-black"
                         href={link.href}
                       >
                         {link.label}
@@ -79,7 +78,7 @@ export default function Component() {
                   <div className="flex flex-col-reverse gap-2 mt-2">
                     <Button
                       asChild
-                      className="group relative px-4 py-3 bg-primary text-primary-foreground font-semibold rounded-md hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-primary/50 hover:scale-105 flex items-center gap-2 w-full justify-center"
+                      className="group relative px-4 py-3 bg-primary text-white font-semibold rounded-md hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-primary/50 hover:scale-105 flex items-center gap-2 w-full justify-center"
                       size="sm"
                     >
                       <Link to="/contact">Contact Us</Link>
@@ -95,7 +94,7 @@ export default function Component() {
             <div className="flex items-center gap-3">
               <div className="flex">
                 <span className="text-xl font-bold tracking-tight text-black">
-                  TASNIME <span className="text-primary">IMMOBILIER</span>
+                  TASNIME <span className="text-[#225f66]">IMMOBILIER</span>
                 </span>
               </div>
             </div>
@@ -107,10 +106,7 @@ export default function Component() {
               {navigationLinks.map((link, index) => (
                 <NavigationMenuItem key={index}>
                   <NavigationMenuLink
-                    active={link.active}
-                    className={`py-2 px-4 font-medium transition-all rounded-lg hover:bg-primary/10 hover:text-primary ${
-                      link.active ? "text-black bg-primary/10" : "text-black"
-                    }`}
+                    className="py-2 px-4 font-medium transition-all rounded-lg hover:bg-primary/10 hover:text-primary text-black focus:bg-transparent focus:text-black data-[active]:bg-transparent data-[active]:text-black"
                     href={link.href}
                   >
                     {link.label}
@@ -120,7 +116,7 @@ export default function Component() {
 
               <Button
                 asChild
-                className="ml-2 group relative px-6 py-2 bg-primary text-primary-foreground font-semibold rounded-md hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-primary/50 hover:scale-105"
+                className="ml-2 group relative px-6 py-2 bg-primary text-white font-semibold rounded-md hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-primary/50 hover:scale-105"
                 size="sm"
               >
                 <Link to="/contact">Contact Us</Link>
