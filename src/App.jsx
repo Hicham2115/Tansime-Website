@@ -10,6 +10,7 @@ import Footer from "./components/MainSection/Footer.jsx";
 import BusinessCenter from "./Pages/BusinessCenter.jsx";
 import Residences from "./Pages/Residences.jsx";
 import Gallery from "./Pages/Gallery.jsx";
+import ScrollToTopButton from "./components/MainSection/ScrollToTopButton.jsx";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -27,6 +28,7 @@ export default function App() {
       <Background />
       <NavBar />
       <ScrollToTop />
+      <ScrollToTopButton />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/business-center" element={<BusinessCenter />} />

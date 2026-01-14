@@ -95,12 +95,12 @@ export default function Contact() {
           <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {/* Contact Form */}
             <div className="lg:col-span-2">
-              <div className="p-8 md:p-10 rounded-2xl bg-white/80 border border-white/10 shadow-xl hover:shadow-2xl transition-all duration-300">
+              <div className="p-8 md:p-10 rounded-2xl bg-card/50 backdrop-blur-sm border border-white/10 shadow-xl hover:shadow-2xl transition-all duration-300">
                 <div className="flex items-center gap-3 mb-8">
                   <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
                     <Send className="w-6 h-6 text-primary" />
                   </div>
-                  <h2 className="text-2xl md:text-3xl font-bold text-black">
+                  <h2 className="text-2xl md:text-3xl font-bold text-white">
                     Send Us a Message
                   </h2>
                 </div>
@@ -108,7 +108,7 @@ export default function Contact() {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   {/* Full Name */}
                   <div>
-                    <label className="block text-sm font-semibold text-black mb-2">
+                    <label className="block text-sm font-semibold text-white mb-2">
                       Full Name *
                     </label>
                     <input
@@ -117,7 +117,7 @@ export default function Contact() {
                       value={formData.fullName}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 bg-white/5 border-2  rounded-xl focus:border-primary focus:outline-none transition-colors duration-300 text-white placeholder:text-gray-500"
+                      className="w-full px-4 py-3 bg-white/5 border-2 border-white rounded-xl focus:border-primary focus:outline-none transition-colors duration-300 text-white placeholder:text-gray-500"
                       placeholder="Enter your full name"
                     />
                   </div>
@@ -125,7 +125,7 @@ export default function Contact() {
                   {/* Email and Phone */}
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-sm font-semibold text-black mb-2">
+                      <label className="block text-sm font-semibold text-white mb-2">
                         Email Address *
                       </label>
                       <input
@@ -134,12 +134,12 @@ export default function Contact() {
                         value={formData.email}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 bg-white/5 border-2  rounded-xl focus:border-primary focus:outline-none transition-colors duration-300 text-white placeholder:text-gray-500"
+                        className="w-full px-4 py-3 bg-white/5 border-2 border-white rounded-xl focus:border-primary focus:outline-none transition-colors duration-300 text-white placeholder:text-gray-500"
                         placeholder="your@email.com"
                       />
                     </div>
                     <div>
-                      <label className="block text-sm font-semibold text-black mb-2">
+                      <label className="block text-sm font-semibold text-white mb-2">
                         Phone Number *
                       </label>
                       <input
@@ -148,7 +148,7 @@ export default function Contact() {
                         value={formData.phone}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 bg-white/5 border-2  rounded-xl focus:border-primary focus:outline-none transition-colors duration-300 text-white placeholder:text-gray-500"
+                        className="w-full px-4 py-3 bg-white/5 border-2 border-white rounded-xl focus:border-primary focus:outline-none transition-colors duration-300 resize-none text-white placeholder:text-gray-500"
                         placeholder="+212 XXX XXX XXX"
                       />
                     </div>
@@ -156,7 +156,7 @@ export default function Contact() {
 
                   {/* Message */}
                   <div>
-                    <label className="block text-sm font-semibold text-black mb-2">
+                    <label className="block text-sm font-semibold text-white mb-2">
                       Message *
                     </label>
                     <textarea
@@ -165,7 +165,7 @@ export default function Contact() {
                       onChange={handleInputChange}
                       required
                       rows={6}
-                      className="w-full px-4 py-3 bg-white/5 border-2  rounded-xl focus:border-primary focus:outline-none transition-colors duration-300 resize-none text-white placeholder:text-gray-500"
+                      className="w-full px-4 py-3 bg-white/5 border-2 border-white rounded-xl focus:border-primary focus:outline-none transition-colors duration-300 resize-none text-white placeholder:text-gray-500"
                       placeholder="Tell us about your inquiry..."
                     />
                   </div>
@@ -204,12 +204,12 @@ export default function Contact() {
             {/* Contact Information Sidebar */}
             <div className="space-y-6">
               {/* Company Info Card */}
-              <div className="p-8 rounded-2xl bg-white/80 border border-white/10 shadow-lg">
+              <div className="p-8 rounded-2xl bg-card/50 backdrop-blur-sm border border-white/10 shadow-lg">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
                     <Building2 className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="text-xl font-bold text-black">
+                  <h3 className="text-xl font-bold text-white">
                     Tasnime Immobilier
                   </h3>
                 </div>
@@ -222,8 +222,8 @@ export default function Contact() {
                   >
                     <Phone className="w-5 h-5 mt-0.5 shrink-0 text-primary group-hover:scale-110 transition-transform" />
                     <div>
-                      <p className="text-xs text-black mb-1">Phone</p>
-                      <span className="text-sm font-semibold text-black">
+                      <p className="text-xs text-white/70 mb-1">Phone</p>
+                      <span className="text-sm font-semibold text-white">
                         +212 XXX XXX XXX
                       </span>
                     </div>
@@ -236,8 +236,8 @@ export default function Contact() {
                   >
                     <Mail className="w-5 h-5 mt-0.5 shrink-0 text-primary group-hover:scale-110 transition-transform" />
                     <div>
-                      <p className="text-xs text-black mb-1">Email</p>
-                      <span className="text-sm font-semibold text-black break-all">
+                      <p className="text-xs text-white/70 mb-1">Email</p>
+                      <span className="text-sm font-semibold text-white break-all">
                         contact@tasnime-immobilier.ma
                       </span>
                     </div>
@@ -247,8 +247,8 @@ export default function Contact() {
                   <div className="flex items-start gap-3 p-3 rounded-xl bg-white/5">
                     <MapPin className="w-5 h-5 mt-0.5 shrink-0 text-primary" />
                     <div>
-                      <p className="text-xs text-black mb-1">Address</p>
-                      <p className="text-sm font-semibold text-black">
+                      <p className="text-xs text-white/70 mb-1">Address</p>
+                      <p className="text-sm font-semibold text-white">
                         Intersection of Bd de Safi & Av Charaf
                         <br />
                         Marrakech, Morocco
@@ -260,10 +260,10 @@ export default function Contact() {
                   <div className="flex items-start gap-3 p-3 rounded-xl bg-white/5">
                     <Clock className="w-5 h-5 mt-0.5 shrink-0 text-primary" />
                     <div>
-                      <p className="text-xs text-black mb-1">
+                      <p className="text-xs text-white/70 mb-1">
                         Business Hours
                       </p>
-                      <p className="text-sm font-semibold text-black">
+                      <p className="text-sm font-semibold text-white">
                         Mon - Fri: 9:00 AM - 6:00 PM
                         <br />
                         Sat: 10:00 AM - 2:00 PM
@@ -276,14 +276,14 @@ export default function Contact() {
               </div>
 
               {/* Map Placeholder */}
-              <div className="rounded-2xl overflow-hidden border border-white/10 shadow-md aspect-square bg-white/80">
-                <div className="w-full h-full bg-white/80 flex items-center justify-center">
+              <div className="rounded-2xl overflow-hidden border border-white/10 shadow-md aspect-square bg-card/50 backdrop-blur-sm">
+                <div className="w-full h-full bg-white/5 flex items-center justify-center">
                   <div className="text-center space-y-3">
                     <MapPin className="w-12 h-12 text-gray-500 mx-auto" />
-                    <p className="text-sm font-semibold text-black">
+                    <p className="text-sm font-semibold text-white">
                       Interactive Map
                     </p>
-                    <p className="text-xs text-gray-400 px-4">
+                    <p className="text-xs text-white/50 px-4">
                       Bd de Safi & Av Charaf
                       <br />
                       Marrakech
@@ -296,11 +296,11 @@ export default function Contact() {
 
           {/* Additional Info */}
           <div className="mt-16 max-w-4xl mx-auto">
-            <div className="p-8 rounded-2xl bg-white/80 border border-white/10 text-center shadow-lg">
-              <h3 className="text-2xl font-bold text-black mb-4">
+            <div className="p-8 rounded-2xl bg-card/50 backdrop-blur-sm border border-white/10 text-center shadow-lg">
+              <h3 className="text-2xl font-bold text-white mb-4">
                 Visit Our Projects
               </h3>
-              <p className="text-black mb-6">
+              <p className="text-white/80 mb-6">
                 Schedule a visit to experience our premium residences and
                 business centers firsthand. Our team is ready to show you around
                 and answer all your questions.
@@ -317,7 +317,7 @@ export default function Contact() {
                     className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10"
                   >
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-sm font-medium text-black">
+                    <span className="text-sm font-medium text-white">
                       {benefit}
                     </span>
                   </div>

@@ -10,6 +10,7 @@ import {
   Home,
   ArrowRight,
 } from "lucide-react";
+import Logo from "../../assets/Logo.png"
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -43,18 +44,18 @@ function Footer() {
             <div className="mb-6">
               <Link to="/" className="inline-flex items-center gap-3 group">
                 <div className="bg-primary/10 p-2 rounded-lg border border-primary/20 group-hover:bg-primary/20 transition-colors">
-                  <Building2 className="w-6 h-6 text-primary" />
+                  <img src={Logo} alt="" width={150} height={150}/>
                 </div>
-                <div className="flex flex-col">
+                {/* <div className="flex flex-col">
                   <span className="text-xl font-bold tracking-tight text-foreground">
                     TASNIME
                   </span>
                   <span className="text-xs text-primary font-medium tracking-wider">
                     IMMOBILIER
                   </span>
-                </div>
+                </div> */}
               </Link>
-              <div className="w-16 h-1 bg-gradient-to-r from-primary to-primary/50 mt-4 rounded-full" />
+              <div className="w-16 h-1 bg-gradient-to-r from-primary to-primary/50 mt-2 rounded-full" />
             </div>
             <p className="text-white/80 leading-relaxed mb-6 text-sm">
               A leading real estate developer in Marrakech, delivering
