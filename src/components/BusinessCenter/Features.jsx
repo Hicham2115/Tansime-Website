@@ -61,8 +61,8 @@ export default function Features() {
               delay={index * 0.1}
               className="group p-8 rounded-2xl bg-card/50 backdrop-blur-sm border border-white/10 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:scale-105 transform cursor-pointer"
             >
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                <feature.icon className="w-7 h-7 text-primary" />
+              <div className="w-14 h-14 rounded-xl bg-primary/50 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                <feature.icon className="w-7 h-7 text-white" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">
                 {feature.title}

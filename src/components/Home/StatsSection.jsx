@@ -21,8 +21,8 @@ export default function StatsSection() {
                 delay={index * 0.1}
                 className="relative p-6 rounded-3xl hover:scale-105 bg-card/50 backdrop-blur-sm border border-white/10 hover:border-primary/50 transition-all duration-300 group"
               >
-                <div className="w-14 h-14 rounded-xl flex items-center bg-white/5 justify-center shadow-lg shadow-primary/70 group-hover:scale-110 transition-transform duration-300">
-                  <Icon className="w-7 h-7 text-primary" />
+                <div className="w-14 h-14 rounded-xl flex items-center bg-primary/50 justify-center shadow-lg shadow-primary/70 group-hover:scale-110 transition-transform duration-300">
+                  <Icon className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="text-2xl md:text-2xl mt-4 font-bold text-white">
                   {stat.number}

@@ -31,8 +31,8 @@ export default function Location() {
                 delay={index * 0.1}
                 className="flex items-center gap-4 p-6 rounded-2xl bg-card/50 backdrop-blur-sm border border-white/10 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105 transform cursor-pointer"
               >
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-                  <benefit.icon className="w-6 h-6 text-primary" />
+                <div className="w-12 h-12 rounded-xl bg-primary/50 flex items-center justify-center shrink-0">
+                  <benefit.icon className="w-6 h-6 text-white" />
                 </div>
                 <p className="text-lg text-white font-medium">{benefit.text}</p>
               </FadeInUp>

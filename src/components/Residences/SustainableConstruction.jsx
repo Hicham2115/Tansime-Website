@@ -31,7 +31,7 @@ export default function SustainableConstruction() {
                 delay={index * 0.05}
                 className="flex items-start gap-3 p-4 rounded-xl bg-card/50 backdrop-blur-sm border border-white/10 hover:border-primary transition-all hover:scale-105 transform cursor-pointer"
               >
-                <CheckCircle2 className="w-6 h-6 text-primary shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-6 h-6 text-white/80 shrink-0 mt-0.5" />
                 <span className="text-white font-medium">{spec}</span>
               </FadeInUp>
             ))}

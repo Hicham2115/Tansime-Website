@@ -70,8 +70,8 @@ export default function HousingTypes() {
                     </h3>
                     <p className="text-gray-300">{housing.description}</p>
                   </div>
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <housing.icon className="w-6 h-6 text-primary" />
+                  <div className="w-12 h-12 rounded-xl bg-primary/50 flex items-center justify-center flex-shrink-0">
+                    <housing.icon className="w-6 h-6 text-white" />
                   </div>
                 </div>
 
