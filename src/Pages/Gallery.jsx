@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { X, ChevronLeft, ChevronRight, Building2, Home } from "lucide-react";
+import FadeInUp from "@/components/FadeInUp";
+import ScaleIn from "@/components/ScaleIn";
 
 // Importing Images
 import ch2 from "../assets/Imgs/CH-2.jpg";
@@ -20,6 +22,7 @@ import sam from "../assets/Imgs/SAM.jpg";
 import studioSalon from "../assets/Imgs/STUDIO SALON.jpg";
 import chApp from "../assets/Imgs/ch-app.jpg";
 import ch2App from "../assets/Imgs/ch2-app.jpg";
+import PageTransition from "@/components/PageTransition";
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -185,10 +188,10 @@ export default function Gallery() {
   };
 
   return (
-    <div className="min-h-screen py-20">
+    <PageTransition className="min-h-screen py-20">
       <div className="container px-4 md:px-6">
         {/* Header */}
-        <div className="text-center space-y-4 mb-12">
+        <FadeInUp className="text-center space-y-4 mb-12">
           <h1 className="text-5xl md:text-6xl font-bold text-white">
             Our Projects in Pictures
             {/* <span className="text-transparent bg-clip-text bg-linear-to-r from-[#328a93] via-[#328a93] to-[#328a93]">
@@ -199,10 +202,13 @@ export default function Gallery() {
             Explore our portfolio of premium residences and business spaces
             through our interactive gallery
           </p>
-        </div>
+        </FadeInUp>
 
         {/* Category Filter */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12">
+        <FadeInUp
+          delay={0.2}
+          className="flex flex-wrap justify-center gap-3 mb-12"
+        >
           {categories.map((category) => (
             <button
               key={category.id}
@@ -210,22 +216,22 @@ export default function Gallery() {
               className={`px-6 py-3 rounded-full font-medium transition-all duration-300 cursor-pointer ${
                 selectedCategory === category.id
                   ? "bg-primary text-white shadow-lg shadow-primary/30"
-                  : "bg-card border border-border hover:border-primary/50 text-white hover:text-foreground"
+                  : "bg-card/50 backdrop-blur-sm border border-white/10 hover:border-primary/50 text-white hover:text-white"
               }`}
             >
               {category.label}
             </button>
           ))}
-        </div>
+        </FadeInUp>
 
         {/* Gallery Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredItems.map((item, index) => (
-            <div
+            <ScaleIn
               key={item.id}
-              className="group relative aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/10"
+              delay={index * 0.05}
+              className="group relative aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer bg-card/50 backdrop-blur-sm border border-white/10 hover:border-primary/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/10"
               onClick={() => openLightbox(item)}
-              style={{ animationDelay: `${index * 50}ms` }}
             >
               {/* Image */}
               <img
@@ -249,7 +255,7 @@ export default function Gallery() {
               <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-black/60 backdrop-blur-sm border border-white/20 text-xs font-medium text-white">
                 {categories.find((c) => c.id === item.category)?.label}
               </div>
-            </div>
+            </ScaleIn>
           ))}
         </div>
 
@@ -308,6 +314,6 @@ export default function Gallery() {
           </div>
         </div>
       )}
-    </div>
+    </PageTransition>
   );
 }

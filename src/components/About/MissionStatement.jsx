@@ -1,10 +1,12 @@
+import FadeInUp from "@/components/FadeInUp";
+
 export default function MissionStatement() {
   return (
     <section className="py-20 relative">
       <div className="container px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="p-8 md:p-12 rounded-3xl bg-white/70 border border-white/20 hover:border-primary/30 transition-all duration-300">
-            <p className="text-lg md:text-xl text-black leading-relaxed text-center font-semibold">
+          <FadeInUp className="p-8 md:p-12 rounded-3xl bg-card/50 backdrop-blur-sm border border-white/10 hover:border-primary/30 transition-all duration-300">
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed text-center font-semibold">
               Tasnime Immobilier is a{" "}
               <span className="font-semibold text-primary">
                 reference player
@@ -22,7 +24,7 @@ export default function MissionStatement() {
               </span>
               .
             </p>
-          </div>
+          </FadeInUp>
         </div>
       </div>
     </section>

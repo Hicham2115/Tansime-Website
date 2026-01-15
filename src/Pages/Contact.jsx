@@ -11,6 +11,8 @@ import {
   MessageSquare,
 } from "lucide-react";
 import chambreImage from "@/assets/Imgs/SAM-DUP.jpg";
+import PageTransition from "@/components/PageTransition";
+import FadeInUp from "@/components/FadeInUp";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -54,7 +56,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen">
+    <PageTransition className="min-h-screen">
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
         {/* Background Image */}
@@ -65,26 +67,35 @@ export default function Contact() {
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/60"></div>
         {/* Grid Pattern */}
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(201,169,97,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(201,169,97,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(201,169,97,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(201,169,97,0.03)_1px,transparent_1px)] bg-size-[64px_64px]" />
 
         <div className="container relative z-10 px-4 md:px-6 py-20">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm animate-fade-in-up">
-              <MessageSquare className="w-4 h-4 text-[#d9ac6f]" />
-              <span className="text-sm font-medium text-white">Contact Us</span>
-            </div>
+            <FadeInUp className="flex justify-center">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm">
+                <MessageSquare className="w-4 h-4 text-[#d9ac6f]" />
+                <span className="text-sm font-medium text-white">
+                  Contact Us
+                </span>
+              </div>
+            </FadeInUp>
 
-            <h1 className="text-5xl md:text-6xl font-bold text-white animate-fade-in-up animation-delay-100">
-              Get in Touch with{" "}
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-[#328a93] via-[#328a93] to-[#328a93]">
-                Tasnime Immobilier
-              </span>
-            </h1>
+            <FadeInUp delay={0.2}>
+              <h1 className="text-5xl md:text-6xl font-bold text-white">
+                Get in Touch with{" "}
+                <span className="text-transparent bg-clip-text bg-linear-to-r from-[#328a93] via-[#328a93] to-[#328a93]">
+                  Tasnime Immobilier
+                </span>
+              </h1>
+            </FadeInUp>
 
-            <p className="text-xl text-white/90 max-w-3xl mx-auto animate-fade-in-up animation-delay-200">
-              Have questions or want to schedule a visit? Reach out to us
-              through our contact form or via our direct communication channels.
-            </p>
+            <FadeInUp delay={0.4}>
+              <p className="text-xl text-white/90 max-w-3xl mx-auto">
+                Have questions or want to schedule a visit? Reach out to us
+                through our contact form or via our direct communication
+                channels.
+              </p>
+            </FadeInUp>
           </div>
         </div>
       </section>
@@ -94,7 +105,7 @@ export default function Contact() {
         <div className="container px-4 md:px-6">
           <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {/* Contact Form */}
-            <div className="lg:col-span-2">
+            <FadeInUp className="lg:col-span-2">
               <div className="p-8 md:p-10 rounded-2xl bg-card/50 backdrop-blur-sm border border-white/10 shadow-xl hover:shadow-2xl transition-all duration-300">
                 <div className="flex items-center gap-3 mb-8">
                   <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
@@ -199,10 +210,10 @@ export default function Contact() {
                   </button>
                 </form>
               </div>
-            </div>
+            </FadeInUp>
 
             {/* Contact Information Sidebar */}
-            <div className="space-y-6">
+            <FadeInUp delay={0.2} className="space-y-6">
               {/* Company Info Card */}
               <div className="p-8 rounded-2xl bg-card/50 backdrop-blur-sm border border-white/10 shadow-lg">
                 <div className="flex items-center gap-3 mb-6">
@@ -291,12 +302,15 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
-            </div>
+            </FadeInUp>
           </div>
 
           {/* Additional Info */}
           <div className="mt-16 max-w-4xl mx-auto">
-            <div className="p-8 rounded-2xl bg-card/50 backdrop-blur-sm border border-white/10 text-center shadow-lg">
+            <FadeInUp
+              delay={0.4}
+              className="p-8 rounded-2xl bg-card/50 backdrop-blur-sm border border-white/10 text-center shadow-lg"
+            >
               <h3 className="text-2xl font-bold text-white mb-4">
                 Visit Our Projects
               </h3>
@@ -323,10 +337,10 @@ export default function Contact() {
                   </div>
                 ))}
               </div>
-            </div>
+            </FadeInUp>
           </div>
         </div>
       </section>
-    </div>
+    </PageTransition>
   );
 }

@@ -106,7 +106,7 @@ export default function Component() {
               {navigationLinks.map((link, index) => (
                 <NavigationMenuItem key={index}>
                   <NavigationMenuLink
-                    className="py-2 px-4 font-medium transition-all rounded-lg hover:bg-primary/10 hover:text-primary text-black focus:bg-transparent focus:text-black data-[active]:bg-transparent data-[active]:text-black"
+                    className="py-2 px-4 font-medium transition-all rounded-lg hover:bg-transparent hover:underline hover:text-primary text-black focus:bg-transparent focus:text-black data-[active]:bg-transparent data-[active]:text-black"
                     href={link.href}
                   >
                     {link.label}

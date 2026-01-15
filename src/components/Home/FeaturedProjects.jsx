@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import FadeInUp from "@/components/FadeInUp";
 
 export default function FeaturedProjects() {
   const projects = [
@@ -35,7 +36,7 @@ export default function FeaturedProjects() {
   return (
     <section className="py-24 relative -mt-20">
       <div className="container px-4 md:px-6">
-        <div className="text-center space-y-4 mb-16">
+        <FadeInUp className="text-center space-y-4 mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white">
             Featured Projects
           </h2>
@@ -43,17 +44,18 @@ export default function FeaturedProjects() {
             Explore our portfolio of premium developments that redefine luxury
             living and working in Marrakech.
           </p>
-        </div>
+        </FadeInUp>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {projects.map((project, index) => (
-            <div
+            <FadeInUp
               key={index}
+              delay={index * 0.2}
               className="group relative overflow-hidden rounded-3xl bg-card border border-border hover:border-primary/50 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/10"
             >
               {/* Gradient background */}
               <div
-                className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-50 group-hover:opacity-70 transition-opacity duration-500`}
+                className={`absolute inset-0 bg-linear-to-br ${project.gradient} opacity-50 group-hover:opacity-70 transition-opacity duration-500`}
               />
 
               <div className="relative p-8 space-y-6">
@@ -93,7 +95,7 @@ export default function FeaturedProjects() {
                   </Link>
                 </Button>
               </div>
-            </div>
+            </FadeInUp>
           ))}
         </div>
       </div>

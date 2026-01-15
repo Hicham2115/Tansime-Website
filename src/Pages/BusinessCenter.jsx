@@ -4,16 +4,17 @@ import Amenities from "@/components/BusinessCenter/Amenities";
 import Location from "@/components/BusinessCenter/Location";
 import Specifications from "@/components/BusinessCenter/Specifications";
 import CallToAction from "@/components/BusinessCenter/CallToAction";
+import PageTransition from "@/components/PageTransition";
 
 export default function BusinessCenter() {
   return (
-    <div className="min-h-screen text-black">
+    <PageTransition className="min-h-screen text-black">
       <Hero />
       <Features />
       <Amenities />
       <Location />
       <Specifications />
       <CallToAction />
-    </div>
+    </PageTransition>
   );
 }

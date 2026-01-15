@@ -1,4 +1,5 @@
 import { Building2, Shield, Zap, Wifi, Wind, Car } from "lucide-react";
+import FadeInUp from "@/components/FadeInUp";
 
 export default function Features() {
   const features = [
@@ -43,7 +44,7 @@ export default function Features() {
   return (
     <section className="py-20 relative">
       <div className="container px-4 md:px-6">
-        <div className="text-center space-y-4 mb-16">
+        <FadeInUp className="text-center space-y-4 mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white">
             Premium Features
           </h2>
@@ -51,24 +52,25 @@ export default function Features() {
             Everything your business needs to thrive in a modern, sustainable
             environment.
           </p>
-        </div>
+        </FadeInUp>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {features.map((feature, index) => (
-            <div
+            <FadeInUp
               key={index}
-              className="group p-8 rounded-2xl bg-white/70 border border-gray-200 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:scale-105 transform cursor-pointer"
+              delay={index * 0.1}
+              className="group p-8 rounded-2xl bg-card/50 backdrop-blur-sm border border-white/10 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:scale-105 transform cursor-pointer"
             >
               <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
                 <feature.icon className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-black">
+              <h3 className="text-xl font-bold mb-3 text-white">
                 {feature.title}
               </h3>
-              <p className="text-black leading-relaxed">
+              <p className="text-gray-300 leading-relaxed">
                 {feature.description}
               </p>
-            </div>
+            </FadeInUp>
           ))}
         </div>
       </div>

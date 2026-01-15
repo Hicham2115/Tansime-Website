@@ -1,4 +1,5 @@
 import { Clock, Briefcase, Users, Star } from "lucide-react";
+import ScaleIn from "@/components/ScaleIn";
 
 export default function StatsSection() {
   const stats = [
@@ -9,26 +10,27 @@ export default function StatsSection() {
   ];
 
   return (
-    <section className="py-12 bg-primary/5 border-y border-white/5">
+    <section className="py-12 bg-transparent border-y border-white/5">
       <div className="container px-4 md:px-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => {
             const Icon = stat.icon;
             return (
-              <div
+              <ScaleIn
                 key={index}
-                className="relative p-6 rounded-3xl hover:scale-105  bg-white/70 border border-white/10 hover:border-primary/50 transition-all duration-300 group"
+                delay={index * 0.1}
+                className="relative p-6 rounded-3xl hover:scale-105 bg-card/50 backdrop-blur-sm border border-white/10 hover:border-primary/50 transition-all duration-300 group"
               >
                 <div className="w-14 h-14 rounded-xl flex items-center bg-white/5 justify-center shadow-lg shadow-primary/70 group-hover:scale-110 transition-transform duration-300">
                   <Icon className="w-7 h-7 text-primary" />
                 </div>
-                <h3 className="text-2xl md:text-2xl mt-4 font-bold text-black">
+                <h3 className="text-2xl md:text-2xl mt-4 font-bold text-white">
                   {stat.number}
                 </h3>
-                <p className="text-sm text-black/70 mt-2 font-medium uppercase tracking-wider">
+                <p className="text-sm text-gray-300 mt-2 font-medium uppercase tracking-wider">
                   {stat.label}
                 </p>
-              </div>
+              </ScaleIn>
             );
           })}
         </div>

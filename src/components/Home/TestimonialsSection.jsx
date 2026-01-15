@@ -1,4 +1,5 @@
 import { Quote, Star } from "lucide-react";
+import FadeInUp from "@/components/FadeInUp";
 
 export default function TestimonialsSection() {
   const testimonials = [
@@ -28,7 +29,7 @@ export default function TestimonialsSection() {
   return (
     <section className="py-24 relative overflow-hidden">
       <div className="container px-4 md:px-6">
-        <div className="text-center space-y-4 mb-16">
+        <FadeInUp className="text-center space-y-4 mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white">
             Client Experiences
           </h2>
@@ -36,19 +37,20 @@ export default function TestimonialsSection() {
             Don't just take our word for it. Here is what our valued clients and
             partners have to say about their experience with us.
           </p>
-        </div>
+        </FadeInUp>
 
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((item, index) => (
-            <div
+            <FadeInUp
               key={index}
+              delay={index * 0.2}
               className="relative p-8 hover:-translate-y-4 rounded-3xl bg-card/50 backdrop-blur-sm border border-white/10 hover:border-primary/50 transition-all duration-300 group"
             >
               <Quote className="absolute top-8 right-8 w-10 h-10 text-primary/20 group-hover:text-primary/40 transition-colors" />
 
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center text-primary-foreground font-bold text-lg shadow-lg">
+                  <div className="w-12 h-12 rounded-full bg-linear-to-br from-primary to-primary/60 flex items-center justify-center text-primary-foreground font-bold text-lg shadow-lg">
                     {item.initials}
                   </div>
                   <div>
@@ -70,7 +72,7 @@ export default function TestimonialsSection() {
                   ))}
                 </div>
               </div>
-            </div>
+            </FadeInUp>
           ))}
         </div>
       </div>

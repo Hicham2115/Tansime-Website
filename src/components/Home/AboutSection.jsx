@@ -1,4 +1,5 @@
 import { Award, Shield, Leaf, MapPin } from "lucide-react";
+import FadeInUp from "@/components/FadeInUp";
 
 export default function AboutSection() {
   const values = [
@@ -30,7 +31,7 @@ export default function AboutSection() {
       <div className="container px-4 md:px-6">
         <div className="max-w-6xl mx-auto space-y-12">
           {/* Header */}
-          <div className="text-center space-y-4">
+          <FadeInUp className="text-center space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold text-white">
               About Tasnime Immobilier
             </h2>
@@ -48,15 +49,16 @@ export default function AboutSection() {
                 is not just a structure, but a home.
               </p>
             </div>
-          </div>
+          </FadeInUp>
 
           {/* 3 Cards */}
           <div className="grid md:grid-cols-3 gap-6">
             {values.map((value, index) => {
               const Icon = value.icon;
               return (
-                <div
+                <FadeInUp
                   key={index}
+                  delay={index * 0.2}
                   className="overflow-hidden rounded-2xl bg-card/50 backdrop-blur-sm border border-[#d9ac6f]/20 hover:border-[#d9ac6f]/40 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#d9ac6f]/10"
                 >
                   <div className="relative p-8 space-y-4">
@@ -75,20 +77,20 @@ export default function AboutSection() {
                       {value.description}
                     </p>
                   </div>
-                </div>
+                </FadeInUp>
               );
             })}
           </div>
 
           {/* Location Info */}
-          <div className="text-center pt-8">
+          <FadeInUp delay={0.6} className="text-center pt-8">
             <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/60 backdrop-blur-md border border-[#d9ac6f]/20 shadow-lg">
               <MapPin className="w-5 h-5 text-primary" />
               <span className="text-black font-medium">
                 Strategically located at Bd de Safi & Av Charaf, Marrakech
               </span>
             </div>
-          </div>
+          </FadeInUp>
         </div>
       </div>
     </section>

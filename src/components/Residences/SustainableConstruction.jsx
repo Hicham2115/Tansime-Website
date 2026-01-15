@@ -1,18 +1,19 @@
 import { CheckCircle2 } from "lucide-react";
+import FadeInUp from "@/components/FadeInUp";
 
 export default function SustainableConstruction() {
   return (
     <section className="py-20 relative">
       <div className="container px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center space-y-4 mb-12">
+          <FadeInUp className="text-center space-y-4 mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-white">
               Sustainable Construction
             </h2>
             <p className="text-lg text-white">
               Built with the environment and your comfort in mind
             </p>
-          </div>
+          </FadeInUp>
 
           <div className="grid md:grid-cols-2 gap-6">
             {[
@@ -25,13 +26,14 @@ export default function SustainableConstruction() {
               "Water conservation systems",
               "Green building standards",
             ].map((spec, index) => (
-              <div
+              <FadeInUp
                 key={index}
-                className="flex items-start gap-3 p-4 rounded-xl bg-white/60 border border-primary hover:border-primary transition-all hover:scale-105 transform cursor-pointer"
+                delay={index * 0.05}
+                className="flex items-start gap-3 p-4 rounded-xl bg-card/50 backdrop-blur-sm border border-white/10 hover:border-primary transition-all hover:scale-105 transform cursor-pointer"
               >
-                <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
-                <span className="text-black font-medium">{spec}</span>
-              </div>
+                <CheckCircle2 className="w-6 h-6 text-primary shrink-0 mt-0.5" />
+                <span className="text-white font-medium">{spec}</span>
+              </FadeInUp>
             ))}
           </div>
         </div>

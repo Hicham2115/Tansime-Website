@@ -2,10 +2,11 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Home, ArrowLeft, Mail, AlertCircle } from "lucide-react";
 import img from "@/assets/Imgs/SALON 1.jpg"; // Using a nice background image
+import PageTransition from "@/components/PageTransition";
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <PageTransition className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background with overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat blur-[2px] opacity-50"
@@ -96,6 +97,6 @@ export default function NotFound() {
           </div>
         </div>
       </div>
-    </div>
+    </PageTransition>
   );
 }

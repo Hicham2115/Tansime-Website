@@ -2,13 +2,15 @@ import { CheckCircle2 } from "lucide-react";
 import img1 from "@/assets/img53.jpg";
 import img2 from "@/assets/img59.jpg";
 import img3 from "@/assets/img77.jpg";
+import FadeInUp from "@/components/FadeInUp";
+import ScaleIn from "@/components/ScaleIn";
 
 export default function ResidencesSection() {
   return (
     <section className="py-20 relative border-t border-white/10">
       <div className="container px-4 md:px-6 space-y-16">
         {/* Preamble */}
-        <div className="max-w-4xl mx-auto text-center space-y-6">
+        <FadeInUp className="max-w-4xl mx-auto text-center space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold text-white">
             PRÉAMBULE
           </h2>
@@ -21,11 +23,11 @@ export default function ResidencesSection() {
             innovation, et modernité : Le centre d'affaires TASNIME et Les
             résidences TASNIME.
           </p>
-        </div>
+        </FadeInUp>
 
         {/* Residences Content */}
         <div className="grid lg:grid-cols-2 gap-12 items-start">
-          <div className="space-y-6">
+          <FadeInUp delay={0.2} className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold text-[#f1c692]">
               RÉSIDENCES TASNIME
             </h2>
@@ -68,9 +70,9 @@ export default function ResidencesSection() {
                 ))}
               </ul>
             </div>
-          </div>
+          </FadeInUp>
 
-          <div className="space-y-8">
+          <FadeInUp delay={0.4} className="space-y-8">
             {/* Typologies Card */}
             <div className="bg-card/50 backdrop-blur-sm p-8 hover:scale-105 transition-all duration-500 rounded-3xl border border-white/10 shadow-xl">
               <h3 className="text-2xl font-bold text-white mb-6">
@@ -115,14 +117,15 @@ export default function ResidencesSection() {
                 architecturale et technique du projet."
               </p>
             </div>
-          </div>
+          </FadeInUp>
         </div>
 
         {/* Image Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[img1, img2, img3].map((img, idx) => (
-            <div
+            <ScaleIn
               key={idx}
+              delay={0.6 + idx * 0.2}
               className="group relative aspect-[4/3] overflow-hidden rounded-2xl border border-white/10 shadow-2xl"
             >
               <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-300 z-10" />
@@ -131,7 +134,7 @@ export default function ResidencesSection() {
                 alt={`Tasnime Residence View ${idx + 1}`}
                 className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
               />
-            </div>
+            </ScaleIn>
           ))}
         </div>
       </div>

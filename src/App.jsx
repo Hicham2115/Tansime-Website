@@ -11,6 +11,7 @@ import BusinessCenter from "./Pages/BusinessCenter.jsx";
 import Residences from "./Pages/Residences.jsx";
 import Gallery from "./Pages/Gallery.jsx";
 import ScrollToTopButton from "./components/MainSection/ScrollToTopButton.jsx";
+import { AnimatePresence } from "motion/react";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -23,21 +24,25 @@ function ScrollToTop() {
 }
 
 export default function App() {
+  const location = useLocation();
+
   return (
     <>
       <Background />
       <NavBar />
       <ScrollToTop />
       <ScrollToTopButton />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/business-center" element={<BusinessCenter />} />
-        <Route path="/residences" element={<Residences />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<Home />} />
+          <Route path="/business-center" element={<BusinessCenter />} />
+          <Route path="/residences" element={<Residences />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </AnimatePresence>
       <Footer />
     </>
   );
