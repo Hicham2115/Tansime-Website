@@ -24,9 +24,9 @@ const navigationLinks = [
 export default function Component() {
   return (
     <header className="px-4 md:px-6 sticky top-0 z-50 backdrop-blur-xl bg-white/80 border-b border-[#d9ac6f]/20 shadow-lg shadow-[#d9ac6f]/5">
-      <div className="flex h-16 items-center justify-between gap-4">
+      <div className="relative flex h-16 items-center justify-between gap-4">
         {/* Left side  */}
-        <div className="flex items-center gap-2 flex-1">
+        <div className="flex items-center gap-2">
           {/* Mobile menu trigger */}
           <Popover>
             <PopoverTrigger asChild>
@@ -99,30 +99,33 @@ export default function Component() {
               </div>
             </div>
           </Link>
+        </div>
 
-          {/* Desktop Navigation menu */}
-          <NavigationMenu className="max-md:hidden ml-auto">
-            <NavigationMenuList className="gap-1">
-              {navigationLinks.map((link, index) => (
-                <NavigationMenuItem key={index}>
-                  <NavigationMenuLink
-                    className="py-2 px-4 font-medium transition-all rounded-lg hover:bg-transparent hover:underline hover:text-primary text-black focus:bg-transparent focus:text-black data-[active]:bg-transparent data-[active]:text-black"
-                    href={link.href}
-                  >
-                    {link.label}
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
-              ))}
+        {/* Desktop Navigation menu - Centered */}
+        <NavigationMenu className="max-md:hidden absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+          <NavigationMenuList className="gap-1">
+            {navigationLinks.map((link, index) => (
+              <NavigationMenuItem key={index}>
+                <NavigationMenuLink
+                  className="py-2 px-4 font-medium transition-all rounded-lg hover:bg-transparent hover:underline hover:text-primary text-black focus:bg-transparent focus:text-black data-[active]:bg-transparent data-[active]:text-black"
+                  href={link.href}
+                >
+                  {link.label}
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            ))}
+          </NavigationMenuList>
+        </NavigationMenu>
 
-              <Button
-                asChild
-                className="ml-2 group relative px-6 py-2 bg-primary text-white font-semibold rounded-md hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-primary/50 hover:scale-105"
-                size="sm"
-              >
-                <Link to="/contact">Contact Us</Link>
-              </Button>
-            </NavigationMenuList>
-          </NavigationMenu>
+        {/* Right side - Contact Button */}
+        <div className="max-md:hidden flex items-center gap-4">
+          <Button
+            asChild
+            className="group relative px-6 py-2 bg-primary text-white font-semibold rounded-md hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-primary/50 hover:scale-105"
+            size="sm"
+          >
+            <Link to="/contact">Contact Us</Link>
+          </Button>
         </div>
       </div>
     </header>
