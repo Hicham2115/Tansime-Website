@@ -11,7 +11,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { Link } from "react-router-dom";
-import { Building2 } from "lucide-react";
+import { Building2, MailOpen, SendHorizontal } from "lucide-react";
 
 const navigationLinks = [
   { href: "/", label: "Home" },
@@ -67,11 +67,13 @@ export default function Component() {
                 <NavigationMenuList className="flex-col items-start gap-0 md:gap-2">
                   {navigationLinks.map((link, _index) => (
                     <NavigationMenuItem className="w-full" key={link.href}>
-                      <NavigationMenuLink
-                        className="py-1.5 hover:bg-transparent focus:bg-transparent data-[active]:bg-transparent hover:text-black focus:text-black data-[active]:text-black"
-                        href={link.href}
-                      >
-                        {link.label}
+                      <NavigationMenuLink asChild>
+                        <Link
+                          className="py-1.5 hover:bg-transparent focus:bg-transparent data-[active]:bg-transparent hover:text-black focus:text-black data-[active]:text-black block w-full"
+                          to={link.href}
+                        >
+                          {link.label}
+                        </Link>
                       </NavigationMenuLink>
                     </NavigationMenuItem>
                   ))}
@@ -81,7 +83,12 @@ export default function Component() {
                       className="group relative px-4 py-3 bg-primary text-white font-semibold rounded-md hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-primary/50 hover:scale-105 flex items-center gap-2 w-full justify-center"
                       size="sm"
                     >
-                      <Link to="/contact">Contact Us</Link>
+                      <Link to="/contact">
+                        Contact Us
+                        <span className="transition-transform duration-300 group-hover:translate-x-1">
+                          <SendHorizontal className="w-5 h-5" />
+                        </span>
+                      </Link>
                     </Button>
                   </div>
                 </NavigationMenuList>
@@ -106,11 +113,13 @@ export default function Component() {
           <NavigationMenuList className="gap-1">
             {navigationLinks.map((link, index) => (
               <NavigationMenuItem key={index}>
-                <NavigationMenuLink
-                  className="py-2 px-4 font-medium transition-all rounded-lg hover:bg-transparent hover:underline hover:text-primary text-black focus:bg-transparent focus:text-black data-[active]:bg-transparent data-[active]:text-black"
-                  href={link.href}
-                >
-                  {link.label}
+                <NavigationMenuLink asChild>
+                  <Link
+                    className="py-2 px-4 font-medium transition-all rounded-lg hover:bg-transparent hover:underline hover:text-primary text-black focus:bg-transparent focus:text-black data-[active]:bg-transparent data-[active]:text-black"
+                    to={link.href}
+                  >
+                    {link.label}
+                  </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
             ))}
@@ -121,10 +130,15 @@ export default function Component() {
         <div className="max-md:hidden flex items-center gap-4">
           <Button
             asChild
-            className="group relative px-6 py-2 bg-primary text-white font-semibold rounded-md hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-primary/50 hover:scale-105"
+            className="group relative px-6 py-5 bg-primary text-white font-semibold rounded-md hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-primary/50 hover:scale-105"
             size="sm"
           >
-            <Link to="/contact">Contact Us</Link>
+            <Link to="/contact">
+              Contact Us
+              <span className="transition-transform duration-300 group-hover:translate-x-1">
+                <SendHorizontal className="w-5 h-5" />
+              </span>
+            </Link>
           </Button>
         </div>
       </div>

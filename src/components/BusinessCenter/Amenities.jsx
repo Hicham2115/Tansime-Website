@@ -59,7 +59,7 @@ export default function Amenities() {
               <h3 className="text-lg font-bold text-white mb-2">
                 {item.title}
               </h3>
-              <p className="text-gray-300 text-sm">{item.description}</p>
+              <p className="text-white text-sm">{item.description}</p>
             </FadeInUp>
           ))}
         </div>
