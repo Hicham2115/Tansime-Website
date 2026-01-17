@@ -71,13 +71,13 @@ export default function Amenities() {
             <h3 className="text-3xl font-bold text-white">
               Experience the Perfect Balance of Work and Life
             </h3>
-            <p className="text-gray-300 leading-relaxed text-lg">
+            <p className="text-white leading-relaxed text-lg">
               Our business center offers more than just office space; it
               provides a holistic environment tailored for success. Enjoy
               premium facilities that cater to your professional needs while
               offering spaces to unwind and recharge.
             </p>
-            <p className="text-gray-300 leading-relaxed text-lg">
+            <p className="text-white leading-relaxed text-lg">
               From state-of-the-art conference rooms to relaxing lounge areas,
               every detail is designed to enhance your workday.
             </p>

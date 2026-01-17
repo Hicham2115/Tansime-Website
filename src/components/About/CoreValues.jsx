@@ -54,7 +54,7 @@ export default function CoreValues() {
               <h3 className="text-xl font-bold text-white mb-3 group-hover:text-white transition-colors">
                 {value.title}
               </h3>
-              <p className="text-gray-300 leading-relaxed">
+              <p className="text-white leading-relaxed">
                 {value.description}
               </p>
             </FadeInUp>

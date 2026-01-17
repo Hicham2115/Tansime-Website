@@ -32,7 +32,7 @@ export default function Achievements() {
               <div className="text-xl md:text-2xl font-bold text-white mb-2">
                 {achievement.value}
               </div>
-              <div className="text-sm text-gray-300">{achievement.label}</div>
+              <div className="text-sm text-white">{achievement.label}</div>
             </FadeInUp>
           ))}
         </div>

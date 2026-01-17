@@ -107,13 +107,13 @@ export default function HousingTypes() {
             <h3 className="text-3xl font-bold text-white">
               Designed for Comfort and Elegance
             </h3>
-            <p className="text-gray-300 leading-relaxed text-lg">
+            <p className="text-white leading-relaxed text-lg">
               Each residence is meticulously crafted to maximize space and
               light, providing a serene sanctuary in the heart of the city.
               High-quality finishes and thoughtful layouts ensure a premium
               living experience.
             </p>
-            <p className="text-gray-300 leading-relaxed text-lg">
+            <p className="text-white leading-relaxed text-lg">
               Whether you choose a cozy studio or a spacious duplex, you'll find
               a home that perfectly reflects your style and needs.
             </p>

@@ -4,12 +4,13 @@ import FadeInUp from "@/components/FadeInUp";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover -mt-20 bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImg})` }}
       ></div>
+      
       <div className="absolute inset-0 bg-black/60"></div>
       <div className="absolute inset-0 bg-[linear-gradient(rgba(201,169,97,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(201,169,97,0.03)_1px,transparent_1px)] bg-size-[64px_64px]" />
 
