@@ -108,8 +108,8 @@ export default function Contact() {
             <FadeInUp className="lg:col-span-2">
               <div className="p-8 md:p-10 rounded-2xl bg-card/50 backdrop-blur-sm border border-white/10 shadow-xl hover:shadow-2xl transition-all duration-300">
                 <div className="flex items-center gap-3 mb-8">
-                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
-                    <Send className="w-6 h-6 text-primary" />
+                  <div className="w-12 h-12 bg-card/50 backdrop-blur-sm  rounded-xl flex items-center justify-center">
+                    <Send className="w-6 h-6 text-white" />
                   </div>
                   <h2 className="text-2xl md:text-3xl font-bold text-white">
                     Send Us a Message
@@ -288,19 +288,15 @@ export default function Contact() {
 
               {/* Map Placeholder */}
               <div className="rounded-2xl overflow-hidden border border-white/10 shadow-md aspect-square bg-card/50 backdrop-blur-sm">
-                <div className="w-full h-full bg-white/5 flex items-center justify-center">
-                  <div className="text-center space-y-3">
-                    <MapPin className="w-12 h-12 text-gray-500 mx-auto" />
-                    <p className="text-sm font-semibold text-white">
-                      Interactive Map
-                    </p>
-                    <p className="text-xs text-white/50 px-4">
-                      Bd de Safi & Av Charaf
-                      <br />
-                      Marrakech
-                    </p>
-                  </div>
-                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3395.9611727058036!2d-8.029307!3d31.662281999999998!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDM5JzQzLjIiTiA4wrAwMSc0OS40Ilc!5e0!3m2!1sen!2sus!4v1768611899120!5m2!1sen!2sus"
+                  width="600"
+                  height="450"
+                  style={{ border: 0 }}
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </FadeInUp>
           </div>
@@ -314,7 +310,7 @@ export default function Contact() {
               <h3 className="text-2xl font-bold text-white mb-4">
                 Visit Our Projects
               </h3>
-              <p className="text-white/80 mb-6">
+              <p className="text-white mb-6">
                 Schedule a visit to experience our premium residences and
                 business centers firsthand. Our team is ready to show you around
                 and answer all your questions.
@@ -330,7 +326,7 @@ export default function Contact() {
                     key={benefit}
                     className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10"
                   >
-                    <CheckCircle className="w-4 h-4 text-primary" />
+                    <CheckCircle className="w-4 h-4 text-white" />
                     <span className="text-sm font-medium text-white">
                       {benefit}
                     </span>
