@@ -188,7 +188,7 @@ function Footer() {
               &copy; {currentYear} Tasnime Immobilier. All rights reserved.
             </p>
 
-            <div className="flex flex-wrap justify-center md:justify-end gap-6 text-sm">
+            {/* <div className="flex flex-wrap justify-center md:justify-end gap-6 text-sm">
               <a
                 href="/privacy"
                 className="text-white/80 hover:text-primary transition-colors"
@@ -207,7 +207,7 @@ function Footer() {
               >
                 Cookie Policy
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
