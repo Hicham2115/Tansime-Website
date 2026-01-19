@@ -101,7 +101,7 @@ export default function Component() {
             <div className="flex items-center gap-3">
               <div className="flex">
                 <span className="text-xl font-bold tracking-tight text-black">
-                  TASNIME <span className="text-[#225f66]">IMMOBILIER</span>
+                  TASNIME <span className="text-[#125a32]">IMMOBILIER</span>
                 </span>
               </div>
             </div>

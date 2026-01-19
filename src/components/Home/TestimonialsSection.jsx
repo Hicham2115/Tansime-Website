@@ -30,10 +30,10 @@ export default function TestimonialsSection() {
     <section className="py-24 relative overflow-hidden">
       <div className="container px-4 md:px-6">
         <FadeInUp className="text-center space-y-4 mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary">
             Client Experiences
           </h2>
-          <p className="text-lg text-[#f1c692] max-w-2xl mx-auto">
+          <p className="text-lg text-black max-w-2xl mx-auto">
             Don't just take our word for it. Here is what our valued clients and
             partners have to say about their experience with us.
           </p>
@@ -44,7 +44,7 @@ export default function TestimonialsSection() {
             <FadeInUp
               key={index}
               delay={index * 0.2}
-              className="relative p-8 hover:-translate-y-4 rounded-3xl bg-card/50 backdrop-blur-sm border border-white/10 hover:border-primary/50 transition-all duration-300 group"
+              className="relative p-8 hover:-translate-y-4 rounded-3xl bg-primary/90 backdrop-blur-sm border border-white/10 hover:border-primary/50 transition-all duration-300 group"
             >
               <Quote className="absolute top-8 right-8 w-10 h-10 text-primary/20 group-hover:text-primary/40 transition-colors" />
 
@@ -59,7 +59,7 @@ export default function TestimonialsSection() {
                   </div>
                 </div>
 
-                <p className="text-white/80 leading-relaxed italic">
+                <p className="text-white leading-relaxed italic">
                   "{item.content}"
                 </p>
 

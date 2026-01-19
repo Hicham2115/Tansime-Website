@@ -37,10 +37,10 @@ export default function FeaturedProjects() {
     <section className="py-24 relative -mt-20">
       <div className="container px-4 md:px-6">
         <FadeInUp className="text-center space-y-4 mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary">
             Featured Projects
           </h2>
-          <p className="text-lg text-[#f1c692] max-w-2xl mx-auto">
+          <p className="text-lg text-black max-w-2xl mx-auto">
             Explore our portfolio of premium developments that redefine luxury
             living and working in Marrakech.
           </p>
@@ -51,7 +51,7 @@ export default function FeaturedProjects() {
             <FadeInUp
               key={index}
               delay={index * 0.2}
-              className="group relative overflow-hidden rounded-3xl bg-card border border-border hover:border-primary/50 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/10"
+              className="group relative overflow-hidden rounded-3xl bg-primary border border-border hover:border-primary/50 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/10"
             >
               {/* Gradient background */}
               <div
@@ -63,7 +63,7 @@ export default function FeaturedProjects() {
                   <h3 className="text-3xl font-bold text-white transition-colors">
                     {project.title}
                   </h3>
-                  <p className="text-white/80 leading-relaxed">
+                  <p className="text-white leading-relaxed">
                     {project.description}
                   </p>
                 </div>
@@ -75,7 +75,7 @@ export default function FeaturedProjects() {
                       key={idx}
                       className="flex items-center gap-2 text-sm text-white"
                     >
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                      <div className="w-1.5 h-1.5 rounded-full bg-white" />
                       {feature}
                     </div>
                   ))}

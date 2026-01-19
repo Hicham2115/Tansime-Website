@@ -32,16 +32,16 @@ export default function AboutSection() {
         <div className="max-w-6xl mx-auto space-y-12">
           {/* Header */}
           <FadeInUp className="text-center space-y-4">
-            <h2 className="text-4xl md:text-5xl font-bold text-white">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary">
               About Tasnime Immobilier
             </h2>
             <div className="max-w-3xl mx-auto space-y-6">
-              <p className="text-lg text-[#f1c692] font-semibold leading-relaxed">
+              <p className="text-lg text-black font-semibold leading-relaxed">
                 Located in the vibrant city of Marrakech, Tasnime Immobilier is
                 a leading real estate developer committed to delivering
                 exceptional residential and business projects.
               </p>
-              <p className="text-white text-base leading-relaxed">
+              <p className="text-black text-base leading-relaxed">
                 With over a decade of experience, we pride ourselves on
                 transforming visions into reality. Our portfolio reflects a
                 perfect blend of modern architecture, sustainable practices, and

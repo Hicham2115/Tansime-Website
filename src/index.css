@@ -49,9 +49,8 @@
   --card-foreground: #f8f9fa;
   --popover: #1a1f2e;
   --popover-foreground: #f8f9fa;
-  --primary: #225f66;
-  --primary-foreground:#rgb(255, 255, 255)
-  --secondary: #1e2738;
+  --primary: #125a32;
+  --primary-foreground: #rgb(255, 255, 255) --secondary: #1e2738;
   --secondary-foreground: #f8f9fa;
   --muted: #1e2738;
   --muted-foreground: #9ca3af;
@@ -126,7 +125,9 @@
   .leaflet-div-icon {
     @apply !bg-transparent !border-none;
   }
-  .leaflet-popup-content-wrapper, .leaflet-popup-content, .leaflet-popup-content p {
+  .leaflet-popup-content-wrapper,
+  .leaflet-popup-content,
+  .leaflet-popup-content p {
     @apply ![all:unset];
   }
   .leaflet-popup {
@@ -135,7 +136,8 @@
   .leaflet-popup-close-button {
     @apply ring-offset-background focus:ring-ring bg-secondary rounded-xs opacity-70 transition-opacity hover:opacity-100 focus:ring-2 focus:outline-hidden;
   }
-  .leaflet-tooltip, .leaflet-draw-tooltip {
+  .leaflet-tooltip,
+  .leaflet-draw-tooltip {
     @apply !bg-foreground !text-background !animate-none !rounded-md !border-none !p-0 !px-3 !py-1.5 !shadow-none;
   }
   .leaflet-draw-tooltip:before {
@@ -150,7 +152,11 @@
   .leaflet-draw-tooltip-subtext {
     @apply !text-background;
   }
-  .leaflet-popup-tip-container, .leaflet-tooltip-top:before, .leaflet-tooltip-bottom:before, .leaflet-tooltip-left:before, .leaflet-tooltip-right:before {
+  .leaflet-popup-tip-container,
+  .leaflet-tooltip-top:before,
+  .leaflet-tooltip-bottom:before,
+  .leaflet-tooltip-left:before,
+  .leaflet-tooltip-right:before {
     @apply hidden;
   }
   .leaflet-control-attribution {

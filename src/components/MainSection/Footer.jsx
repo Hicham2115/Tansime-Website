@@ -30,7 +30,7 @@ function Footer() {
   ];
 
   return (
-    <footer className="bg-background border-t border-border relative overflow-hidden">
+    <footer className="bg-[#0b161c] border-t border-border relative overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary/50 via-primary to-primary/50" />
       <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
@@ -43,7 +43,7 @@ function Footer() {
           <div className="lg:col-span-1">
             <div className="mb-6">
               <Link to="/" className="inline-flex items-center gap-3 group">
-                <div className="bg-primary/10 p-2 rounded-lg border border-primary/20 group-hover:bg-primary/20 transition-colors">
+                <div className=" p-2 rounded-lg">
                   <img src={Logo} alt="" width={150} height={150}/>
                 </div>
                 {/* <div className="flex flex-col">
@@ -55,9 +55,9 @@ function Footer() {
                   </span>
                 </div> */}
               </Link>
-              <div className="w-16 h-1 bg-gradient-to-r from-primary to-primary/50 mt-2 rounded-full" />
+              <div className="w-16 h-1 bg-[#b1cc4b] mt-2 rounded-full" />
             </div>
-            <p className="text-white/80 leading-relaxed mb-6 text-sm">
+            <p className="white leading-relaxed mb-6 text-sm">
               A leading real estate developer in Marrakech, delivering
               exceptional residential and business projects with sustainability,
               quality, and modernity at the forefront.
@@ -65,14 +65,14 @@ function Footer() {
 
             {/* Newsletter */}
             <div className="space-y-3">
-              <h4 className="font-bold text-sm text-primary">Stay Updated</h4>
+              <h4 className="font-bold text-sm text-white">Stay Updated</h4>
               <div className="flex">
                 <input
                   type="email"
                   placeholder="Your email"
                   className="flex-1 px-4 py-2 bg-card border border-border rounded-l-lg focus:outline-none focus:border-primary transition-colors text-sm text-foreground"
                 />
-                <button className="px-4 py-2 bg-primary hover:bg-primary/90 text-primary-foreground rounded-r-lg transition-all duration-300 flex items-center justify-center group">
+                <button className="px-4 py-2 bg-[#b1cc4b] hover:bg-[#b1cc4b]/90 text-primary-foreground rounded-r-lg transition-all duration-300 flex items-center justify-center group">
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
               </div>
@@ -83,14 +83,14 @@ function Footer() {
           <div>
             <h3 className="font-bold text-lg mb-6 text-foreground relative inline-block">
               Quick Links
-              <span className="absolute -bottom-2 left-0 w-12 h-0.5 bg-primary rounded-full" />
+              <span className="absolute -bottom-2 left-0 w-12 h-0.5 bg-[#b1cc4b] rounded-full" />
             </h3>
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
                   <Link
                     to={link.href}
-                    className="text-white/80 hover:text-primary transition-all duration-300 flex items-center group text-sm"
+                    className="text-white hover:text-[#b1cc4b] transition-all duration-300 flex items-center group text-sm"
                   >
                     <span className="w-0 group-hover:w-2 h-0.5 bg-primary mr-0 group-hover:mr-2 transition-all duration-300 rounded-full" />
                     {link.name}
@@ -104,16 +104,16 @@ function Footer() {
           <div>
             <h3 className="font-bold text-lg mb-6 text-foreground relative inline-block">
               Our Projects
-              <span className="absolute -bottom-2 left-0 w-12 h-0.5 bg-primary rounded-full" />
+              <span className="absolute -bottom-2 left-0 w-12 h-0.5 bg-[#b1cc4b] rounded-full" />
             </h3>
             <ul className="space-y-3">
               {projects.map((project, index) => (
                 <li key={index}>
                   <Link
                     to={project.href}
-                    className="text-white/80 hover:text-primary transition-all duration-300 flex items-center gap-2 group text-sm"
+                    className="white hover:text-[#b1cc4b] transition-all duration-300 flex items-center gap-2 group text-sm"
                   >
-                    <project.icon className="w-4 h-4 text-primary/60 group-hover:text-primary transition-colors" />
+                    <project.icon className="w-4 h-4 text-[#b1cc4b] group-hover:text-[#b1cc4b] transition-colors" />
                     {project.name}
                   </Link>
                 </li>
@@ -125,31 +125,31 @@ function Footer() {
           <div>
             <h3 className="font-bold text-lg mb-6 text-foreground relative inline-block">
               Get in Touch
-              <span className="absolute -bottom-2 left-0 w-12 h-0.5 bg-primary rounded-full" />
+              <span className="absolute -bottom-2 left-0 w-12 h-0.5 bg-[#b1cc4b] rounded-full" />
             </h3>
             <ul className="space-y-4">
-              <li className="flex items-start gap-3 text-white/80 text-sm group">
-                <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5 group-hover:text-primary/80 transition-colors" />
-                <span className="group-hover:text-foreground transition-colors">
+              <li className="flex items-start gap-3 white text-sm group">
+                <MapPin className="w-5 h-5 text-[#b1cc4b] shrink-0 mt-0.5 group-hover:text-[#b1cc4b] transition-colors" />
+                <span className="group-hover:text-[#b1cc4b] transition-colors">
                   Intersection of Bd de Safi & Av Charaf
                   <br />
                   Marrakech, Morocco
                 </span>
               </li>
-              <li className="flex items-center gap-3 text-white/80 text-sm group">
-                <Phone className="w-5 h-5 text-primary shrink-0 group-hover:text-primary/80 transition-colors" />
+              <li className="flex items-center gap-3 white text-sm group">
+                <Phone className="w-5 h-5 text-[#b1cc4b] shrink-0 group-hover:text-[#b1cc4b] transition-colors" />
                 <a
                   href="tel:+212XXXXXXXXX"
-                  className="group-hover:text-foreground transition-colors"
+                  className="group-hover:text-[#b1cc4b] transition-colors"
                 >
                   +212 XXX XXX XXX
                 </a>
               </li>
-              <li className="flex items-center gap-3 text-white/80 text-sm group">
-                <Mail className="w-5 h-5 text-primary shrink-0 group-hover:text-primary/80 transition-colors" />
+              <li className="flex items-center gap-3 white text-sm group">
+                <Mail className="w-5 h-5 text-[#b1cc4b] shrink-0 group-hover:text-[#b1cc4b] transition-colors" />
                 <a
                   href="mailto:contact@tasnime-immobilier.ma"
-                  className="group-hover:text-foreground transition-colors break-all"
+                  className="group-hover:text-[#b1cc4b] transition-colors break-all"
                 >
                   contact@tasnime-immobilier.ma
                 </a>
@@ -158,7 +158,7 @@ function Footer() {
 
             {/* Social Media */}
             <div className="mt-6">
-              <h4 className="font-bold text-sm mb-3 text-primary">Follow Us</h4>
+              <h4 className="font-bold text-sm mb-3 text-white">Follow Us</h4>
               <div className="flex gap-3">
                 {[
                   { icon: Facebook, href: "#", label: "Facebook" },
@@ -171,9 +171,9 @@ function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={social.label}
-                    className="w-10 h-10 rounded-lg bg-card border border-border hover:bg-primary hover:border-primary flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+                    className="w-10 h-10 rounded-lg bg-card border border-border hover:bg-[#b1cc4b] hover:border-[#b1cc4b] flex items-center justify-center transition-all duration-300 hover:scale-110 group"
                   >
-                    <social.icon className="w-5 h-5 text-white/80 group-hover:text-primary-foreground transition-colors" />
+                    <social.icon className="w-5 h-5 white group-hover:text-white  transition-colors" />
                   </a>
                 ))}
               </div>
@@ -184,26 +184,26 @@ function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-border pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-white/80 text-sm text-center md:text-left">
+            <p className="white text-sm text-center md:text-left">
               &copy; {currentYear} Tasnime Immobilier. All rights reserved.
             </p>
 
             {/* <div className="flex flex-wrap justify-center md:justify-end gap-6 text-sm">
               <a
                 href="/privacy"
-                className="text-white/80 hover:text-primary transition-colors"
+                className="white hover:text-primary transition-colors"
               >
                 Privacy Policy
               </a>
               <a
                 href="/terms"
-                className="text-white/80 hover:text-primary transition-colors"
+                className="white hover:text-primary transition-colors"
               >
                 Terms of Service
               </a>
               <a
                 href="/cookies"
-                className="text-white/80 hover:text-primary transition-colors"
+                className="white hover:text-primary transition-colors"
               >
                 Cookie Policy
               </a>

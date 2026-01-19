@@ -12,14 +12,14 @@ export default function Hero() {
         className="absolute inset-0 bg-cover -mt-20 bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImg})` }}
       ></div>
-      <div className="absolute inset-0 bg-black/60"></div>
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(201,169,97,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(201,169,97,0.03)_1px,transparent_1px)] bg-size-[64px_64px]" />
+      <div className="absolute inset-0 bg-background/80"></div>
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(177,204,75,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(177,204,75,0.03)_1px,transparent_1px)] bg-size-[64px_64px]" />
 
       <div className="container relative z-10 px-4 md:px-6 py-20">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <FadeInUp className="flex justify-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/20 backdrop-blur-sm">
-              <Home className="w-4 h-4 text-[#f0ba78]" />
+              <Home className="w-4 h-4 text-primary" />
               <span className="text-sm font-medium text-white">
                 Residential Living
               </span>
@@ -29,7 +29,7 @@ export default function Hero() {
           <FadeInUp delay={0.2}>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white">
               Tasnime{" "}
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-[#328a93] via-[#328a93] to-[#328a93]">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-secondary via-secondary to-secondary">
                 Residences
               </span>
             </h1>
@@ -56,10 +56,10 @@ export default function Hero() {
 
               <span className="absolute left-[-75%] top-0 h-full w-[50%] bg-white/20 rotate-12 z-10 blur-lg group-hover:left-[125%] transition-all duration-1000 ease-in-out"></span>
 
-              <span className="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#D4EDF9] absolute h-[20%] rounded-tl-lg border-l-2 border-t-2 top-0 left-0"></span>
-              <span className="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#D4EDF9] absolute group-hover:h-[90%] h-[60%] rounded-tr-lg border-r-2 border-t-2 top-0 right-0"></span>
-              <span className="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#D4EDF9] absolute h-[60%] group-hover:h-[90%] rounded-bl-lg border-l-2 border-b-2 left-0 bottom-0"></span>
-              <span className="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#D4EDF9] absolute h-[20%] rounded-br-lg border-r-2 border-b-2 right-0 bottom-0"></span>
+              <span className="w-1/2 drop-shadow-3xl transition-all duration-300 block border-secondary absolute h-[20%] rounded-tl-lg border-l-2 border-t-2 top-0 left-0"></span>
+              <span className="w-1/2 drop-shadow-3xl transition-all duration-300 block border-secondary absolute group-hover:h-[90%] h-[60%] rounded-tr-lg border-r-2 border-t-2 top-0 right-0"></span>
+              <span className="w-1/2 drop-shadow-3xl transition-all duration-300 block border-secondary absolute h-[60%] group-hover:h-[90%] rounded-bl-lg border-l-2 border-b-2 left-0 bottom-0"></span>
+              <span className="w-1/2 drop-shadow-3xl transition-all duration-300 block border-secondary absolute h-[20%] rounded-br-lg border-r-2 border-b-2 right-0 bottom-0"></span>
             </Link>
             {/* <Button
               asChild

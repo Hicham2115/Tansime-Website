@@ -7,15 +7,15 @@ import ScaleIn from "@/components/ScaleIn";
 
 export default function ResidencesSection() {
   return (
-    <section className="py-20 relative border-t border-white/10">
+    <section className="py-20 relative border-t border-white/10 -mt-10">
       <div className="container px-4 md:px-6 space-y-16">
         {/* Preamble */}
         <FadeInUp className="max-w-4xl mx-auto text-center space-y-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary">
             INTRODUCTION
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
-          <p className="text-lg text-white leading-relaxed">
+          <p className="text-lg text-black leading-relaxed">
             In the heart of Marrakech, Tasnime Immobilier, a leading player in
             the real estate sector, is launching two exceptional projects
             resolutely designed with contemporary architecture and built around
@@ -27,26 +27,26 @@ export default function ResidencesSection() {
         {/* Residences Content */}
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <FadeInUp delay={0.2} className="space-y-6">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#f1c692]">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary">
               TASNIME RESIDENCES
             </h2>
-            <p className="text-white text-lg leading-relaxed">
+            <p className="text-black text-lg leading-relaxed">
               Tasnime Residences are distinguished by the user-friendliness of
               the spaces, the durability of construction materials, and the
               quality of finishes. The project includes the creation of more
               than 40 shops and showrooms on the ground floor for commercial
               activity, including a supermarket (MARJANE market).
             </p>
-            <p className="text-white leading-relaxed">
+            <p className="text-black leading-relaxed">
               TASNIME Residences are secure residences designed with sober and
               refined architecture, offering an exceptional living experience.
               These Premium residences are enlivened by a play of gardens and
               swimming pools, constituting a symphony of elegance and comfort.
             </p>
 
-            <div className="bg-card/50 backdrop-blur-sm p-6 rounded-2xl hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 border border-white/10">
+            <div className="bg-primary/90 backdrop-blur-sm p-6 rounded-2xl hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 border border-white/10">
               <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                <CheckCircle2 className="w-6 h-6 text-primary" />
+                <CheckCircle2 className="w-6 h-6 text-[#f1c692]" />
                 Key Sustainability Features
               </h3>
               <ul className="space-y-3">
@@ -62,7 +62,7 @@ export default function ResidencesSection() {
                     key={i}
                     className="flex items-center gap-3 text-white text-sm"
                   >
-                    <div className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#f1c692] text-white shrink-0" />
                     {item}
                   </li>
                 ))}
@@ -72,7 +72,7 @@ export default function ResidencesSection() {
 
           <FadeInUp delay={0.4} className="space-y-8">
             {/* Typologies Card */}
-            <div className="bg-card/50 backdrop-blur-sm p-8 hover:scale-101 transition-all duration-500 rounded-3xl border border-white/10 shadow-xl">
+            <div className="bg-primary/90 backdrop-blur-sm p-8 hover:scale-101 transition-all duration-500 rounded-3xl border border-white/10 shadow-xl">
               <h3 className="text-2xl font-bold text-white mb-6">
                 Typologies & Areas
               </h3>
@@ -116,7 +116,7 @@ export default function ResidencesSection() {
             </div>
 
             {/* Additional Feature Highlight */}
-            <div className="p-6 rounded-2xl bg-card/50 backdrop-blur-sm hover:scale-105 transition-all duration-500 border border-white/10">
+            <div className="p-6 rounded-2xl bg-primary/90 backdrop-blur-sm hover:scale-105 transition-all duration-500 border border-white/10">
               <p className="text-white font-semibold italic text-center">
                 "Energy efficiency is at the heart of the project's
                 architectural and technical design."

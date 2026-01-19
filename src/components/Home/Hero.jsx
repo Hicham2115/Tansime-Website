@@ -39,7 +39,7 @@ export default function Hero() {
           {/* Badge */}
           <FadeInUp className="flex justify-center -mt-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm">
-              <MapPin className="w-4 h-4 text-[#f0ba78]" />
+              <MapPin className="w-4 h-4 text-[#b1cc4b]" />
               <span className="text-sm font-medium text-white">
                 Marrakech, Morocco
               </span>
@@ -58,7 +58,7 @@ export default function Hero() {
             className="text-5xl md:text-7xl font-bold tracking-tight text-white drop-shadow-lg"
           >
             Discover Luxury Living and{" "}
-            <span className="text-transparent bg-clip-text bg-linear-to-r from-[#328a93] via-[#328a93] to-[#328a93]">
+            <span className="text-transparent bg-clip-text bg-[#b1cc4b]">
               Business Spaces
             </span>
           </motion.h1>
