@@ -13,31 +13,36 @@ import "../../App.css";
 import { EffectCards, Pagination, Navigation } from "swiper/modules";
 import { CheckCircle2 } from "lucide-react";
 import FadeInUp from "@/components/FadeInUp";
-import ScaleIn from "@/components/ScaleIn";
+
+import salonDup from "../../assets/Imgs/SALON 1.jpg";
+import salonSamKitch from "../../assets/Imgs/SALON-SAM-KITCH.jpg";
+import samDup from "../../assets/Imgs/SAM-DUP.jpg";
+import samSalon from "../../assets/Imgs/SAM-SALON.jpg";
+import sam from "../../assets/Imgs/SAM.jpg";
 
 const sliderImages = [
   {
-    src: "/src/assets/Imgs/CHAMBRE.jpg",
+    src: salonDup,
     title: "Luxury Bedroom",
     description: "Spacious and elegantly designed bedroom suites",
   },
   {
-    src: "/src/assets/Imgs/SALON 1.jpg",
+    src: salonSamKitch,
     title: "Modern Living Room",
     description: "Contemporary living spaces with premium finishes",
   },
   {
-    src: "/src/assets/Imgs/KITCHENETTE.jpg",
+    src: samDup,
     title: "Modern Kitchen",
     description: "Fully equipped kitchenette with quality appliances",
   },
   {
-    src: "/src/assets/Imgs/ESPACE TV 2.jpg",
+    src: samSalon,
     title: "Entertainment Area",
     description: "Dedicated space for relaxation and entertainment",
   },
   {
-    src: "/src/assets/Imgs/CHAMBRE 2.jpg",
+    src: sam,
     title: "Guest Bedroom",
     description: "Comfortable guest accommodations",
   },
