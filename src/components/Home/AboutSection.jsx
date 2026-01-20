@@ -59,7 +59,7 @@ export default function AboutSection() {
                 <FadeInUp
                   key={index}
                   delay={index * 0.2}
-                  className="overflow-hidden rounded-2xl bg-white/60 backdrop-blur-sm border border-[#d9ac6f]/20 hover:border-[#d9ac6f]/40 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#d9ac6f]/10"
+                  className="overflow-hidden rounded-2xl bg-primary/90 backdrop-blur-sm border border-[#d9ac6f]/20 hover:border-[#d9ac6f]/40 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#d9ac6f]/10"
                 >
                   <div className="relative p-8 space-y-4">
                     {/* Icon */}
@@ -68,12 +68,12 @@ export default function AboutSection() {
                     </div>
 
                     {/* Title */}
-                    <h3 className="text-2xl font-bold text-black transition-colors">
+                    <h3 className="text-2xl font-bold text-white transition-colors">
                       {value.title}
                     </h3>
 
                     {/* Description */}
-                    <p className="text-black/80 leading-relaxed">
+                    <p className="text-white leading-relaxed">
                       {value.description}
                     </p>
                   </div>
