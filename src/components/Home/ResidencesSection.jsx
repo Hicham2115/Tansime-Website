@@ -15,7 +15,7 @@ export default function ResidencesSection() {
             INTRODUCTION
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
-          <p className="text-lg text-black leading-relaxed">
+          <p className="text-lg text-black leading-relaxed font-semibold">
             In the heart of Marrakech, Tasnime Immobilier, a leading player in
             the real estate sector, is launching two exceptional projects
             resolutely designed with contemporary architecture and built around
@@ -30,14 +30,14 @@ export default function ResidencesSection() {
             <h2 className="text-3xl md:text-4xl font-bold text-primary">
               TASNIME RESIDENCES
             </h2>
-            <p className="text-black text-lg leading-relaxed">
+            <p className="text-black text-lg leading-relaxed font-semibold">
               Tasnime Residences are distinguished by the user-friendliness of
               the spaces, the durability of construction materials, and the
               quality of finishes. The project includes the creation of more
               than 40 shops and showrooms on the ground floor for commercial
               activity, including a supermarket (MARJANE market).
             </p>
-            <p className="text-black leading-relaxed">
+            <p className="text-black leading-relaxed font-semibold">
               TASNIME Residences are secure residences designed with sober and
               refined architecture, offering an exceptional living experience.
               These Premium residences are enlivened by a play of gardens and

@@ -6,12 +6,12 @@ import FadeInUp from "@/components/FadeInUp";
 export default function CallToAction() {
   return (
     <section className="py-20 relative overflow-hidden">
-      <FadeInUp className="container relative px-4 md:px-6 bg-card/50 backdrop-blur-sm p-6 w-[70%] mx-auto rounded-lg border border-white/10">
+      <FadeInUp className="container relative px-4 md:px-6 bg-primary/90 backdrop-blur-sm p-6 w-[70%] mx-auto rounded-lg border border-white/10">
         <div className="max-w-3xl mx-auto text-center space-y-6">
           <h2 className="text-3xl md:text-3xl font-bold text-white">
             Your Dream Home Awaits
           </h2>
-          <p className="text-lg text-white/80">
+          <p className="text-lg text-white">
             Schedule a visit today and experience the Tasnime Residences
             lifestyle firsthand.
           </p>

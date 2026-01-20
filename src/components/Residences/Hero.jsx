@@ -12,14 +12,13 @@ export default function Hero() {
         className="absolute inset-0 bg-cover -mt-20 bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImg})` }}
       ></div>
-      <div className="absolute inset-0 bg-background/80"></div>
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(177,204,75,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(177,204,75,0.03)_1px,transparent_1px)] bg-size-[64px_64px]" />
+      <div className="absolute inset-0 bg-black/60"></div>
 
       <div className="container relative z-10 px-4 md:px-6 py-20">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <FadeInUp className="flex justify-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/20 backdrop-blur-sm">
-              <Home className="w-4 h-4 text-primary" />
+              <Home className="w-4 h-4 text-[#b1cc4b]" />
               <span className="text-sm font-medium text-white">
                 Residential Living
               </span>
@@ -29,7 +28,7 @@ export default function Hero() {
           <FadeInUp delay={0.2}>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white">
               Tasnime{" "}
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-secondary via-secondary to-secondary">
+              <span className="text-transparent bg-clip-text bg-[#b1cc4b]">
                 Residences
               </span>
             </h1>

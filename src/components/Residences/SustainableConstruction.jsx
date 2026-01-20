@@ -7,10 +7,10 @@ export default function SustainableConstruction() {
       <div className="container px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
           <FadeInUp className="text-center space-y-4 mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-white">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary">
               Sustainable Construction
             </h2>
-            <p className="text-lg text-white">
+            <p className="text-lg text-black">
               Built with the environment and your comfort in mind
             </p>
           </FadeInUp>
@@ -29,7 +29,7 @@ export default function SustainableConstruction() {
               <FadeInUp
                 key={index}
                 delay={index * 0.05}
-                className="flex items-start gap-3 p-4 rounded-xl bg-card/50 backdrop-blur-sm border border-white/10 hover:border-primary transition-all hover:scale-105 transform cursor-pointer"
+                className="flex items-start gap-3 p-4 rounded-xl bg-primary/90 backdrop-blur-sm border border-white/10 hover:border-primary transition-all hover:scale-105 transform cursor-pointer"
               >
                 <CheckCircle2 className="w-6 h-6 text-white/80 shrink-0 mt-0.5" />
                 <span className="text-white font-medium">{spec}</span>

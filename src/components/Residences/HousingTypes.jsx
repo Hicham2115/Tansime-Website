@@ -46,10 +46,10 @@ export default function HousingTypes() {
     <section className="py-20 relative overflow-hidden">
       <div className="container relative px-4 md:px-6">
         <FadeInUp className="text-center space-y-4 mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary">
             Available Residences
           </h2>
-          <p className="text-lg text-[#f1c692] max-w-2xl mx-auto">
+          <p className="text-lg text-black max-w-2xl mx-auto">
             Choose from a variety of layouts designed to fit your lifestyle
           </p>
         </FadeInUp>
@@ -60,7 +60,7 @@ export default function HousingTypes() {
             <FadeInUp
               key={index}
               delay={index * 0.1}
-              className="group relative overflow-hidden rounded-2xl bg-card/50 backdrop-blur-sm border border-white/10 hover:border-primary/50 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/10"
+              className="group relative overflow-hidden rounded-2xl bg-primary/90 backdrop-blur-sm border border-white/10 hover:border-primary/50 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/10"
             >
               <div className="relative p-8 space-y-6">
                 <div className="flex items-start justify-between">
@@ -68,7 +68,7 @@ export default function HousingTypes() {
                     <h3 className="text-2xl font-bold text-white transition-colors">
                       {housing.type}
                     </h3>
-                    <p className="text-gray-300">{housing.description}</p>
+                    <p className="text-white">{housing.description}</p>
                   </div>
                   <div className="w-12 h-12 rounded-xl bg-primary/50 flex items-center justify-center flex-shrink-0">
                     <housing.icon className="w-6 h-6 text-white" />
@@ -78,19 +78,19 @@ export default function HousingTypes() {
                 <div className="flex items-center gap-6 pt-4 border-t border-white/10">
                   <div className="flex items-center gap-2">
                     <Bed className="w-5 h-5 text-primary" />
-                    <span className="text-sm text-gray-200">
+                    <span className="text-sm text-white">
                       {housing.bedrooms} bed
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Bath className="w-5 h-5 text-primary" />
-                    <span className="text-sm text-gray-200">
+                    <span className="text-sm text-white">
                       {housing.bathrooms} bath
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Maximize className="w-5 h-5 text-primary" />
-                    <span className="text-sm text-gray-200">
+                    <span className="text-sm text-white">
                       {housing.size}
                     </span>
                   </div>
@@ -104,16 +104,16 @@ export default function HousingTypes() {
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           {/* Content Side */}
           <FadeInUp className="space-y-6">
-            <h3 className="text-3xl font-bold text-white">
+            <h3 className="text-3xl font-bold text-primary">
               Designed for Comfort and Elegance
             </h3>
-            <p className="text-white leading-relaxed text-lg">
+            <p className="text-black font-semibold leading-relaxed text-lg">
               Each residence is meticulously crafted to maximize space and
               light, providing a serene sanctuary in the heart of the city.
               High-quality finishes and thoughtful layouts ensure a premium
               living experience.
             </p>
-            <p className="text-white leading-relaxed text-lg">
+            <p className="text-black font-semibold leading-relaxed text-lg">
               Whether you choose a cozy studio or a spacious duplex, you'll find
               a home that perfectly reflects your style and needs.
             </p>

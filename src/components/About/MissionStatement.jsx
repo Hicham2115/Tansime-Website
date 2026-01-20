@@ -8,18 +8,18 @@ export default function MissionStatement() {
           <FadeInUp className="p-8 md:p-12 rounded-3xl bg-card/50 backdrop-blur-sm border border-white/10 hover:border-primary/30 transition-all duration-300">
             <p className="text-lg md:text-xl text-white leading-relaxed text-center font-semibold">
               Tasnime Immobilier is a{" "}
-              <span className="font-semibold text-[#f1c692]">
+              <span className="font-semibold text-[#b1cc4b]">
                 reference player
               </span>{" "}
               in Marrakech's real estate sector, delivering projects that
               combine{" "}
-              <span className="font-semibold text-[#f1c692]">
+              <span className="font-semibold text-[#b1cc4b]">
                 contemporary architecture
               </span>
               ,{" "}
-              <span className="font-semibold text-[#f1c692]">sustainability</span>
+              <span className="font-semibold text-[#b1cc4b]">sustainability</span>
               , and{" "}
-              <span className="font-semibold text-[#f1c692]">
+              <span className="font-semibold text-[#b1cc4b]">
                 superior craftsmanship
               </span>
               .

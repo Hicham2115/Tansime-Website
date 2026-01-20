@@ -37,10 +37,10 @@ export default function Amenities() {
     <section className="py-20 relative">
       <div className="container px-4 md:px-6">
         <FadeInUp className="text-center space-y-4 mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary">
             World-Class Amenities
           </h2>
-          <p className="text-lg text-[#f5c386] max-w-2xl mx-auto">
+          <p className="text-lg text-black max-w-2xl mx-auto">
             Designed for convenience, comfort, and productivity.
           </p>
         </FadeInUp>
@@ -51,7 +51,7 @@ export default function Amenities() {
             <FadeInUp
               key={index}
               delay={index * 0.1}
-              className="text-center p-6 rounded-2xl bg-card/50 backdrop-blur-sm border border-white/10 hover:border-primary/30 hover:shadow-lg transition-all duration-300 hover:scale-105 transform cursor-pointer"
+              className="text-center p-6 rounded-2xl bg-primary/90 backdrop-blur-sm border border-white/10 hover:border-primary/30 hover:shadow-lg transition-all duration-300 hover:scale-105 transform cursor-pointer"
             >
               <div className="w-12 h-12 mx-auto rounded-full bg-primary shadow-md flex items-center justify-center mb-4 text-white">
                 <item.icon className="w-6 h-6" />
@@ -68,16 +68,16 @@ export default function Amenities() {
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           {/* Content Side */}
           <FadeInUp className="space-y-6">
-            <h3 className="text-3xl font-bold text-white">
+            <h3 className="text-3xl font-bold text-primary">
               Experience the Perfect Balance of Work and Life
             </h3>
-            <p className="text-white leading-relaxed text-lg">
+            <p className="text-black font-semibold leading-relaxed text-lg">
               Our business center offers more than just office space; it
               provides a holistic environment tailored for success. Enjoy
               premium facilities that cater to your professional needs while
               offering spaces to unwind and recharge.
             </p>
-            <p className="text-white leading-relaxed text-lg">
+            <p className="text-black font-semibold leading-relaxed text-lg">
               From state-of-the-art conference rooms to relaxing lounge areas,
               every detail is designed to enhance your workday.
             </p>

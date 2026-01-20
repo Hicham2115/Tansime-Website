@@ -13,10 +13,10 @@ export default function Achievements() {
     <section className="py-20 relative">
       <div className="container px-4 md:px-6">
         <FadeInUp className="text-center space-y-4 mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary">
             Our Achievements
           </h2>
-          <p className="text-lg text-[#f1c692] max-w-2xl mx-auto">
+          <p className="text-lg text-black max-w-2xl mx-auto">
             Numbers that reflect our commitment to excellence
           </p>
         </FadeInUp>
@@ -26,7 +26,7 @@ export default function Achievements() {
             <FadeInUp
               key={index}
               delay={index * 0.1}
-              className="p-8 rounded-2xl bg-card/50 backdrop-blur-sm border border-white/10 hover:border-primary/50 transition-all duration-300 hover:scale-105 text-center transform cursor-pointer shadow-lg"
+              className="p-8 rounded-2xl bg-primary/90 backdrop-blur-sm border border-white/10 hover:border-primary/50 transition-all duration-300 hover:scale-105 text-center transform cursor-pointer shadow-lg"
             >
               <achievement.icon className="w-10 h-10 text-white mx-auto mb-4" />
               <div className="text-xl md:text-2xl font-bold text-white mb-2">

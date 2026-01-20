@@ -192,13 +192,13 @@ export default function Gallery() {
       <div className="container px-4 md:px-6">
         {/* Header */}
         <FadeInUp className="text-center space-y-4 mb-12">
-          <h1 className="text-5xl md:text-6xl font-bold text-white">
+          <h1 className="text-5xl md:text-6xl font-bold text-primary">
             Our Projects in Pictures
             {/* <span className="text-transparent bg-clip-text bg-linear-to-r from-[#328a93] via-[#328a93] to-[#328a93]">
               Pictures
             </span> */}
           </h1>
-          <p className="text-lg text-white/80 max-w-3xl mx-auto">
+          <p className="text-lg text-black max-w-3xl mx-auto">
             Explore our portfolio of premium residences and business spaces
             through our interactive gallery
           </p>
