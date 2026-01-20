@@ -5,6 +5,7 @@ import StatsSection from "@/components/Home/StatsSection";
 import TestimonialsSection from "@/components/Home/TestimonialsSection";
 import FeaturedProjects from "@/components/Home/FeaturedProjects";
 import PageTransition from "@/components/PageTransition";
+import Slider from "../components/Home/Slider";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <AboutSection />
       <ResidencesSection />
+      <Slider />
       <StatsSection />
       <TestimonialsSection />
       <FeaturedProjects />
