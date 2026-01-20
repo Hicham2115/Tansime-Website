@@ -23,28 +23,29 @@ import sam from "../../assets/Imgs/SAM.jpg";
 const sliderImages = [
   {
     src: salonDup,
-    title: "Luxury Bedroom",
-    description: "Spacious and elegantly designed bedroom suites",
+    title: "Chambre de Luxe",
+    description: "Suites spacieuses et élégamment conçues",
   },
   {
     src: salonSamKitch,
-    title: "Modern Living Room",
-    description: "Contemporary living spaces with premium finishes",
+    title: "Salon Moderne",
+    description: "Espaces de vie contemporains avec finitions premium",
   },
   {
     src: samDup,
-    title: "Modern Kitchen",
-    description: "Fully equipped kitchenette with quality appliances",
+    title: "Cuisine Moderne",
+    description:
+      "Kitchenette entièrement équipée avec électroménager de qualité",
   },
   {
     src: samSalon,
-    title: "Entertainment Area",
-    description: "Dedicated space for relaxation and entertainment",
+    title: "Espace Divertissement",
+    description: "Espace dédié à la détente et aux loisirs",
   },
   {
     src: sam,
-    title: "Guest Bedroom",
-    description: "Comfortable guest accommodations",
+    title: "Chambre d'Invités",
+    description: "Hébergement confortable pour vos invités",
   },
 ];
 
@@ -56,21 +57,21 @@ export default function Slider() {
           {/* Preamble */}
           <FadeInUp className="max-w-4xl mx-auto text-center space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold text-primary">
-              WELCOME TO TASNIME
+              BIENVENUE À TASNIME
             </h2>
             <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
             <p className="text-lg text-black leading-relaxed font-semibold">
-              Discover the pinnacle of modern living and premium business spaces
-              in Marrakech. Tasnime Immobilier presents two visionary projects
-              that redefine the real estate landscape. Built on the foundation
-              of contemporary architecture and sustainable practices, our
-              developments embody excellence, innovation, and sophisticated
-              design.
+              Découvrez l'apogée de la vie moderne et des espaces commerciaux
+              haut de gamme à Marrakech. Tasnime Immobilier présente deux
+              projets visionnaires qui redéfinissent le paysage immobilier.
+              Basés sur les fondations d'une architecture contemporaine et de
+              pratiques durables, nos développements incarnent l'excellence,
+              l'innovation et la conception sophistiquée.
             </p>
             <p className="text-base text-gray-700 leading-relaxed">
-              Every detail has been carefully crafted to deliver an exceptional
-              experience, combining luxury with functionality and environmental
-              responsibility.
+              Chaque détail a été soigneusement élaboré pour offrir une
+              expérience exceptionnelle, combinant le luxe avec la
+              fonctionnalité et la responsabilité environnementale.
             </p>
           </FadeInUp>
 
@@ -79,17 +80,18 @@ export default function Slider() {
             <FadeInUp delay={0.2} className="space-y-6">
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-                  TASNIME RESIDENCES
+                  RÉSIDENCES TASNIME
                 </h2>
                 <div className="w-16 h-1 bg-primary rounded-full" />
               </div>
 
               <p className="text-black text-lg leading-relaxed font-semibold">
-                Experience luxury living at its finest. Tasnime Residences
-                showcase thoughtfully designed spaces that prioritize comfort,
-                sustainability, and modern aesthetics. With meticulous attention
-                to construction quality and premium finishes, each residence is
-                a sanctuary of elegance.
+                Expérimentez le luxe de vivre à son meilleur. Les Résidences
+                Tasnime présentent des espaces consciencieusement conçus qui
+                privilégient le confort, la durabilité et l'esthétique moderne.
+                Avec une attention méticuleuse à la qualité de la construction
+                et aux finitions haut de gamme, chaque résidence est un
+                sanctuaire d'élégance.
               </p>
 
               <div className="space-y-4">
@@ -97,11 +99,11 @@ export default function Slider() {
                   <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="font-bold text-black mb-1">
-                      Prime Commercial Space
+                      Espace Commercial de Premier Plan
                     </h4>
                     <p className="text-sm text-gray-700">
-                      Over 40 premium shops and showrooms on ground floor,
-                      including MARJANE supermarket
+                      Plus de 40 boutiques et showrooms premium au
+                      rez-de-chaussée, y compris le supermarché MARJANE
                     </p>
                   </div>
                 </div>
@@ -110,10 +112,10 @@ export default function Slider() {
                   <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="font-bold text-black mb-1">
-                      Secure Living Environment
+                      Environnement de Vie Sécurisé
                     </h4>
                     <p className="text-sm text-gray-700">
-                      State-of-the-art security systems with 24/7 monitoring
+                      Systèmes de sécurité de pointe avec surveillance 24/7
                     </p>
                   </div>
                 </div>
@@ -122,10 +124,10 @@ export default function Slider() {
                   <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="font-bold text-black mb-1">
-                      Lush Gardens & Amenities
+                      Jardins Luxuriants et Commodités
                     </h4>
                     <p className="text-sm text-gray-700">
-                      Multiple swimming pools and beautifully landscaped gardens
+                      Plusieurs piscines et jardins magnifiquement aménagés
                     </p>
                   </div>
                 </div>
@@ -134,20 +136,21 @@ export default function Slider() {
                   <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="font-bold text-black mb-1">
-                      Sustainable Architecture
+                      Architecture Durable
                     </h4>
                     <p className="text-sm text-gray-700">
-                      Environmentally conscious design with energy-efficient
-                      systems
+                      Conception écologiquement responsable avec systèmes
+                      économes en énergie
                     </p>
                   </div>
                 </div>
               </div>
 
               <p className="text-black leading-relaxed font-semibold pt-4 border-t border-primary/30">
-                Each residence is crafted to provide an exceptional living
-                experience, seamlessly blending contemporary design with
-                timeless elegance and environmental responsibility.
+                Chaque résidence est conçue pour offrir une expérience de vie
+                exceptionnelle, fusionnant harmonieusement le design
+                contemporain avec l'élégance intemporelle et la responsabilité
+                environnementale.
               </p>
             </FadeInUp>
 

@@ -9,11 +9,12 @@ export default function CallToAction() {
       <FadeInUp className="container relative px-4 md:px-6 bg-primary/90 backdrop-blur-sm p-6 w-[70%] mx-auto rounded-lg border border-white/10">
         <div className="max-w-3xl mx-auto text-center space-y-6">
           <h2 className="text-3xl md:text-3xl font-bold text-white">
-            Ready to Elevate Your Business?
+            Prêt à Élever Votre Entreprise ?
           </h2>
           <p className="text-lg text-white">
-            Contact us today to schedule a visit and discover how Tasnime
-            Business Center can transform your workspace.
+            Contactez-nous aujourd'hui pour planifier une visite et découvrir
+            comment le Centre d'Affaires Tasnime peut transformer votre espace
+            de travail.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             {/* <button
@@ -29,7 +30,7 @@ export default function CallToAction() {
               className="w-[260px] h-[56px] relative cursor-pointer py-4 px-4 text-center font-barlow inline-flex justify-center items-center text-base uppercase text-white rounded-lg border-solid transition-transform duration-300 ease-in-out group outline-offset-4 focus:outline focus:outline-2 focus:outline-white focus:outline-offset-4 overflow-hidden hover:scale-105 active:scale-95"
             >
               <span className="relative z-20 flex font-bold items-center gap-2">
-                View Gallery
+                Voir la Galerie
                 <span className="transition-transform duration-300 group-hover:translate-x-1">
                   <Images className="w-5 h-5" />
                 </span>

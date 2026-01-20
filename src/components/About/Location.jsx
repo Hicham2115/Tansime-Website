@@ -7,10 +7,10 @@ export default function Location() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center space-y-6 mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-primary">
-              Strategic Location
+              Localisation Stratégique
             </h2>
             <p className="text-lg text-black">
-              Perfectly positioned in the heart of Marrakech
+              Parfaitement positionnée au cœur de Marrakech
             </p>
           </div>
 
@@ -21,42 +21,36 @@ export default function Location() {
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-white mb-3">
-                  Prime Intersection
+                  Carrefour Principal
                 </h3>
                 <p className="text-lg text-white leading-relaxed">
-                  Strategically located at the intersection of two main
-                  boulevards:{" "}
+                  Stratégiquement situé à l'intersection de deux grands
+                  boulevards :{" "}
                   <span className="text-[#b1cc4b] font-semibold">
                     Boulevard de Safi
                   </span>{" "}
-                  and{" "}
+                  et{" "}
                   <span className="text-[#b1cc4b] font-semibold">
                     Avenue Charaf
                   </span>
-                  , our projects are easily accessible and offer a premium
-                  living and working environment.
+                  , nos projets sont facilement accessibles et offrent un
+                  environnement de vie et de travail premium.
                 </p>
               </div>
             </div>
 
             <div className="grid md:grid-cols-3 gap-4 pt-6 border-t border-gray-200/50">
               <div className="text-center p-4">
-                <div className="text-2xl font-bold text-white mb-1">
-                  10 min
-                </div>
-                <div className="text-sm text-white">From Downtown</div>
+                <div className="text-2xl font-bold text-white mb-1">10 min</div>
+                <div className="text-sm text-white">Du Centre-Ville</div>
               </div>
               <div className="text-center p-4">
-                <div className="text-2xl font-bold text-white mb-1">
-                  5 min
-                </div>
-                <div className="text-sm text-white">From Highway</div>
+                <div className="text-2xl font-bold text-white mb-1">5 min</div>
+                <div className="text-sm text-white">De l'Autoroute</div>
               </div>
               <div className="text-center p-4">
-                <div className="text-2xl font-bold text-white mb-1">
-                  5 min
-                </div>
-                <div className="text-sm text-white">From TGV Station</div>
+                <div className="text-2xl font-bold text-white mb-1">5 min</div>
+                <div className="text-sm text-white">De la Gare TGV</div>
               </div>
             </div>
           </div>

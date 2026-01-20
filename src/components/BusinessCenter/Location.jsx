@@ -5,10 +5,10 @@ export default function Location() {
   const locationBenefits = [
     {
       icon: MapPin,
-      text: "Prime location near Safi Boulevard and Avenue Charaf",
+      text: "Localisation de premier plan près du Boulevard Safi et de l'Avenue Charaf",
     },
-    { icon: Clock, text: "10 minutes from downtown Marrakech" },
-    { icon: Car, text: "5 minutes from highway and future TGV station" },
+    { icon: Clock, text: "10 minutes du centre-ville de Marrakech" },
+    { icon: Car, text: "5 minutes de l'autoroute et de la future gare TGV" },
   ];
 
   return (
@@ -17,10 +17,10 @@ export default function Location() {
         <div className="max-w-4xl mx-auto">
           <FadeInUp className="text-center space-y-4 mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-primary">
-              Strategic Location
+              Localisation Stratégique
             </h2>
             <p className="text-lg text-black">
-              Perfectly positioned for business success
+              Parfaitement positionnée pour le succès des affaires
             </p>
           </FadeInUp>
 

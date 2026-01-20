@@ -20,24 +20,24 @@ export default function Hero() {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/20 backdrop-blur-sm">
               <Home className="w-4 h-4 text-[#b1cc4b]" />
               <span className="text-sm font-medium text-white">
-                Residential Living
+                Vie Résidentielle
               </span>
             </div>
           </FadeInUp>
 
           <FadeInUp delay={0.2}>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white">
-              Tasnime{" "}
+              Résidences{" "}
               <span className="text-transparent bg-clip-text bg-[#b1cc4b]">
-                Residences
+                Tasnime
               </span>
             </h1>
           </FadeInUp>
 
           <FadeInUp delay={0.4}>
             <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Premium Living, Redefined – A secure, elegant, and contemporary
-              living experience in the heart of Marrakech.
+              La Vie de Luxe Redéfinie – Une expérience de vie sécurisée,
+              élégante et contemporaine au cœur de Marrakech.
             </p>
           </FadeInUp>
 
@@ -47,7 +47,7 @@ export default function Hero() {
               className="w-[230px] h-[56px] relative cursor-pointer py-4 px-4 text-center font-barlow inline-flex justify-center items-center text-base uppercase text-white rounded-lg border-solid transition-transform duration-300 ease-in-out group outline-offset-4 focus:outline focus:outline-2 focus:outline-white focus:outline-offset-4 overflow-hidden hover:scale-105 active:scale-95"
             >
               <span className="relative z-20 flex font-bold items-center gap-2">
-                Book a Visit
+                Planifier une Visite
                 <span className="transition-transform duration-300 group-hover:translate-x-1">
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>

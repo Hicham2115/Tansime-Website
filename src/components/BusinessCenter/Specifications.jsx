@@ -8,20 +8,20 @@ export default function Specifications() {
         <div className="max-w-4xl mx-auto">
           <FadeInUp className="text-center space-y-4 mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-primary">
-              Technical Specifications
+              Spécifications Techniques
             </h2>
           </FadeInUp>
 
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              "Double-glazed facades for optimal insulation",
-              "INVERTER air conditioning systems",
-              "LED lighting throughout",
-              "Smart building management system",
-              "High-speed fiber optic connectivity",
-              "Advanced security systems",
-              "Sustainable construction materials",
-              "Accessible design for all abilities",
+              "Façades à double vitrage pour une isolation optimale",
+              "Systèmes de climatisation INVERTER",
+              "Éclairage LED partout",
+              "Système de gestion de bâtiment intelligent",
+              "Connectivité fibre optique haute vitesse",
+              "Systèmes de sécurité avancés",
+              "Matériaux de construction durables",
+              "Conception accessible pour tous les besoins",
             ].map((spec, index) => (
               <FadeInUp
                 key={index}

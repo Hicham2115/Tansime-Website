@@ -14,11 +14,11 @@ import { Link } from "react-router-dom";
 import { Building2, MailOpen, SendHorizontal } from "lucide-react";
 
 const navigationLinks = [
-  { href: "/", label: "Home" },
-  { href: "/business-center", label: "Business Center" },
-  { href: "/residences", label: "Residences" },
-  { href: "/gallery", label: "Gallery" },
-  { href: "/about", label: "About" },
+  { href: "/", label: "Accueil" },
+  { href: "/business-center", label: "Centre d'Affaires" },
+  { href: "/residences", label: "Résidences" },
+  { href: "/gallery", label: "Galerie" },
+  { href: "/about", label: "À Propos" },
 ];
 
 export default function Component() {
@@ -84,7 +84,7 @@ export default function Component() {
                       size="sm"
                     >
                       <Link to="/contact">
-                        Contact Us
+                        Nous Contacter
                         <span className="transition-transform duration-300 group-hover:translate-x-1">
                           <SendHorizontal className="w-5 h-5" />
                         </span>
@@ -134,7 +134,7 @@ export default function Component() {
             size="sm"
           >
             <Link to="/contact">
-              Contact Us
+              Nous Contacter
               <span className="transition-transform duration-300 group-hover:translate-x-1">
                 <SendHorizontal className="w-5 h-5" />
               </span>

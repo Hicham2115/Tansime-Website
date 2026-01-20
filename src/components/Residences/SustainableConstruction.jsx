@@ -8,23 +8,23 @@ export default function SustainableConstruction() {
         <div className="max-w-4xl mx-auto">
           <FadeInUp className="text-center space-y-4 mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-primary">
-              Sustainable Construction
+              Construction Durable
             </h2>
             <p className="text-lg text-black">
-              Built with the environment and your comfort in mind
+              Conçue avec l'environnement et votre confort à l'esprit
             </p>
           </FadeInUp>
 
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              "Thermal and acoustic insulation",
-              "Double-glazed facades",
-              "LED lighting throughout",
-              "INVERTER air conditioning",
-              "Eco-friendly materials",
-              "Energy-efficient design",
-              "Water conservation systems",
-              "Green building standards",
+              "Isolation thermique et acoustique",
+              "Façades à double vitrage",
+              "Éclairage LED partout",
+              "Climatisation INVERTER",
+              "Matériaux écologiques",
+              "Conception économe en énergie",
+              "Systèmes de conservation de l'eau",
+              "Standards de construction verte",
             ].map((spec, index) => (
               <FadeInUp
                 key={index}

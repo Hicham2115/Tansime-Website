@@ -21,25 +21,25 @@ export default function Hero() {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#328a93]/20 backdrop-blur-sm">
               <Building2 className="w-4 h-4 text-[#b1cc4b]" />
               <span className="text-sm font-medium text-white">
-                Commercial Real Estate
+                Immobilier Commercial
               </span>
             </div>
           </FadeInUp>
 
           <FadeInUp delay={0.2}>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white">
-              Tasnime{" "}
+              Centre d'Affaires{" "}
               <span className="text-transparent bg-clip-text bg-[#b1cc4b]">
-                Business Center
+                Tasnime
               </span>
             </h1>
           </FadeInUp>
 
           <FadeInUp delay={0.4}>
             <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Marrakech's Premier Office Destination – High-end architecture,
-              flexible layouts, and modern amenities designed for businesses of
-              all sizes.
+              Destination Commerciale Premier de Marrakech – Architecture haut
+              de gamme, agencements flexibles et commodités modernes conçus pour
+              les entreprises de toutes tailles.
             </p>
           </FadeInUp>
 
@@ -49,7 +49,7 @@ export default function Hero() {
               className="w-[360px] h-[56px] relative cursor-pointer py-4 px-4 text-center font-barlow inline-flex justify-center items-center text-base uppercase text-white rounded-lg border-solid transition-transform duration-300 ease-in-out group outline-offset-4 focus:outline focus:outline-2 focus:outline-white focus:outline-offset-4 overflow-hidden hover:scale-105 active:scale-95"
             >
               <span className="relative z-20 flex font-bold items-center gap-2">
-                Request More Information
+                Demander Plus d'Informations
                 <span className="transition-transform duration-300 group-hover:translate-x-1">
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>

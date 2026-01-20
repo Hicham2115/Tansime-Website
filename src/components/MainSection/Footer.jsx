@@ -10,23 +10,23 @@ import {
   Home,
   ArrowRight,
 } from "lucide-react";
-import Logo from "../../assets/Logo.png"
+import Logo from "../../assets/Logo.png";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { name: "Home", href: "/" },
-    { name: "Business Center", href: "/business-center" },
-    { name: "Residences", href: "/residences" },
-    { name: "Gallery", href: "/gallery" },
-    { name: "About", href: "/about" },
+    { name: "Accueil", href: "/" },
+    { name: "Centre d'Affaires", href: "/business-center" },
+    { name: "Résidences", href: "/residences" },
+    { name: "Galerie", href: "/gallery" },
+    { name: "À Propos", href: "/about" },
     { name: "Contact", href: "/contact" },
   ];
 
   const projects = [
-    { name: "Business Center", href: "/business-center", icon: Building2 },
-    { name: "Tasnime Residences", href: "/residences", icon: Home },
+    { name: "Centre d'Affaires", href: "/business-center", icon: Building2 },
+    { name: "Résidences Tasnime", href: "/residences", icon: Home },
   ];
 
   return (
@@ -44,7 +44,7 @@ function Footer() {
             <div className="mb-6">
               <Link to="/" className="inline-flex items-center gap-3 group">
                 <div className=" p-2 rounded-lg">
-                  <img src={Logo} alt="" width={150} height={150}/>
+                  <img src={Logo} alt="" width={150} height={150} />
                 </div>
                 {/* <div className="flex flex-col">
                   <span className="text-xl font-bold tracking-tight text-foreground">
@@ -58,18 +58,18 @@ function Footer() {
               <div className="w-16 h-1 bg-[#b1cc4b] mt-2 rounded-full" />
             </div>
             <p className="white leading-relaxed mb-6 text-sm">
-              A leading real estate developer in Marrakech, delivering
-              exceptional residential and business projects with sustainability,
-              quality, and modernity at the forefront.
+              Un développeur immobilier de premier plan à Marrakech, livrant des
+              projets résidentiels et commerciaux exceptionnels avec la
+              durabilité, la qualité et la modernité au premier plan.
             </p>
 
             {/* Newsletter */}
             <div className="space-y-3">
-              <h4 className="font-bold text-sm text-white">Stay Updated</h4>
+              <h4 className="font-bold text-sm text-white">Rester Informé</h4>
               <div className="flex">
                 <input
                   type="email"
-                  placeholder="Your email"
+                  placeholder="Votre email"
                   className="flex-1 px-4 py-2 bg-card border border-border rounded-l-lg focus:outline-none focus:border-primary transition-colors text-sm text-foreground"
                 />
                 <button className="px-4 py-2 bg-[#b1cc4b] hover:bg-[#b1cc4b]/90 text-primary-foreground rounded-r-lg transition-all duration-300 flex items-center justify-center group">
@@ -82,7 +82,7 @@ function Footer() {
           {/* Quick Links */}
           <div>
             <h3 className="font-bold text-lg mb-6 text-foreground relative inline-block">
-              Quick Links
+              Liens Rapides
               <span className="absolute -bottom-2 left-0 w-12 h-0.5 bg-[#b1cc4b] rounded-full" />
             </h3>
             <ul className="space-y-3">
@@ -103,7 +103,7 @@ function Footer() {
           {/* Projects */}
           <div>
             <h3 className="font-bold text-lg mb-6 text-foreground relative inline-block">
-              Our Projects
+              Nos Projets
               <span className="absolute -bottom-2 left-0 w-12 h-0.5 bg-[#b1cc4b] rounded-full" />
             </h3>
             <ul className="space-y-3">
@@ -124,16 +124,16 @@ function Footer() {
           {/* Contact Info */}
           <div>
             <h3 className="font-bold text-lg mb-6 text-foreground relative inline-block">
-              Get in Touch
+              Nous Contacter
               <span className="absolute -bottom-2 left-0 w-12 h-0.5 bg-[#b1cc4b] rounded-full" />
             </h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3 white text-sm group">
                 <MapPin className="w-5 h-5 text-[#b1cc4b] shrink-0 mt-0.5 group-hover:text-[#b1cc4b] transition-colors" />
                 <span className="group-hover:text-[#b1cc4b] transition-colors">
-                  Intersection of Bd de Safi & Av Charaf
+                  Intersection de Bd de Safi et Av Charaf
                   <br />
-                  Marrakech, Morocco
+                  Marrakech, Maroc
                 </span>
               </li>
               <li className="flex items-center gap-3 white text-sm group">
@@ -158,7 +158,7 @@ function Footer() {
 
             {/* Social Media */}
             <div className="mt-6">
-              <h4 className="font-bold text-sm mb-3 text-white">Follow Us</h4>
+              <h4 className="font-bold text-sm mb-3 text-white">Nous Suivre</h4>
               <div className="flex gap-3">
                 {[
                   { icon: Facebook, href: "#", label: "Facebook" },
@@ -185,7 +185,7 @@ function Footer() {
         <div className="border-t border-border pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="white text-sm text-center md:text-left">
-              &copy; {currentYear} Tasnime Immobilier. All rights reserved.
+              &copy; {currentYear} Tasnime Immobilier. Tous droits réservés.
             </p>
 
             {/* <div className="flex flex-wrap justify-center md:justify-end gap-6 text-sm">

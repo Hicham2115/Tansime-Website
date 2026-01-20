@@ -3,10 +3,10 @@ import ScaleIn from "@/components/ScaleIn";
 
 export default function StatsSection() {
   const stats = [
-    { number: "10+", label: "Years of Excellence", icon: Clock },
-    { number: "25+", label: "Completed Projects", icon: Briefcase },
-    { number: "500+", label: "Happy Families", icon: Users },
-    { number: "100%", label: "Satisfaction Rate", icon: Star },
+    { number: "10+", label: "Années d'Excellence", icon: Clock },
+    { number: "25+", label: "Projets Terminés", icon: Briefcase },
+    { number: "500+", label: "Familles Heureuses", icon: Users },
+    { number: "100%", label: "Taux de Satisfaction", icon: Star },
   ];
 
   return (

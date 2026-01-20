@@ -29,8 +29,8 @@ export default function Gallery() {
   const [selectedCategory, setSelectedCategory] = useState("all");
 
   const categories = [
-    { id: "all", label: "All Projects" },
-    { id: "residences", label: "Residences" },
+    { id: "all", label: "Tous les Projets" },
+    { id: "residences", label: "Résidences" },
     // { id: "business", label: "Business Center" }, // Commented out as we mostly have residential images for now
   ];
 
@@ -38,127 +38,127 @@ export default function Gallery() {
     {
       id: 1,
       category: "residences",
-      title: "Master Bedroom",
-      description: "Elegant and spacious master bedroom",
+      title: "Chambre Principale",
+      description: "Chambre principale élégante et spacieuse",
       image: chambre,
     },
     {
       id: 2,
       category: "residences",
-      title: "Modern Bedroom",
-      description: "Contemporary bedroom design",
+      title: "Chambre Moderne",
+      description: "Design de chambre contemporain",
       image: chambre2,
     },
     {
       id: 3,
       category: "residences",
-      title: "Duplex Bedroom 1",
-      description: "Upper floor bedroom in duplex",
+      title: "Chambre Duplex 1",
+      description: "Chambre étage supérieur en duplex",
       image: chDup,
     },
     {
       id: 4,
       category: "residences",
-      title: "Duplex Bedroom 2",
-      description: "Guest bedroom in duplex",
+      title: "Chambre Duplex 2",
+      description: "Chambre d'invité en duplex",
       image: ch3Dup,
     },
     {
       id: 5,
       category: "residences",
-      title: "Duplex Bedroom 3",
-      description: "Comfortable living space",
+      title: "Chambre Duplex 3",
+      description: "Espace de vie confortable",
       image: ch4Dup,
     },
     {
       id: 6,
       category: "residences",
-      title: "Apartment Bedroom",
-      description: "Cozy apartment bedroom",
+      title: "Chambre Appartement",
+      description: "Chambre d'appartement douillette",
       image: chApp,
     },
     {
       id: 7,
       category: "residences",
-      title: "Secondary Bedroom",
-      description: "Well-lit secondary bedroom",
+      title: "Chambre Secondaire",
+      description: "Chambre secondaire bien éclairée",
       image: ch2,
     },
     {
       id: 8,
       category: "residences",
-      title: "Apartment Bedroom 2",
-      description: "Modern apartment sleeping area",
+      title: "Chambre Appartement 2",
+      description: "Zone de sommeil moderne d'appartement",
       image: ch2App,
     },
     {
       id: 9,
       category: "residences",
-      title: "Duplex Stairs",
-      description: "Elegant staircase design",
+      title: "Escalier Duplex",
+      description: "Design d'escalier élégant",
       image: escalierDup,
     },
     {
       id: 10,
       category: "residences",
-      title: "TV Lounge",
-      description: "Relaxing entertainment area",
+      title: "Salon TV",
+      description: "Zone de divertissement relaxante",
       image: espaceTv2,
     },
     {
       id: 11,
       category: "residences",
       title: "Kitchenette",
-      description: "Functional and stylish kitchenette",
+      description: "Kitchenette fonctionnelle et stylée",
       image: kitchenette,
     },
     {
       id: 12,
       category: "residences",
-      title: "Living Room",
-      description: "Spacious main living area",
+      title: "Salon",
+      description: "Zone de vie principale spacieuse",
       image: salon1,
     },
     {
       id: 13,
       category: "residences",
-      title: "Duplex Salon",
-      description: "Grand salon in duplex",
+      title: "Salon Duplex",
+      description: "Grand salon en duplex",
       image: salonDup,
     },
     {
       id: 14,
       category: "residences",
-      title: "Open Plan Living",
-      description: "Integrated salon, dining, and kitchen",
+      title: "Espace Ouvert",
+      description: "Salon, salle à manger et cuisine intégrés",
       image: salonSamKitch,
     },
     {
       id: 15,
       category: "residences",
-      title: "Duplex Dining",
-      description: "Dining area in duplex",
+      title: "Salle à Manger Duplex",
+      description: "Salle à manger en duplex",
       image: samDup,
     },
     {
       id: 16,
       category: "residences",
-      title: "Dining & Salon",
-      description: "Seamless flow between dining and living",
+      title: "Salle à Manger & Salon",
+      description: "Flux ininterrompu entre salle à manger et salon",
       image: samSalon,
     },
     {
       id: 17,
       category: "residences",
-      title: "Dining Room",
-      description: "Formal dining space",
+      title: "Salle à Manger",
+      description: "Espace formel de repas",
       image: sam,
     },
     {
       id: 18,
       category: "residences",
-      title: "Studio Salon",
-      description: "Efficient studio living area",
+      title: "Salon Studio",
+      description: "Zone de vie efficace du studio",
       image: studioSalon,
     },
   ];
@@ -178,7 +178,7 @@ export default function Gallery() {
 
   const navigateImage = (direction) => {
     const currentIndex = filteredItems.findIndex(
-      (item) => item.id === selectedImage.id
+      (item) => item.id === selectedImage.id,
     );
     const newIndex =
       direction === "next"
@@ -193,14 +193,14 @@ export default function Gallery() {
         {/* Header */}
         <FadeInUp className="text-center space-y-4 mb-12">
           <h1 className="text-5xl md:text-6xl font-bold text-primary">
-            Our Projects in Pictures
+            Nos Projets en Images
             {/* <span className="text-transparent bg-clip-text bg-linear-to-r from-[#328a93] via-[#328a93] to-[#328a93]">
               Pictures
             </span> */}
           </h1>
           <p className="text-lg text-black max-w-3xl mx-auto">
-            Explore our portfolio of premium residences and business spaces
-            through our interactive gallery
+            Explorez notre portefeuille de résidences premium et d'espaces
+            commerciaux à travers notre galerie interactive
           </p>
         </FadeInUp>
 

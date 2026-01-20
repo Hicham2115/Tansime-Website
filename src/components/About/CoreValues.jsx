@@ -7,25 +7,25 @@ export default function CoreValues() {
       icon: Lightbulb,
       title: "Innovation",
       description:
-        "Pioneering modern architectural solutions that set new standards in real estate development",
+        "Solutions architecturales modernes pionére qui fixent de nouveaux standards dans le développement immobilier",
     },
     {
       icon: Award,
-      title: "Quality",
+      title: "Qualité",
       description:
-        "Uncompromising commitment to superior craftsmanship and premium materials",
+        "Engagement inébranlable envers l'artisanat supérieur et les matériaux premium",
     },
     {
       icon: Leaf,
-      title: "Sustainability",
+      title: "Durabilité",
       description:
-        "Eco-friendly practices and energy-efficient designs for a better tomorrow",
+        "Pratiques écologiques et conceptions économes en énergie pour un meilleur avenir",
     },
     {
       icon: Sparkles,
-      title: "Modernity",
+      title: "Modernité",
       description:
-        "Contemporary designs that blend aesthetics with functionality",
+        "Designs contemporains qui fusionnent l'esthétique avec la fonctionnalité",
     },
   ];
 
@@ -34,10 +34,10 @@ export default function CoreValues() {
       <div className="container relative px-4 md:px-6">
         <FadeInUp className="text-center space-y-4 mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary">
-            Our Core Values
+            Nos Valeurs Fondamentales
           </h2>
           <p className="text-lg text-black max-w-2xl mx-auto">
-            The principles that guide everything we do
+            Les principes qui nous guident dans tout ce que nous faisons
           </p>
         </FadeInUp>
 
@@ -54,9 +54,7 @@ export default function CoreValues() {
               <h3 className="text-xl font-bold text-white mb-3 group-hover:text-white transition-colors">
                 {value.title}
               </h3>
-              <p className="text-white leading-relaxed">
-                {value.description}
-              </p>
+              <p className="text-white leading-relaxed">{value.description}</p>
             </FadeInUp>
           ))}
         </div>

@@ -5,35 +5,37 @@ export default function Features() {
   const features = [
     {
       icon: Shield,
-      title: "Security & Privacy",
-      description: "Gated complex with 24/7 controlled access and surveillance",
+      title: "Sécurité & Intimité",
+      description: "Complexe fermé avec accès contrôlé 24/7 et surveillance",
     },
     {
       icon: Waves,
-      title: "Luxury Pools",
+      title: "Piscines Luxe",
       description:
-        "Adult and children's communal pools, plus private pools in select duplexes",
+        "Piscines communes pour adultes et enfants, plus piscines privées dans certains duplex",
     },
     {
       icon: Trees,
-      title: "Landscaped Gardens",
+      title: "Jardins Aménagés",
       description:
-        "Beautifully designed green spaces for relaxation and recreation",
+        "Espaces verts magnifiquement conçus pour la détente et les loisirs",
     },
     {
       icon: Zap,
-      title: "Energy Efficient",
-      description: "INVERTER air conditioning and LED lighting throughout",
+      title: "Efficacité Énergétique",
+      description: "Climatisation INVERTER et éclairage LED partout",
     },
     {
       icon: Wind,
-      title: "Superior Insulation",
-      description: "Thermal and acoustic insulation with double-glazed facades",
+      title: "Isolation Supérieure",
+      description:
+        "Isolation thermique et acoustique avec façades à double vitrage",
     },
     {
       icon: Sparkles,
-      title: "Premium Finishes",
-      description: "High-quality materials and elegant design in every detail",
+      title: "Finitions Premium",
+      description:
+        "Matériaux de haute qualité et design élégant dans chaque détail",
     },
   ];
 
@@ -42,10 +44,10 @@ export default function Features() {
       <div className="container px-4 md:px-6">
         <FadeInUp className="text-center space-y-4 mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary">
-            Luxury Amenities
+            Commodités Luxe
           </h2>
           <p className="text-lg text-black max-w-2xl mx-auto">
-            Every detail designed for your comfort and peace of mind
+            Chaque détail conçu pour votre confort et votre sérénité
           </p>
         </FadeInUp>
 

@@ -5,39 +5,39 @@ export default function Features() {
   const features = [
     {
       icon: Building2,
-      title: "Open-Space Offices",
+      title: "Bureaux Ouverts",
       description:
-        "Flexible floor plans adaptable to startups, SMEs, and multinationals. Customize your workspace to foster collaboration and productivity.",
+        "Plans d'étages flexibles adaptables aux startups, PME et multinationales. Personnalisez votre espace de travail pour favoriser la collaboration et la productivité.",
     },
     {
       icon: Shield,
-      title: "Premium Construction",
+      title: "Construction Premium",
       description:
-        "Durable materials, double-glazed windows, and superior thermal and acoustic insulation ensure a quiet and professional environment.",
+        "Matériaux durables, fenêtres à double vitrage et isolation thermique et acoustique supérieure garantissent un environnement calme et professionnel.",
     },
     {
       icon: Zap,
-      title: "Energy Efficiency",
+      title: "Efficacité Énergétique",
       description:
-        "Equipped with INVERTER air conditioning, LED lighting, and smart building solutions to minimize environmental impact and operating costs.",
+        "Équipé de climatisation INVERTER, éclairage LED et solutions de bâtiment intelligent pour minimiser l'impact environnemental et les coûts d'exploitation.",
     },
     {
       icon: Wifi,
-      title: "High-Speed Connectivity",
+      title: "Connectivité Haut Débit",
       description:
-        "Fiber optic internet pre-installed with advanced telecommunications infrastructure to keep your business connected at all times.",
+        "Internet par fibre optique pré-installé avec infrastructure télécommunications avancée pour maintenir votre entreprise connectée en permanence.",
     },
     {
       icon: Wind,
-      title: "Climate Control",
+      title: "Contrôle Climatique",
       description:
-        "Advanced HVAC systems provide optimal temperature and air quality control for comfort year-round, boosting employee well-being.",
+        "Systèmes HVAC avancés pour un contrôle optimal de la température et de la qualité de l'air toute l'année, améliorant le bien-être des employés.",
     },
     {
       icon: Car,
-      title: "Ample Parking",
+      title: "Stationnement Abondant",
       description:
-        "Secure underground and surface parking dedicated to employees and visitors, resolving city center parking challenges.",
+        "Stationnement sécurisé souterrain et en surface dédié aux employés et visiteurs, résolvant les défis de stationnement du centre-ville.",
     },
   ];
 
@@ -46,11 +46,11 @@ export default function Features() {
       <div className="container px-4 md:px-6">
         <FadeInUp className="text-center space-y-4 mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary">
-            Premium Features
+            Caractéristiques Premium
           </h2>
           <p className="text-lg text-black max-w-2xl mx-auto">
-            Everything your business needs to thrive in a modern, sustainable
-            environment.
+            Tout ce dont votre entreprise a besoin pour prospérer dans un
+            environnement moderne et durable.
           </p>
         </FadeInUp>
 

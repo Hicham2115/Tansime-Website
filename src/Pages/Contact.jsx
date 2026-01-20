@@ -75,23 +75,23 @@ export default function Contact() {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm">
                 <MessageSquare className="w-4 h-4 text-[#b1cc4b]" />
                 <span className="text-sm font-medium text-white">
-                  Contact Us
+                  Nous Contacter
                 </span>
               </div>
             </FadeInUp>
 
             <FadeInUp delay={0.2}>
               <h1 className="text-5xl md:text-6xl font-bold text-white">
-                Get in Touch with{" "}
+                Entrez en Contact avec{" "}
                 <span className="text-[#b1cc4b]">Tasnime Immobilier</span>
               </h1>
             </FadeInUp>
 
             <FadeInUp delay={0.4}>
               <p className="text-xl text-white/90 max-w-3xl mx-auto">
-                Have questions or want to schedule a visit? Reach out to us
-                through our contact form or via our direct communication
-                channels.
+                Vous avez des questions ou vous souhaitez planifier une visite ?
+                Contactez-nous via notre formulaire ou nos canaux de
+                communication directs.
               </p>
             </FadeInUp>
           </div>
@@ -110,7 +110,7 @@ export default function Contact() {
                     <Send className="w-6 h-6 text-white" />
                   </div>
                   <h2 className="text-2xl md:text-3xl font-bold text-white">
-                    Send Us a Message
+                    Envoyez-nous un Message
                   </h2>
                 </div>
 
@@ -118,7 +118,7 @@ export default function Contact() {
                   {/* Full Name */}
                   <div>
                     <label className="block text-sm font-semibold text-white mb-2">
-                      Full Name *
+                      Nom Complet *
                     </label>
                     <input
                       type="text"
@@ -127,7 +127,7 @@ export default function Contact() {
                       onChange={handleInputChange}
                       required
                       className="w-full px-4 py-3 bg-white/5 border-2 border-white rounded-xl focus:border-primary focus:outline-none transition-colors duration-300 text-white placeholder:text-white-200"
-                      placeholder="Enter your full name"
+                      placeholder="Entrez votre nom complet"
                     />
                   </div>
 
@@ -135,7 +135,7 @@ export default function Contact() {
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-sm font-semibold text-white mb-2">
-                        Email Address *
+                        Adresse E-mail *
                       </label>
                       <input
                         type="email"
@@ -144,12 +144,12 @@ export default function Contact() {
                         onChange={handleInputChange}
                         required
                         className="w-full px-4 py-3 bg-white/5 border-2 border-white rounded-xl focus:border-primary focus:outline-none transition-colors duration-300 text-white placeholder:text-white-200"
-                        placeholder="your@email.com"
+                        placeholder="votre@email.com"
                       />
                     </div>
                     <div>
                       <label className="block text-sm font-semibold text-white mb-2">
-                        Phone Number *
+                        Numéro de Téléphone *
                       </label>
                       <input
                         type="tel"
@@ -175,7 +175,7 @@ export default function Contact() {
                       required
                       rows={6}
                       className="w-full px-4 py-3 bg-white/5 border-2 border-white rounded-xl focus:border-primary focus:outline-none transition-colors duration-300 resize-none text-white placeholder:text-white-200"
-                      placeholder="Tell us about your inquiry..."
+                      placeholder="Parlez-nous de votre demande..."
                     />
                   </div>
 
@@ -192,17 +192,17 @@ export default function Contact() {
                     {isSubmitting ? (
                       <>
                         <div className="w-5 h-5 border-3 border-white border-t-transparent rounded-full animate-spin" />
-                        <span>Sending...</span>
+                        <span>Envoi en cours...</span>
                       </>
                     ) : isSubmitted ? (
                       <>
                         <CheckCircle className="w-6 h-6" />
-                        <span>Message Sent!</span>
+                        <span>Message Envoyé !</span>
                       </>
                     ) : (
                       <>
                         <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-                        <span>Send Message</span>
+                        <span>Envoyer le Message</span>
                       </>
                     )}
                   </button>
@@ -231,7 +231,7 @@ export default function Contact() {
                   >
                     <Phone className="w-5 h-5 mt-0.5 shrink-0 text-white group-hover:scale-110 transition-transform" />
                     <div>
-                      <p className="text-xs text-white mb-1">Phone</p>
+                      <p className="text-xs text-white mb-1">Téléphone</p>
                       <span className="text-sm font-semibold text-white">
                         +212 XXX XXX XXX
                       </span>
@@ -245,7 +245,7 @@ export default function Contact() {
                   >
                     <Mail className="w-5 h-5 mt-0.5 shrink-0 text-white group-hover:scale-110 transition-transform" />
                     <div>
-                      <p className="text-xs text-white mb-1">Email</p>
+                      <p className="text-xs text-white mb-1">E-mail</p>
                       <span className="text-sm font-semibold text-white break-all">
                         contact@tasnime-immobilier.ma
                       </span>
@@ -256,11 +256,11 @@ export default function Contact() {
                   <div className="flex items-start gap-3 p-3 rounded-xl bg-white/5">
                     <MapPin className="w-5 h-5 mt-0.5 shrink-0 text-white" />
                     <div>
-                      <p className="text-xs text-white mb-1">Address</p>
+                      <p className="text-xs text-white mb-1">Adresse</p>
                       <p className="text-sm font-semibold text-white">
-                        Intersection of Bd de Safi & Av Charaf
+                        Intersection du Bd de Safi & Av Charaf
                         <br />
-                        Marrakech, Morocco
+                        Marrakech, Maroc
                       </p>
                     </div>
                   </div>
@@ -270,14 +270,14 @@ export default function Contact() {
                     <Clock className="w-5 h-5 mt-0.5 shrink-0 text-white" />
                     <div>
                       <p className="text-xs text-white mb-1">
-                        Business Hours
+                        Heures d'Ouverture
                       </p>
                       <p className="text-sm font-semibold text-white">
-                        Mon - Fri: 9:00 AM - 6:00 PM
+                        Lun - Ven : 9:00 - 18:00
                         <br />
-                        Sat: 10:00 AM - 2:00 PM
+                        Sam : 10:00 - 14:00
                         <br />
-                        Sun: Closed
+                        Dim : Fermé
                       </p>
                     </div>
                   </div>
@@ -306,19 +306,19 @@ export default function Contact() {
               className="p-8 rounded-2xl bg-primary/90 backdrop-blur-sm border border-white/10 text-center shadow-lg"
             >
               <h3 className="text-2xl font-bold text-white mb-4">
-                Visit Our Projects
+                Visitez Nos Projets
               </h3>
               <p className="text-white mb-6">
-                Schedule a visit to experience our premium residences and
-                business centers firsthand. Our team is ready to show you around
-                and answer all your questions.
+                Planifiez une visite pour expérimenter nos résidences premium et
+                nos centres d'affaires en personne. Notre équipe est prête à
+                vous faire visiter et répondre à toutes vos questions.
               </p>
               <div className="flex flex-wrap justify-center gap-3">
                 {[
-                  "Professional Consultation",
-                  "Flexible Viewing Times",
-                  "Expert Guidance",
-                  "Personalized Tours",
+                  "Consultation Professionnelle",
+                  "Horaires de Visite Flexibles",
+                  "Guidance d'Expert",
+                  "Visites Personnalisées",
                 ].map((benefit) => (
                   <div
                     key={benefit}

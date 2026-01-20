@@ -10,26 +10,27 @@ export default function Amenities() {
   const amenities = [
     {
       icon: Users,
-      title: "Conference Rooms",
+      title: "Salles de Conférence",
       description:
-        "Fully equipped meeting spaces for presentations and client briefs.",
+        "Espaces de réunion entièrement équipés pour présentations et briefings clients.",
     },
     {
       icon: Coffee,
-      title: "Lounge Areas",
+      title: "Zones Lounge",
       description:
-        "Comfortable break zones for relaxation and informal networking.",
+        "Zones de détente confortables pour la relaxation et le networking informel.",
     },
     {
       icon: Monitor,
-      title: "IT Support",
+      title: "Support IT",
       description:
-        "On-site technical assistance to ensure smooth daily operations.",
+        "Assistance technique sur site pour assurer le bon fonctionnement quotidien.",
     },
     {
       icon: Briefcase,
-      title: "Reception Services",
-      description: "Professional front-desk service to welcome your guests.",
+      title: "Services de Réception",
+      description:
+        "Service professionnel de réception pour accueillir vos clients.",
     },
   ];
 
@@ -38,10 +39,10 @@ export default function Amenities() {
       <div className="container px-4 md:px-6">
         <FadeInUp className="text-center space-y-4 mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary">
-            World-Class Amenities
+            Commodités de Classe Mondiale
           </h2>
           <p className="text-lg text-black max-w-2xl mx-auto">
-            Designed for convenience, comfort, and productivity.
+            Conçues pour la commodité, le confort et la productivité.
           </p>
         </FadeInUp>
 
@@ -69,13 +70,14 @@ export default function Amenities() {
           {/* Content Side */}
           <FadeInUp className="space-y-6">
             <h3 className="text-3xl font-bold text-primary">
-              Experience the Perfect Balance of Work and Life
+              Expérimentez l'Équilibre Parfait Entre Travail et Vie
             </h3>
             <p className="text-black font-semibold leading-relaxed text-lg">
-              Our business center offers more than just office space; it
-              provides a holistic environment tailored for success. Enjoy
-              premium facilities that cater to your professional needs while
-              offering spaces to unwind and recharge.
+              Notre centre d'affaires offre plus que de simples espaces de
+              bureau ; il propose un environnement holistique adapté au succès.
+              Profitez d'installations premium qui répondent à vos besoins
+              professionnels tout en offrant des espaces pour vous détendre et
+              vous ressourcer.
             </p>
             <p className="text-black font-semibold leading-relaxed text-lg">
               From state-of-the-art conference rooms to relaxing lounge areas,

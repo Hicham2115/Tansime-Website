@@ -10,7 +10,7 @@ export default function Hero() {
         className="absolute inset-0 bg-cover -mt-20 bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImg})` }}
       ></div>
-      
+
       <div className="absolute inset-0 bg-black/60"></div>
       <div className="absolute inset-0 bg-[linear-gradient(rgba(201,169,97,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(201,169,97,0.03)_1px,transparent_1px)] bg-size-[64px_64px]" />
 
@@ -19,23 +19,23 @@ export default function Hero() {
           <FadeInUp className="flex justify-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/20 backdrop-blur-sm">
               <Target className="w-4 h-4 text-[#b1cc4b]" />
-              <span className="text-sm font-medium text-white">Our Story</span>
+              <span className="text-sm font-medium text-white">
+                Notre Histoire
+              </span>
             </div>
           </FadeInUp>
 
           <FadeInUp delay={0.2}>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white">
-              Who We{" "}
-              <span className="text-transparent bg-clip-text bg-[#b1cc4b]">
-                Are
-              </span>
+              Qui sommes-nous
+              <span className="text-transparent bg-clip-text bg-[#b1cc4b]"></span>
             </h1>
           </FadeInUp>
 
           <FadeInUp delay={0.4}>
             <p className="text-lg md:text-xl text-white max-w-3xl mx-auto leading-relaxed">
-              Tasnime Immobilier – A reference player in Marrakech's real estate
-              sector
+              Tasnime Immobilier – Un acteur de référence dans le secteur
+              immobilier de Marrakech
             </p>
           </FadeInUp>
         </div>

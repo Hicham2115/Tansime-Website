@@ -21,7 +21,7 @@ export default function NotFound() {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#f0ba78]/30 bg-[#f0ba78]/10 backdrop-blur-sm animate-fade-in-up">
             <AlertCircle className="w-4 h-4 text-[#f0ba78]" />
             <span className="text-sm font-medium text-[#f0ba78]">
-              404 Error
+              Erreur 404
             </span>
           </div>
 
@@ -31,11 +31,11 @@ export default function NotFound() {
               404
             </h1>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white animate-fade-in-up animation-delay-200">
-              Page Not Found
+              Page Non Trouvée
             </h2>
             <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed animate-fade-in-up animation-delay-300">
-              The page you are looking for might have been removed, had its name
-              changed, or is temporarily unavailable.
+              La page que vous recherchez peut avoir été supprimée, renommée ou
+              est temporairement indisponible.
             </p>
           </div>
 
@@ -48,7 +48,7 @@ export default function NotFound() {
             >
               <Link to="/" className="flex items-center gap-2">
                 <Home className="w-5 h-5 group-hover:-translate-y-1 transition-transform" />
-                Go Home
+                Accueil
               </Link>
             </Button>
 
@@ -63,7 +63,7 @@ export default function NotFound() {
                 className="flex items-center gap-2 cursor-pointer"
               >
                 <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
-                Go Back
+                Retour
               </div>
             </Button>
           </div>
@@ -71,27 +71,27 @@ export default function NotFound() {
           {/* Help Links */}
           <div className="pt-12 animate-fade-in-up animation-delay-700">
             <p className="text-white/50 text-sm mb-4">
-              Or explore our other pages:
+              Ou explorez nos autres pages :
             </p>
             <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm font-medium text-[#f0ba78]">
               <Link
                 to="/residences"
                 className="hover:text-primary hover:underline transition-colors"
               >
-                Residences
+                Résidences
               </Link>
               <Link
                 to="/business-center"
                 className="hover:text-primary hover:underline transition-colors"
               >
-                Business Center
+                Centre d'Affaires
               </Link>
               <Link
                 to="/contact"
                 className="hover:text-primary hover:underline transition-colors flex items-center gap-2"
               >
                 <Mail className="w-4 h-4" />
-                Contact Support
+                Support Client
               </Link>
             </div>
           </div>

@@ -7,7 +7,7 @@ import FadeInUp from "@/components/FadeInUp";
 
 export default function Hero() {
   const text =
-    "Tasnime Immobilier offers premium residences and high-end business centers designed for comfort, innovation, and sustainability in the heart of Marrakech.";
+    "Tasnime Immobilier offre des résidences premium et des centres d'affaires haut de gamme conçus pour le confort, l'innovation et la durabilité au cœur de Marrakech.";
   const letters = text.split("");
 
   const container = {
@@ -41,7 +41,7 @@ export default function Hero() {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm">
               <MapPin className="w-4 h-4 text-[#b1cc4b]" />
               <span className="text-sm font-medium text-white">
-                Marrakech, Morocco
+                Marrakech, Maroc
               </span>
             </div>
           </FadeInUp>
@@ -57,9 +57,9 @@ export default function Hero() {
             }}
             className="text-5xl md:text-7xl font-bold tracking-tight text-white drop-shadow-lg"
           >
-            Discover Luxury Living and{" "}
+            Découvrez la Vie de Luxe et les{" "}
             <span className="text-transparent bg-clip-text bg-[#b1cc4b]">
-              Business Spaces
+              Espaces Commerciaux
             </span>
           </motion.h1>
 
@@ -90,7 +90,7 @@ export default function Hero() {
               className="w-[260px] h-[56px] py-4 px-8 flex gap-3 text-white font-bold text-md rounded-md shadow-lg transition-transform transform bg-transparent border-2 border-white hover:scale-105 hover:border-primary cursor-pointer hover:shadow-primary/50 hover:shadow-2xl focus:outline-none"
               id="startButton"
             >
-              Explore Our Projects
+              Explorer nos Projets
               <ExternalLink className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
             </button>
 
@@ -99,7 +99,7 @@ export default function Hero() {
               className="w-[260px] h-[56px] relative cursor-pointer py-4 px-4 text-center font-barlow inline-flex justify-center items-center text-base uppercase text-white rounded-lg border-solid transition-transform duration-300 ease-in-out group outline-offset-4 focus:outline focus:outline-2 focus:outline-white focus:outline-offset-4 overflow-hidden hover:scale-105 active:scale-95"
             >
               <span className="relative z-20 flex font-bold items-center gap-2">
-                Contact Us
+                Nous Contacter
                 <span className="transition-transform duration-300 group-hover:translate-x-1">
                   <MailOpen className="w-5 h-5" />
                 </span>

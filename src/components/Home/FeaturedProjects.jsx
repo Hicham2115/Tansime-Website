@@ -6,27 +6,27 @@ import FadeInUp from "@/components/FadeInUp";
 export default function FeaturedProjects() {
   const projects = [
     {
-      title: "Business Center",
+      title: "Centre d'Affaires",
       description:
-        "Flexible office spaces with state-of-the-art facilities, designed for modern businesses.",
+        "Espaces de bureaux flexibles avec des installations de pointe, conçus pour les entreprises modernes.",
       features: [
-        "Open-space Offices",
-        "Smart Building",
-        "Prime Location",
-        "Energy Efficient",
+        "Bureaux Ouverts",
+        "Bâtiment Intelligent",
+        "Emplacement de Premier Plan",
+        "Économe en Énergie",
       ],
       link: "/business-center",
       gradient: "from-blue-500/20 to-cyan-500/20",
     },
     {
-      title: "Tasnime Residences",
+      title: "Résidences Tasnime",
       description:
-        "Premium apartments and duplexes with gardens, pools, and superior finishes.",
+        "Appartements premium et duplexes avec jardins, piscines et finitions supérieures.",
       features: [
-        "Private Pools",
-        "Landscaped Gardens",
-        "24/7 Security",
-        "Luxury Amenities",
+        "Piscines Privées",
+        "Jardins Aménagés",
+        "Sécurité 24/7",
+        "Commodités Luxe",
       ],
       link: "/residences",
       gradient: "from-primary/20 to-amber-500/20",
@@ -38,11 +38,11 @@ export default function FeaturedProjects() {
       <div className="container px-4 md:px-6">
         <FadeInUp className="text-center space-y-4 mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary">
-            Featured Projects
+            Projets Phares
           </h2>
           <p className="text-lg text-black max-w-2xl mx-auto">
-            Explore our portfolio of premium developments that redefine luxury
-            living and working in Marrakech.
+            Explorez notre portefeuille de développements premium qui
+            redéfinissent la vie et le travail de luxe à Marrakech.
           </p>
         </FadeInUp>
 
@@ -90,7 +90,7 @@ export default function FeaturedProjects() {
                     to={project.link}
                     className="flex items-center justify-center gap-2"
                   >
-                    Learn More
+                    En Savoir Plus
                     <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                   </Link>
                 </Button>

@@ -5,23 +5,23 @@ export default function TestimonialsSection() {
   const testimonials = [
     {
       name: "Ahmed Benali",
-      role: "Homeowner",
+      role: "Propriétaire",
       content:
-        "Buying our home with Tasnime Immobilier was the best decision we made. The quality of construction and attention to detail is unmatched in Marrakech.",
+        "Acheter notre maison avec Tasnime Immobilier a été la meilleure décision que nous ayons prise. La qualité de la construction et l'attention aux détails sont incomparables à Marrakech.",
       initials: "AB",
     },
     {
       name: "Sarah Lahlou",
-      role: "Business Owner",
+      role: "Propriétaire d'Entreprise",
       content:
-        "The office space at the Business Center is perfect for our growing team. Modern facilities, great location, and professional management.",
+        "L'espace de bureau au Centre d'Affaires est parfait pour notre équipe en croissance. Installations modernes, excellent emplacement et gestion professionnelle.",
       initials: "SL",
     },
     {
       name: "Karim Tazi",
-      role: "Investor",
+      role: "Investisseur",
       content:
-        "I have invested in multiple projects with Tasnime. Their commitment to deadlines and quality gives me complete peace of mind.",
+        "J'ai inverti dans plusieurs projets avec Tasnime. Leur engagement envers les délais et la qualité me donne une tranquillité d'esprit complète.",
       initials: "KT",
     },
   ];
@@ -31,11 +31,11 @@ export default function TestimonialsSection() {
       <div className="container px-4 md:px-6">
         <FadeInUp className="text-center space-y-4 mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary">
-            Client Experiences
+            Expériences des Clients
           </h2>
           <p className="text-lg text-black max-w-2xl mx-auto">
-            Don't just take our word for it. Here is what our valued clients and
-            partners have to say about their experience with us.
+            N'ayez pas juste notre parole. Voici ce que nos clients et
+            partenaires précieux disent de leur expérience avec nous.
           </p>
         </FadeInUp>
 

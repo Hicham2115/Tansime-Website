@@ -9,19 +9,19 @@ export default function CallToAction() {
       <FadeInUp className="container relative px-4 md:px-6 bg-primary/90 backdrop-blur-sm p-6 w-[70%] mx-auto rounded-lg border border-white/10">
         <div className="max-w-3xl mx-auto text-center space-y-6">
           <h2 className="text-3xl md:text-3xl font-bold text-white">
-            Your Dream Home Awaits
+            Votre Maison de Rêves Vous Attend
           </h2>
           <p className="text-lg text-white">
-            Schedule a visit today and experience the Tasnime Residences
-            lifestyle firsthand.
+            Planifiez une visite aujourd'hui et expérimentez le style de vie des
+            Résidences Tasnime en personne.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
+            <Link
               to="/gallery"
               className="w-[260px] h-[56px] relative cursor-pointer py-4 px-4 text-center font-barlow inline-flex justify-center items-center text-base uppercase text-white rounded-lg border-solid transition-transform duration-300 ease-in-out group outline-offset-4 focus:outline focus:outline-2 focus:outline-white focus:outline-offset-4 overflow-hidden hover:scale-105 active:scale-95"
             >
               <span className="relative z-20 flex font-bold items-center gap-2">
-                View Gallery
+                Voir la Galerie
                 <span className="transition-transform duration-300 group-hover:translate-x-1">
                   <Images className="w-5 h-5" />
                 </span>
@@ -47,7 +47,7 @@ export default function CallToAction() {
               asChild
               className="flex justify-center items-center gap-2 px-6 py-6 border-2 border-primary hover:bg-white hover:scale-105 text-black bg-white rounded-xl transition-all duration-300 text-md"
             >
-              <Link to="/gallery">View Gallery</Link>
+              <Link to="/gallery">Voir la Galerie</Link>
             </Button> */}
           </div>
         </div>

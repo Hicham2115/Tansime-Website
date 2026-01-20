@@ -7,21 +7,21 @@ export default function AboutSection() {
       icon: Award,
       title: "Innovation",
       description:
-        "We embrace cutting-edge design and smart building solutions to create spaces that anticipate the future needs of modern living and working.",
+        "Nous adoptons une conception de pointe et des solutions de construction intelligentes pour créer des espaces qui anticipent les besoins futurs de la vie et du travail modernes.",
       color: "from-blue-500/20 to-cyan-500/20",
     },
     {
       icon: Shield,
-      title: "Quality",
+      title: "Qualité",
       description:
-        "Premium construction with durable materials, double-glazed windows, and superior finishes. Every detail is crafted to exceed expectations.",
+        "Construction premium avec matériaux durables, fenêtres à double vitrage et finitions supérieures. Chaque détail est conçu pour dépasser les attentes.",
       color: "from-primary/20 to-amber-500/20",
     },
     {
       icon: Leaf,
-      title: "Sustainability",
+      title: "Durabilité",
       description:
-        "Energy-efficient INVERTER systems, LED lighting, thermal and acoustic insulation. Building responsibly for a greener tomorrow.",
+        "Systèmes INVERTER économes en énergie, éclairage LED, isolation thermique et acoustique. Construire de manière responsable pour un avenir plus vert.",
       color: "from-green-500/20 to-emerald-500/20",
     },
   ];
@@ -33,20 +33,21 @@ export default function AboutSection() {
           {/* Header */}
           <FadeInUp className="text-center space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold text-primary">
-              About Tasnime Immobilier
+              À Propos de Tasnime Immobilier
             </h2>
             <div className="max-w-3xl mx-auto space-y-6">
               <p className="text-lg text-black font-semibold leading-relaxed">
-                Located in the vibrant city of Marrakech, Tasnime Immobilier is
-                a leading real estate developer committed to delivering
-                exceptional residential and business projects.
+                Situé dans la ville dynamique de Marrakech, Tasnime Immobilier
+                est un développeur immobilier de premier plan engagé à livrer
+                des projets résidentiels et commerciaux exceptionnels.
               </p>
               <p className="text-black text-base leading-relaxed">
-                With over a decade of experience, we pride ourselves on
-                transforming visions into reality. Our portfolio reflects a
-                perfect blend of modern architecture, sustainable practices, and
-                the rich cultural heritage of Morocco, ensuring every property
-                is not just a structure, but a home.
+                Avec plus d'une décennie d'expérience, nous sommes fiers de
+                transformer les visions en réalité. Notre portefeuille reflète
+                un mélange parfait d'architecture moderne, de pratiques durables
+                et de l'héritage culturel riche du Maroc, en veillant à ce que
+                chaque propriété ne soit pas seulement une structure, mais une
+                maison.
               </p>
             </div>
           </FadeInUp>
@@ -87,7 +88,7 @@ export default function AboutSection() {
             <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/60 backdrop-blur-md border border-[#d9ac6f]/20 shadow-lg">
               <MapPin className="w-5 h-5 text-primary" />
               <span className="text-black font-medium">
-                Strategically located at Bd de Safi & Av Charaf, Marrakech
+                Situé stratégiquement à Bd de Safi & Av Charaf, Marrakech
               </span>
             </div>
           </FadeInUp>

@@ -10,7 +10,7 @@ export default function HousingTypes() {
   const housingTypes = [
     {
       type: "Studio / F2",
-      description: "1 bedroom, living room, American-style kitchen",
+      description: "1 chambre, salon, cuisine américaine",
       size: "36–55 m²",
       icon: Bed,
       bedrooms: 1,
@@ -18,7 +18,7 @@ export default function HousingTypes() {
     },
     {
       type: "F3",
-      description: "2 bedrooms, living room, kitchen",
+      description: "2 chambres, salon, cuisine",
       size: "68–85 m²",
       icon: Bed,
       bedrooms: 2,
@@ -26,7 +26,7 @@ export default function HousingTypes() {
     },
     {
       type: "F4",
-      description: "3 bedrooms, living room, kitchen",
+      description: "3 chambres, salon, cuisine",
       size: "108–112 m²",
       icon: Bed,
       bedrooms: 3,
@@ -34,7 +34,7 @@ export default function HousingTypes() {
     },
     {
       type: "Duplex",
-      description: "3–4 bedrooms, 2 living rooms",
+      description: "3–4 chambres, 2 salons",
       size: "96–186 m²",
       icon: Home,
       bedrooms: "3-4",
@@ -47,10 +47,11 @@ export default function HousingTypes() {
       <div className="container relative px-4 md:px-6">
         <FadeInUp className="text-center space-y-4 mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary">
-            Available Residences
+            Résidences Disponibles
           </h2>
           <p className="text-lg text-black max-w-2xl mx-auto">
-            Choose from a variety of layouts designed to fit your lifestyle
+            Choisissez parmi une variété d'agencements conçus pour s'adapter à
+            votre style de vie
           </p>
         </FadeInUp>
 
@@ -79,20 +80,18 @@ export default function HousingTypes() {
                   <div className="flex items-center gap-2">
                     <Bed className="w-5 h-5 text-primary" />
                     <span className="text-sm text-white">
-                      {housing.bedrooms} bed
+                      {housing.bedrooms} ch
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Bath className="w-5 h-5 text-primary" />
                     <span className="text-sm text-white">
-                      {housing.bathrooms} bath
+                      {housing.bathrooms} sdb
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Maximize className="w-5 h-5 text-primary" />
-                    <span className="text-sm text-white">
-                      {housing.size}
-                    </span>
+                    <span className="text-sm text-white">{housing.size}</span>
                   </div>
                 </div>
               </div>
@@ -105,17 +104,18 @@ export default function HousingTypes() {
           {/* Content Side */}
           <FadeInUp className="space-y-6">
             <h3 className="text-3xl font-bold text-primary">
-              Designed for Comfort and Elegance
+              Conçus pour le Confort et l'Élégance
             </h3>
             <p className="text-black font-semibold leading-relaxed text-lg">
-              Each residence is meticulously crafted to maximize space and
-              light, providing a serene sanctuary in the heart of the city.
-              High-quality finishes and thoughtful layouts ensure a premium
-              living experience.
+              Chaque résidence est minutieusement conçue pour maximiser l'espace
+              et la lumière, offrant un sanctuaire serein au cœur de la ville.
+              Les finitions de haute qualité et les agencements réfléchis
+              garantissent une expérience de vie premium.
             </p>
             <p className="text-black font-semibold leading-relaxed text-lg">
-              Whether you choose a cozy studio or a spacious duplex, you'll find
-              a home that perfectly reflects your style and needs.
+              Que vous choisissiez un studio douillet ou un spacieux duplex,
+              vous trouverez une maison qui reflète parfaitement votre style et
+              vos besoins.
             </p>
           </FadeInUp>
 

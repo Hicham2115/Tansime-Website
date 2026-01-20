@@ -3,10 +3,10 @@ import FadeInUp from "@/components/FadeInUp";
 
 export default function Achievements() {
   const achievements = [
-    { icon: Building2, value: "2+", label: "Major Projects" },
-    { icon: Users, value: "150+", label: "Happy Residents" },
-    { icon: Award, value: "10+", label: "Years Experience" },
-    { icon: TrendingUp, value: "100%", label: "Client Satisfaction" },
+    { icon: Building2, value: "2+", label: "Projets Majeurs" },
+    { icon: Users, value: "150+", label: "Résidents Heureux" },
+    { icon: Award, value: "10+", label: "Ans d'Expérience" },
+    { icon: TrendingUp, value: "100%", label: "Satisfaction Client" },
   ];
 
   return (
@@ -14,10 +14,10 @@ export default function Achievements() {
       <div className="container px-4 md:px-6">
         <FadeInUp className="text-center space-y-4 mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary">
-            Our Achievements
+            Nos Réalisations
           </h2>
           <p className="text-lg text-black max-w-2xl mx-auto">
-            Numbers that reflect our commitment to excellence
+            Des chiffres qui reflètent notre engagement envers l'excellence
           </p>
         </FadeInUp>
 
