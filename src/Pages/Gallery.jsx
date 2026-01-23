@@ -323,11 +323,7 @@ export default function Gallery() {
       category: "residences",
       image: A7409590,
     },
-    {
-      id: 51,
-      category: "residences",
-      image: A7409591,
-    },
+
     {
       id: 52,
       category: "residences",
