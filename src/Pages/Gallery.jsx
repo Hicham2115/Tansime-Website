@@ -67,11 +67,11 @@ export default function Gallery() {
   const [imagesLoaded, setImagesLoaded] = useState(0);
   const [totalImages, setTotalImages] = useState(0);
 
-  const categories = [
-    { id: "all", label: "Tous les Projets" },
-    { id: "residences", label: "Résidences" },
-    // { id: "business", label: "Business Center" }, // Commented out as we mostly have residential images for now
-  ];
+  // const categories = [
+  //   { id: "all", label: "Tous les Projets" },
+  //   { id: "residences", label: "Résidences" },
+  //   // { id: "business", label: "Business Center" }, // Commented out as we mostly have residential images for now
+  // ];
 
   const galleryItems = [
     {
@@ -404,7 +404,7 @@ export default function Gallery() {
         </FadeInUp>
 
         {/* Category Filter */}
-        <FadeInUp
+        {/* <FadeInUp
           delay={0.2}
           className="flex flex-wrap justify-center gap-3 mb-12"
         >
@@ -421,7 +421,7 @@ export default function Gallery() {
               {category.label}
             </button>
           ))}
-        </FadeInUp>
+        </FadeInUp> */}
 
         {/* Loading Indicator */}
         {isLoading && (
