@@ -233,7 +233,7 @@ export default function Contact() {
                     <div>
                       <p className="text-xs text-white mb-1">Téléphone</p>
                       <span className="text-sm font-semibold text-white">
-                        +212 XXX XXX XXX
+                        +212 61 36 95 12
                       </span>
                     </div>
                   </a>
@@ -247,7 +247,7 @@ export default function Contact() {
                     <div>
                       <p className="text-xs text-white mb-1">E-mail</p>
                       <span className="text-sm font-semibold text-white break-all">
-                        contact@tasnime-immobilier.ma
+                        TASNIMEKECH@GMAIL.COM
                       </span>
                     </div>
                   </a>
@@ -258,15 +258,13 @@ export default function Contact() {
                     <div>
                       <p className="text-xs text-white mb-1">Adresse</p>
                       <p className="text-sm font-semibold text-white">
-                        Intersection du Bd de Safi & Av Charaf
-                        <br />
-                        Marrakech, Maroc
+                        MARRAKECH - BD SAFI X AV. ACHARAF
                       </p>
                     </div>
                   </div>
 
                   {/* Business Hours */}
-                  <div className="flex items-start gap-3 p-3 rounded-xl bg-white/5">
+                  {/* <div className="flex items-start gap-3 p-3 rounded-xl bg-white/5">
                     <Clock className="w-5 h-5 mt-0.5 shrink-0 text-white" />
                     <div>
                       <p className="text-xs text-white mb-1">
@@ -280,7 +278,7 @@ export default function Contact() {
                         Dim : Fermé
                       </p>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 

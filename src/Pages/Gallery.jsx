@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { X, ChevronLeft, ChevronRight, Building2, Home } from "lucide-react";
 import FadeInUp from "@/components/FadeInUp";
 import ScaleIn from "@/components/ScaleIn";
@@ -22,11 +22,50 @@ import sam from "../assets/Imgs/SAM.jpg";
 import studioSalon from "../assets/Imgs/STUDIO SALON.jpg";
 import chApp from "../assets/Imgs/ch-app.jpg";
 import ch2App from "../assets/Imgs/ch2-app.jpg";
+import A7409457 from "../assets/Imgs/A7409457.JPG";
+import A7409460 from "../assets/Imgs/A7409460.JPG";
+import A7409471 from "../assets/Imgs/A7409471.JPG";
+import A7409473 from "../assets/Imgs/A7409473.JPG";
+import A7409479 from "../assets/Imgs/A7409479.JPG";
+import A7409482 from "../assets/Imgs/A7409482.JPG";
+import A7409486 from "../assets/Imgs/A7409486.JPG";
+import A7409489 from "../assets/Imgs/A7409489.JPG";
+import A7409494 from "../assets/Imgs/A7409494.JPG";
+import A7409497 from "../assets/Imgs/A7409497.JPG";
+import A7409507 from "../assets/Imgs/A7409507.JPG";
+import A7409515 from "../assets/Imgs/A7409515.JPG";
+import A7409516 from "../assets/Imgs/A7409516.JPG";
+import A7409518 from "../assets/Imgs/A7409518.JPG";
+import A7409522 from "../assets/Imgs/A7409522.JPG";
+import A7409535 from "../assets/Imgs/A7409535.JPG";
+import A7409538 from "../assets/Imgs/A7409538.JPG";
+import A7409545 from "../assets/Imgs/A7409545.JPG";
+import A7409547 from "../assets/Imgs/A7409547.JPG";
+import A7409553 from "../assets/Imgs/A7409553.JPG";
+import A7409558 from "../assets/Imgs/A7409558.JPG";
+import A7409560 from "../assets/Imgs/A7409560.JPG";
+import A7409562 from "../assets/Imgs/A7409562.JPG";
+import A7409563 from "../assets/Imgs/A7409563.JPG";
+import A7409570 from "../assets/Imgs/A7409570.JPG";
+import A7409574 from "../assets/Imgs/A7409574.JPG";
+import A7409576 from "../assets/Imgs/A7409576.JPG";
+import A7409578 from "../assets/Imgs/A7409578.JPG";
+import A7409583 from "../assets/Imgs/A7409583.JPG";
+import A7409585 from "../assets/Imgs/A7409585.JPG";
+import A7409586 from "../assets/Imgs/A7409586.JPG";
+import A7409590 from "../assets/Imgs/A7409590.JPG";
+import A7409591 from "../assets/Imgs/A7409591.JPG";
+import A7409595 from "../assets/Imgs/A7409595.JPG";
+import RUR04229 from "../assets/Imgs/RUR04229.jpg";
+import RUR04328 from "../assets/Imgs/RUR04328.jpg";
+import RUR04395 from "../assets/Imgs/RUR04395.jpg";
 import PageTransition from "@/components/PageTransition";
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState("all");
+  const [imagesLoaded, setImagesLoaded] = useState(0);
+  const [totalImages, setTotalImages] = useState(0);
 
   const categories = [
     { id: "all", label: "Tous les Projets" },
@@ -38,128 +77,277 @@ export default function Gallery() {
     {
       id: 1,
       category: "residences",
-      title: "Chambre Principale",
-      description: "Chambre principale élégante et spacieuse",
       image: chambre,
     },
     {
       id: 2,
       category: "residences",
-      title: "Chambre Moderne",
-      description: "Design de chambre contemporain",
       image: chambre2,
     },
     {
       id: 3,
       category: "residences",
-      title: "Chambre Duplex 1",
-      description: "Chambre étage supérieur en duplex",
       image: chDup,
     },
     {
       id: 4,
       category: "residences",
-      title: "Chambre Duplex 2",
-      description: "Chambre d'invité en duplex",
       image: ch3Dup,
     },
     {
       id: 5,
       category: "residences",
-      title: "Chambre Duplex 3",
-      description: "Espace de vie confortable",
       image: ch4Dup,
     },
     {
       id: 6,
       category: "residences",
-      title: "Chambre Appartement",
-      description: "Chambre d'appartement douillette",
       image: chApp,
     },
     {
       id: 7,
       category: "residences",
-      title: "Chambre Secondaire",
-      description: "Chambre secondaire bien éclairée",
       image: ch2,
     },
     {
       id: 8,
       category: "residences",
-      title: "Chambre Appartement 2",
-      description: "Zone de sommeil moderne d'appartement",
       image: ch2App,
     },
     {
       id: 9,
       category: "residences",
-      title: "Escalier Duplex",
-      description: "Design d'escalier élégant",
       image: escalierDup,
     },
     {
       id: 10,
       category: "residences",
-      title: "Salon TV",
-      description: "Zone de divertissement relaxante",
       image: espaceTv2,
     },
     {
       id: 11,
       category: "residences",
-      title: "Kitchenette",
-      description: "Kitchenette fonctionnelle et stylée",
       image: kitchenette,
     },
     {
       id: 12,
       category: "residences",
-      title: "Salon",
-      description: "Zone de vie principale spacieuse",
       image: salon1,
     },
     {
       id: 13,
       category: "residences",
-      title: "Salon Duplex",
-      description: "Grand salon en duplex",
       image: salonDup,
     },
     {
       id: 14,
       category: "residences",
-      title: "Espace Ouvert",
-      description: "Salon, salle à manger et cuisine intégrés",
       image: salonSamKitch,
     },
     {
       id: 15,
       category: "residences",
-      title: "Salle à Manger Duplex",
-      description: "Salle à manger en duplex",
       image: samDup,
     },
     {
       id: 16,
       category: "residences",
-      title: "Salle à Manger & Salon",
-      description: "Flux ininterrompu entre salle à manger et salon",
       image: samSalon,
     },
     {
       id: 17,
       category: "residences",
-      title: "Salle à Manger",
-      description: "Espace formel de repas",
       image: sam,
     },
     {
       id: 18,
       category: "residences",
-      title: "Salon Studio",
-      description: "Zone de vie efficace du studio",
       image: studioSalon,
+    },
+    {
+      id: 19,
+      category: "residences",
+      image: A7409457,
+    },
+    {
+      id: 20,
+      category: "residences",
+      image: A7409460,
+    },
+    {
+      id: 21,
+      category: "residences",
+      image: A7409471,
+    },
+    {
+      id: 22,
+      category: "residences",
+      image: A7409473,
+    },
+    {
+      id: 23,
+      category: "residences",
+      image: A7409479,
+    },
+    {
+      id: 24,
+      category: "residences",
+      image: A7409482,
+    },
+    {
+      id: 25,
+      category: "residences",
+      image: A7409486,
+    },
+    {
+      id: 26,
+      category: "residences",
+      image: A7409489,
+    },
+    {
+      id: 27,
+      category: "residences",
+      image: A7409494,
+    },
+    {
+      id: 28,
+      category: "residences",
+      image: A7409497,
+    },
+    {
+      id: 29,
+      category: "residences",
+      image: A7409507,
+    },
+    {
+      id: 30,
+      category: "residences",
+      image: A7409515,
+    },
+    {
+      id: 31,
+      category: "residences",
+      image: A7409516,
+    },
+    {
+      id: 32,
+      category: "residences",
+      image: A7409518,
+    },
+    {
+      id: 33,
+      category: "residences",
+      image: A7409522,
+    },
+    {
+      id: 34,
+      category: "residences",
+      image: A7409535,
+    },
+    {
+      id: 35,
+      category: "residences",
+      image: A7409538,
+    },
+    {
+      id: 36,
+      category: "residences",
+      image: A7409545,
+    },
+    {
+      id: 37,
+      category: "residences",
+      image: A7409547,
+    },
+    {
+      id: 38,
+      category: "residences",
+      image: A7409553,
+    },
+    {
+      id: 39,
+      category: "residences",
+      image: A7409558,
+    },
+    {
+      id: 40,
+      category: "residences",
+      image: A7409560,
+    },
+    {
+      id: 41,
+      category: "residences",
+      image: A7409562,
+    },
+    {
+      id: 42,
+      category: "residences",
+      image: A7409563,
+    },
+    {
+      id: 43,
+      category: "residences",
+      image: A7409570,
+    },
+    {
+      id: 44,
+      category: "residences",
+      image: A7409574,
+    },
+    {
+      id: 45,
+      category: "residences",
+      image: A7409576,
+    },
+    {
+      id: 46,
+      category: "residences",
+      image: A7409578,
+    },
+    {
+      id: 47,
+      category: "residences",
+      image: A7409583,
+    },
+    {
+      id: 48,
+      category: "residences",
+      image: A7409585,
+    },
+    {
+      id: 49,
+      category: "residences",
+      image: A7409586,
+    },
+    {
+      id: 50,
+      category: "residences",
+      image: A7409590,
+    },
+    {
+      id: 51,
+      category: "residences",
+      image: A7409591,
+    },
+    {
+      id: 52,
+      category: "residences",
+      image: A7409595,
+    },
+    {
+      id: 53,
+      category: "residences",
+      image: RUR04229,
+    },
+    {
+      id: 54,
+      category: "residences",
+      image: RUR04328,
+    },
+    {
+      id: 55,
+      category: "residences   ",
+      image: RUR04395,
     },
   ];
 
@@ -167,6 +355,17 @@ export default function Gallery() {
     selectedCategory === "all"
       ? galleryItems
       : galleryItems.filter((item) => item.category === selectedCategory);
+
+  useEffect(() => {
+    setTotalImages(filteredItems.length);
+    setImagesLoaded(0);
+  }, [filteredItems.length]);
+
+  const isLoading = imagesLoaded < totalImages;
+
+  const handleImageLoad = () => {
+    setImagesLoaded((prev) => prev + 1);
+  };
 
   const openLightbox = (item) => {
     setSelectedImage(item);
@@ -224,8 +423,23 @@ export default function Gallery() {
           ))}
         </FadeInUp>
 
+        {/* Loading Indicator */}
+        {isLoading && (
+          <div className="flex flex-col items-center justify-center py-12">
+            <div className="relative w-12 h-12 mb-4">
+              <div className="absolute inset-0 rounded-full border-4 border-primary/20" />
+              <div className="absolute inset-0 rounded-full border-4 border-transparent border-t-primary animate-spin" />
+            </div>
+            <p className="text-gray-400">
+              Chargement de la galerie... {imagesLoaded}/{totalImages}
+            </p>
+          </div>
+        )}
+
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div
+          className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ${isLoading ? "opacity-50 pointer-events-none" : "opacity-100"}`}
+        >
           {filteredItems.map((item, index) => (
             <ScaleIn
               key={item.id}
@@ -236,25 +450,13 @@ export default function Gallery() {
               {/* Image */}
               <img
                 src={item.image}
-                alt={item.title}
+                alt={`Gallery item ${item.id}`}
+                onLoad={handleImageLoad}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
 
               {/* Overlay Gradient */}
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-300" />
-
-              {/* Hover overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                <div className="space-y-2">
-                  <h3 className="text-xl font-bold text-white">{item.title}</h3>
-                  <p className="text-sm text-gray-200">{item.description}</p>
-                </div>
-              </div>
-
-              {/* Category badge */}
-              <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-black/60 backdrop-blur-sm border border-white/20 text-xs font-medium text-white">
-                {categories.find((c) => c.id === item.category)?.label}
-              </div>
             </ScaleIn>
           ))}
         </div>
@@ -295,22 +497,12 @@ export default function Gallery() {
           </button>
 
           {/* Image container */}
-          <div className="max-w-5xl w-full">
-            <div className="relative aspect-[16/10] rounded-2xl overflow-hidden bg-black/50 border border-white/10">
-              <img
-                src={selectedImage.image}
-                alt={selectedImage.title}
-                className="absolute inset-0 w-full h-full object-contain"
-              />
-            </div>
-
-            {/* Image info */}
-            <div className="mt-6 text-center space-y-2">
-              <h3 className="text-2xl font-bold text-white">
-                {selectedImage.title}
-              </h3>
-              <p className="text-gray-300">{selectedImage.description}</p>
-            </div>
+          <div className="relative aspect-[16/10] rounded-2xl overflow-hidden bg-black/50 border border-white/10">
+            <img
+              src={selectedImage.image}
+              alt={`Gallery item ${selectedImage.id}`}
+              className="absolute inset-0 w-full h-full object-contain"
+            />
           </div>
         </div>
       )}

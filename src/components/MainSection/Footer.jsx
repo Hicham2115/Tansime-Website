@@ -131,9 +131,7 @@ function Footer() {
               <li className="flex items-start gap-3 white text-sm group">
                 <MapPin className="w-5 h-5 text-[#b1cc4b] shrink-0 mt-0.5 group-hover:text-[#b1cc4b] transition-colors" />
                 <span className="group-hover:text-[#b1cc4b] transition-colors">
-                  Intersection de Bd de Safi et Av Charaf
-                  <br />
-                  Marrakech, Maroc
+                  MARRAKECH - BD SAFI X AV. ACHARAF
                 </span>
               </li>
               <li className="flex items-center gap-3 white text-sm group">
@@ -142,7 +140,7 @@ function Footer() {
                   href="tel:+212XXXXXXXXX"
                   className="group-hover:text-[#b1cc4b] transition-colors"
                 >
-                  +212 XXX XXX XXX
+                  +212 61 36 95 12
                 </a>
               </li>
               <li className="flex items-center gap-3 white text-sm group">
@@ -151,7 +149,7 @@ function Footer() {
                   href="mailto:contact@tasnime-immobilier.ma"
                   className="group-hover:text-[#b1cc4b] transition-colors break-all"
                 >
-                  contact@tasnime-immobilier.ma
+                  TASNIMEKECH@GMAIL.COM
                 </a>
               </li>
             </ul>
@@ -161,9 +159,17 @@ function Footer() {
               <h4 className="font-bold text-sm mb-3 text-white">Nous Suivre</h4>
               <div className="flex gap-3">
                 {[
-                  { icon: Facebook, href: "#", label: "Facebook" },
-                  { icon: Instagram, href: "#", label: "Instagram" },
-                  { icon: Linkedin, href: "#", label: "LinkedIn" },
+                  {
+                    icon: Facebook,
+                    href: "https://web.facebook.com/p/Tasnime-61577909202998/?_rdc=1&_rdr#",
+                    label: "Facebook",
+                  },
+                  {
+                    icon: Instagram,
+                    href: "https://www.instagram.com/tasnime.immo/",
+                    label: "Instagram",
+                  },
+                  // { icon: Linkedin, href: "#", label: "LinkedIn" },
                 ].map((social, index) => (
                   <a
                     key={index}
