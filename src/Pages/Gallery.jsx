@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { X, ChevronLeft, ChevronRight, Building2, Home } from "lucide-react";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import FadeInUp from "@/components/FadeInUp";
 import ScaleIn from "@/components/ScaleIn";
 
@@ -346,7 +346,7 @@ export default function Gallery() {
     },
     {
       id: 55,
-      category: "residences   ",
+      category: "residences",
       image: RUR04395,
     },
   ];
@@ -361,7 +361,8 @@ export default function Gallery() {
     setImagesLoaded(0);
   }, [filteredItems.length]);
 
-  const isLoading = imagesLoaded < totalImages;
+  // Gallery is ready immediately with lazy loading
+  const isLoading = false;
 
   const handleImageLoad = () => {
     setImagesLoaded((prev) => prev + 1);
@@ -452,6 +453,8 @@ export default function Gallery() {
                 src={item.image}
                 alt={`Gallery item ${item.id}`}
                 onLoad={handleImageLoad}
+                loading="lazy"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
 
@@ -501,6 +504,7 @@ export default function Gallery() {
             <img
               src={selectedImage.image}
               alt={`Gallery item ${selectedImage.id}`}
+              loading="eager"
               className="absolute inset-0 w-full h-full object-contain"
             />
           </div>
