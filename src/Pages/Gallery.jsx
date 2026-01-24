@@ -440,7 +440,7 @@ export default function Gallery() {
             <ScaleIn
               key={item.id}
               delay={index * 0.05}
-              className="group relative aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer bg-card/50 backdrop-blur-sm border border-white/10 hover:border-primary/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/10"
+              className="group relative aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer bg-card/50 backdrop-blur-sm border border-white/10 hover:border-primary/50 transition-all duration-300"
               onClick={() => openLightbox(item)}
             >
               {/* Image */}
@@ -450,7 +450,7 @@ export default function Gallery() {
                 onLoad={handleImageLoad}
                 loading="lazy"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="absolute inset-0 w-full h-full object-cover"
               />
 
               {/* Overlay Gradient */}
