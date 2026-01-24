@@ -14,11 +14,11 @@ import { EffectCards, Pagination, Navigation } from "swiper/modules";
 import { CheckCircle2 } from "lucide-react";
 import FadeInUp from "@/components/FadeInUp";
 
-import salonDup from "../../assets/Imgs/SALON 1.jpg";
-import salonSamKitch from "../../assets/Imgs/SALON-SAM-KITCH.jpg";
-import samDup from "../../assets/Imgs/SAM-DUP.jpg";
-import samSalon from "../../assets/Imgs/SAM-SALON.jpg";
-import sam from "../../assets/Imgs/SAM.jpg";
+import salonDup from "../../assets/Imgs/A7409578.JPG";
+import salonSamKitch from "../../assets/Imgs/A7409585.JPG";
+import samDup from "../../assets/Imgs/A7409574.JPG";
+import samSalon from "../../assets/Imgs/A7409576.JPG";
+import sam from "../../assets/Imgs/A7409471.JPG";
 
 const sliderImages = [
   {

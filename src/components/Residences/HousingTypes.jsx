@@ -1,8 +1,8 @@
 import { Bed, Bath, Maximize, Home } from "lucide-react";
-import img1 from "@/assets/Imgs/CHAMBRE.jpg";
-import img2 from "@/assets/Imgs/KITCHENETTE.jpg";
-import img3 from "@/assets/Imgs/SALON DUP.jpg";
-import img4 from "@/assets/Imgs/STUDIO SALON.jpg";
+import img1 from "@/assets/Imgs/A7409585.JPG";
+import img2 from "@/assets/Imgs/A7409489.JPG";
+import img3 from "@/assets/Imgs/A7409494.JPG";
+import img4 from "@/assets/Imgs/A7409497.JPG";
 import FadeInUp from "@/components/FadeInUp";
 import ScaleIn from "@/components/ScaleIn";
 

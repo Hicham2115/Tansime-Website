@@ -74,96 +74,6 @@ export default function Gallery() {
 
   const galleryItems = [
     {
-      id: 1,
-      category: "residences",
-      image: chambre,
-    },
-    {
-      id: 2,
-      category: "residences",
-      image: chambre2,
-    },
-    {
-      id: 3,
-      category: "residences",
-      image: chDup,
-    },
-    {
-      id: 4,
-      category: "residences",
-      image: ch3Dup,
-    },
-    {
-      id: 5,
-      category: "residences",
-      image: ch4Dup,
-    },
-    {
-      id: 6,
-      category: "residences",
-      image: chApp,
-    },
-    {
-      id: 7,
-      category: "residences",
-      image: ch2,
-    },
-    {
-      id: 8,
-      category: "residences",
-      image: ch2App,
-    },
-    {
-      id: 9,
-      category: "residences",
-      image: escalierDup,
-    },
-    {
-      id: 10,
-      category: "residences",
-      image: espaceTv2,
-    },
-    {
-      id: 11,
-      category: "residences",
-      image: kitchenette,
-    },
-    {
-      id: 12,
-      category: "residences",
-      image: salon1,
-    },
-    {
-      id: 13,
-      category: "residences",
-      image: salonDup,
-    },
-    {
-      id: 14,
-      category: "residences",
-      image: salonSamKitch,
-    },
-    {
-      id: 15,
-      category: "residences",
-      image: samDup,
-    },
-    {
-      id: 16,
-      category: "residences",
-      image: samSalon,
-    },
-    {
-      id: 17,
-      category: "residences",
-      image: sam,
-    },
-    {
-      id: 18,
-      category: "residences",
-      image: studioSalon,
-    },
-    {
       id: 19,
       category: "residences",
       image: A7409457,
@@ -343,6 +253,96 @@ export default function Gallery() {
       id: 55,
       category: "residences",
       image: RUR04395,
+    },
+    {
+      id: 1,
+      category: "residences",
+      image: chambre,
+    },
+    {
+      id: 2,
+      category: "residences",
+      image: chambre2,
+    },
+    {
+      id: 3,
+      category: "residences",
+      image: chDup,
+    },
+    {
+      id: 4,
+      category: "residences",
+      image: ch3Dup,
+    },
+    {
+      id: 5,
+      category: "residences",
+      image: ch4Dup,
+    },
+    {
+      id: 6,
+      category: "residences",
+      image: chApp,
+    },
+    {
+      id: 7,
+      category: "residences",
+      image: ch2,
+    },
+    {
+      id: 8,
+      category: "residences",
+      image: ch2App,
+    },
+    {
+      id: 9,
+      category: "residences",
+      image: escalierDup,
+    },
+    {
+      id: 10,
+      category: "residences",
+      image: espaceTv2,
+    },
+    {
+      id: 11,
+      category: "residences",
+      image: kitchenette,
+    },
+    {
+      id: 12,
+      category: "residences",
+      image: salon1,
+    },
+    {
+      id: 13,
+      category: "residences",
+      image: salonDup,
+    },
+    {
+      id: 14,
+      category: "residences",
+      image: salonSamKitch,
+    },
+    {
+      id: 15,
+      category: "residences",
+      image: samDup,
+    },
+    {
+      id: 16,
+      category: "residences",
+      image: samSalon,
+    },
+    {
+      id: 17,
+      category: "residences",
+      image: sam,
+    },
+    {
+      id: 18,
+      category: "residences",
+      image: studioSalon,
     },
   ];
 

@@ -1,6 +1,6 @@
 import { CheckCircle2 } from "lucide-react";
-import img1 from "@/assets/img53.jpg";
-import img2 from "@/assets/img59.jpg";
+import img1 from "@/assets/Imgs/A7409547.JPG";
+import img2 from "@/assets/Imgs/A7409553.JPG";
 import img3 from "@/assets/img77.jpg";
 import FadeInUp from "@/components/FadeInUp";
 import ScaleIn from "@/components/ScaleIn";

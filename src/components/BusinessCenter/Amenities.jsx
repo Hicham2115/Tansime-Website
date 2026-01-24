@@ -1,8 +1,8 @@
 import { Users, Coffee, Monitor, Briefcase } from "lucide-react";
-import img1 from "@/assets/Imgs/SALON 1.jpg";
-import img2 from "@/assets/Imgs/SAM-SALON.jpg";
-import img3 from "@/assets/Imgs/CH-2.jpg";
-import img4 from "@/assets/Imgs/SAM.jpg";
+import img1 from "@/assets/Imgs/A7409547.JPG";
+import img2 from "@/assets/Imgs/A7409507.JPG";
+import img3 from "@/assets/Imgs/A7409522.JPG";
+import img4 from "@/assets/Imgs/A7409473.JPG";
 import FadeInUp from "@/components/FadeInUp";
 import ScaleIn from "@/components/ScaleIn";
 
