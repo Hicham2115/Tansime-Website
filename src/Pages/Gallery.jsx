@@ -15,7 +15,7 @@ import A7409489 from "../assets/Imgs/A7409576.JPG";
 import A7409494 from "../assets/Imgs/A7409585.JPG";
 import A7409497 from "../assets/Imgs/A7409586.JPG";
 import A7409507 from "../assets/Imgs/A7409595.JPG";
-import A7409515 from "../assets/Imgs/CH-2.JPG";
+// import A7409515 from "../assets/Imgs/CH-2.JPG";
 import RUR04395 from "../assets/Imgs/RUR04395.jpg";
 
 // Interior / 3D visuals
@@ -65,7 +65,7 @@ export default function Gallery() {
     { id: 9, category: "residences", image: A7409494 },
     { id: 10, category: "residences", image: A7409497 },
     { id: 11, category: "residences", image: A7409507 },
-    { id: 12, category: "residences", image: A7409515 },
+    // { id: 12, category: "residences", image: A7409515 },
     { id: 13, category: "residences", image: RUR04395 },
 
     // 3D / interior visuals
