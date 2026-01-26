@@ -4,10 +4,6 @@ import { ArrowRight, ExternalLink, MailOpen, MapPin } from "lucide-react";
 import HeroPic from "@/assets/Imgs/RUR04229.jpg";
 import { motion } from "motion/react";
 import FadeInUp from "@/components/FadeInUp";
-import img1 from "@/assets/Imgs/A7409547.JPG";
-import img2 from "@/assets/Imgs/A7409553.JPG";
-import img3 from "@/assets/Imgs/A7409576.JPG";
-import ScaleIn from "@/components/ScaleIn";
 
 export default function Hero() {
   const text =
@@ -196,23 +192,7 @@ export default function Hero() {
           </FadeInUp>
         </div>
       </section>
-      {/* Image Grid */}
-      {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mt-10">
-        {[img1, img2, img3].map((img, idx) => (
-          <ScaleIn
-            key={idx}
-            delay={0.6 + idx * 0.2}
-            className="group relative aspect-[5/3] mx-4 overflow-hidden rounded-2xl border border-white/10 shadow-2xl"
-          >
-            <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-300 z-10" />
-            <img
-              src={img}
-              alt={`Tasnime Residence View ${idx + 1}`}
-              className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
-            />
-          </ScaleIn>
-        ))}
-      </div> */}
+     
       <div className="flex justify-center mt-10">
         <Button
           asChild
