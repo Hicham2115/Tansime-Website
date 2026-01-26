@@ -18,6 +18,7 @@ import A7409507 from "../assets/Imgs/A7409595.JPG";
 // import A7409515 from "../assets/Imgs/CH-2.JPG";
 import RUR04395 from "../assets/Imgs/RUR04395.jpg";
 
+
 // Interior / 3D visuals
 import chambre from "../assets/Imgs/CHAMBRE.jpg";
 import chambre2 from "../assets/Imgs/CHAMBRE 2.jpg";
