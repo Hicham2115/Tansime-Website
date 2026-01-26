@@ -18,7 +18,6 @@ import A7409507 from "../assets/Imgs/A7409595.JPG";
 // import A7409515 from "../assets/Imgs/CH-2.JPG";
 import RUR04395 from "../assets/Imgs/RUR04395.jpg";
 
-
 // Interior / 3D visuals
 import chambre from "../assets/Imgs/CHAMBRE.jpg";
 import chambre2 from "../assets/Imgs/CHAMBRE 2.jpg";
@@ -131,13 +130,17 @@ export default function Gallery() {
       <div className="container px-4 md:px-6">
         {/* Header */}
         <FadeInUp className="text-center space-y-4 mb-12">
-          <h1 className="text-5xl md:text-6xl font-bold text-primary">
+          <h1 className="text-4xl md:text-6xl font-bold text-primary">
             Nos Projets en Images
             {/* <span className="text-transparent bg-clip-text bg-linear-to-r from-[#328a93] via-[#328a93] to-[#328a93]">
               Pictures
             </span> */}
           </h1>
-          <p className="text-lg text-black max-w-3xl mx-auto">
+          <p
+            className="lg:text-lg
+  leading-snug
+  sm:leading-relaxed text-black max-w-3xl mx-auto"
+          >
             Explorez notre portefeuille de résidences premium et d'espaces
             commerciaux à travers notre galerie interactive
           </p>

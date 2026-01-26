@@ -33,7 +33,11 @@ export default function Hero() {
           </FadeInUp>
 
           <FadeInUp delay={0.4}>
-            <p className="text-lg md:text-xl text-white max-w-3xl mx-auto leading-relaxed">
+            <p
+              className="lg:text-lg
+  leading-snug
+  sm:leading-relaxed text-white max-w-3xl mx-auto leading-relaxed"
+            >
               Tasnime Immobilier – Un acteur de référence dans le secteur
               immobilier de Marrakech
             </p>

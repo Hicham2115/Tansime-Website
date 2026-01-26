@@ -108,7 +108,17 @@ export default function Hero() {
         <div className="flex flex-col lg:flex-row gap-12 items-start w-full max-w-6xl">
           {/* Left Side - Existing Text */}
           <FadeInUp delay={0.2} className="flex-1 space-y-6">
-            <p className="text-black text-lg leading-relaxed font-semibold">
+            <p
+              className="
+  text-sm
+  sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed
+  text-gray-800
+  font-medium
+"
+            >
               Les résidences TASNIME sont des résidences sécurisées conçues
               selon une architecture sobre et raffinée offrant une expérience de
               vie exceptionnelle. Ces résidences Premium sont animées par un jeu
@@ -122,7 +132,17 @@ export default function Hero() {
               Elles sont composées de différents typologies d'habitation à
               savoir:
             </p>
-            <p className="text-black text-lg leading-relaxed font-semibold">
+            <p
+              className="
+  text-sm
+  sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed
+  text-gray-800
+  font-medium
+"
+            >
               • Appartements F2 ou studios (1 chambre, salon et cuisine à
               l'américaine)
               <br />• Appartements F2 ou studios (1 chambre, salon et cuisine à
@@ -130,7 +150,17 @@ export default function Hero() {
               <br />• Appartements F4 (3 chambres, salon et cuisine). <br />•
               Duplexes avec 2 salons, 3 ou 4 chambres à coucher.
             </p>
-            <p className="text-black text-lg leading-relaxed font-semibold">
+            <p
+              className="
+  text-sm
+  sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed
+  text-gray-800
+  font-medium
+"
+            >
               Les résidences sont conçues selon les principes de développement
               durable et sont dotées des finitions de qualité supérieure. Elles
               offrent une large variété de superficies qui s'adaptent aux
@@ -179,7 +209,18 @@ export default function Hero() {
                 </Swiper>
               </div>
             </motion.div>
-            <p className="text-primary  text-lg leading-relaxed font-bold ml-6">
+            <p
+              className="
+  text-sm
+  sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed
+  text-gray-800
+  font-medium 
+  ml-6
+"
+            >
               De 36 M2 à 55 M2 pour les studios <br /> De 68 M2 à 85 M2 pour les
               appartements F3 <br />
               De 108 à 112 M2 pour les appartements F4 <br />

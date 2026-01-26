@@ -60,7 +60,11 @@ export default function Slider() {
               BIENVENUE À TASNIME
             </h2>
             <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
-            <p className="text-lg text-black leading-relaxed font-semibold">
+            <p className="text-lg text-black  text-sm
+  sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed font-semibold">
               Découvrez l'apogée de la vie moderne et des espaces commerciaux
               haut de gamme à Marrakech. Tasnime Immobilier présente deux
               projets visionnaires qui redéfinissent le paysage immobilier.
@@ -68,7 +72,11 @@ export default function Slider() {
               pratiques durables, nos développements incarnent l'excellence,
               l'innovation et la conception sophistiquée.
             </p>
-            <p className="text-base text-gray-700 leading-relaxed">
+            <p className="text-base text-gray-700  text-sm
+  sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed">
               Chaque détail a été soigneusement élaboré pour offrir une
               expérience exceptionnelle, combinant le luxe avec la
               fonctionnalité et la responsabilité environnementale.
@@ -85,7 +93,11 @@ export default function Slider() {
                 <div className="w-16 h-1 bg-primary rounded-full" />
               </div>
 
-              <p className="text-black text-lg leading-relaxed font-semibold">
+              <p className="text-black text-lg  text-sm
+  sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed font-semibold">
                 Expérimentez le luxe de vivre à son meilleur. Les Résidences
                 Tasnime présentent des espaces consciencieusement conçus qui
                 privilégient le confort, la durabilité et l'esthétique moderne.
@@ -94,7 +106,11 @@ export default function Slider() {
                 sanctuaire d'élégance.
               </p>
 
-              <div className="space-y-4">
+              <div className="space-y-4  text-sm
+  sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed">
                 <div className="flex gap-3 items-start">
                   <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <div>
@@ -146,7 +162,11 @@ export default function Slider() {
                 </div>
               </div>
 
-              <p className="text-black leading-relaxed font-semibold pt-4 border-t border-primary/30">
+              <p className="text-black  text-sm
+  sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed font-semibold pt-4 border-t border-primary/30">
                 Chaque résidence est conçue pour offrir une expérience de vie
                 exceptionnelle, fusionnant harmonieusement le design
                 contemporain avec l'élégance intemporelle et la responsabilité

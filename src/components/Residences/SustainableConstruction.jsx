@@ -10,7 +10,12 @@ export default function SustainableConstruction() {
             <h2 className="text-4xl md:text-5xl font-bold text-primary">
               Construction Durable
             </h2>
-            <p className="text-lg text-black">
+            <p
+              className="sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed text-black"
+            >
               Conçue avec l'environnement et votre confort à l'esprit
             </p>
           </FadeInUp>

@@ -41,7 +41,12 @@ export default function Amenities() {
           <h2 className="text-4xl md:text-5xl font-bold text-primary">
             Commodités de Classe Mondiale
           </h2>
-          <p className="text-lg text-black max-w-2xl mx-auto">
+          <p
+            className="sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed text-black max-w-2xl mx-auto"
+          >
             Conçues pour la commodité, le confort et la productivité.
           </p>
         </FadeInUp>
@@ -72,14 +77,24 @@ export default function Amenities() {
             <h3 className="text-3xl font-bold text-primary">
               Expérimentez l'Équilibre Parfait Entre Travail et Vie
             </h3>
-            <p className="text-black font-semibold leading-relaxed text-lg">
+            <p
+              className="text-black font-semiboldsm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed"
+            >
               Notre centre d'affaires offre plus que de simples espaces de
               bureau ; il propose un environnement holistique adapté au succès.
               Profitez d'installations premium qui répondent à vos besoins
               professionnels tout en offrant des espaces pour vous détendre et
               vous ressourcer.
             </p>
-            <p className="text-black font-semibold leading-relaxed text-lg">
+            <p
+              className="text-black font-semiboldsm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed"
+            >
               Des salles de conférence ultramodernes aux espaces lounge
               relaxants, chaque détail est conçu pour améliorer votre journée de
               travail.

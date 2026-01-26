@@ -40,7 +40,13 @@ export default function FeaturedProjects() {
           <h2 className="text-4xl md:text-5xl font-bold text-primary">
             Projets Phares
           </h2>
-          <p className="text-lg text-black max-w-2xl mx-auto">
+          <p
+            className=" text-sm
+  sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed text-black max-w-2xl mx-auto"
+          >
             Explorez notre portefeuille de développements premium qui
             redéfinissent la vie et le travail de luxe à Marrakech.
           </p>

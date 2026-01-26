@@ -46,7 +46,9 @@ export default function Features() {
           <h2 className="text-4xl md:text-5xl font-bold text-primary">
             Commodités Luxe
           </h2>
-          <p className="text-lg text-black max-w-2xl mx-auto">
+          <p className="lg:text-lg
+  leading-snug
+  sm:leading-relaxed text-black max-w-2xl mx-auto">
             Chaque détail conçu pour votre confort et votre sérénité
           </p>
         </FadeInUp>

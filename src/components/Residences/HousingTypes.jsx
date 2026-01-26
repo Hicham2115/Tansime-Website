@@ -106,13 +106,21 @@ export default function HousingTypes() {
             <h3 className="text-3xl font-bold text-primary">
               Conçus pour le Confort et l'Élégance
             </h3>
-            <p className="text-black font-semibold leading-relaxed text-lg">
+            <p
+              className="text-black font-semibold lg:text-lg
+  leading-snug
+  sm:leading-relaxed"
+            >
               Chaque résidence est minutieusement conçue pour maximiser l'espace
               et la lumière, offrant un sanctuaire serein au cœur de la ville.
               Les finitions de haute qualité et les agencements réfléchis
               garantissent une expérience de vie premium.
             </p>
-            <p className="text-black font-semibold leading-relaxed text-lg">
+            <p
+              className="text-black font-semibold lg:text-lg
+  leading-snug
+  sm:leading-relaxed"
+            >
               Que vous choisissiez un studio douillet ou un spacieux duplex,
               vous trouverez une maison qui reflète parfaitement votre style et
               vos besoins.

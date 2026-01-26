@@ -111,20 +111,44 @@ export default function Hero() {
         <div className="flex flex-col lg:flex-row gap-12 items-start w-full max-w-6xl">
           {/* Left Side - Existing Text */}
           <FadeInUp delay={0.2} className="flex-1 space-y-6">
-            <p className="text-black text-lg leading-relaxed font-semibold">
+<p className="
+  text-sm
+  sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed
+  text-gray-800
+  font-medium
+">
               Le centre d'affaires TASNIME est composé de 72 plateaux bureaux
               avec des surfaces allant de 56 m2 à 126 m2 offrant une large
               fourchette de superficies qui s'adaptent aux différents besoins et
               budgets.
             </p>
 
-            <p className="text-black text-lg leading-relaxed font-semibold">
+<p className="
+  text-sm
+  sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed
+  text-gray-800
+  font-medium
+">
               Les plateaux bureaux sont dotés de finitions raffinées et de tous
               les équipements nécessaires au bon déroulement des activités
               professionnelles (climatisation centralisée, connexions
               électriques et informatiques, ....)
             </p>
-            <p className="text-black text-lg leading-relaxed font-semibold">
+<p className="
+  text-sm
+  sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed
+  text-gray-800
+  font-medium
+">
               Le centre d'affaires Tasnime est conçue selon une architecture
               sobre et moderne pensée autour des valeurs de qualité et de
               développement durable. La construction du projet a été réalisée

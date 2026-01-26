@@ -19,7 +19,10 @@ export default function Location() {
             <h2 className="text-4xl md:text-5xl font-bold text-primary">
               Localisation Stratégique
             </h2>
-            <p className="text-lg text-black">
+            <p className="sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed text-black">
               Parfaitement positionnée pour le succès des affaires
             </p>
           </FadeInUp>

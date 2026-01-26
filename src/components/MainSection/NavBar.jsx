@@ -69,7 +69,7 @@ export default function Component() {
                     <NavigationMenuItem className="w-full" key={link.href}>
                       <NavigationMenuLink asChild>
                         <Link
-                          className="py-1.5 hover:bg-transparent focus:bg-transparent data-[active]:bg-transparent hover:text-black focus:text-black data-[active]:text-black block w-full"
+                          className="py-2 px-4 font-medium transition-all rounded-lg hover:bg-transparent hover:underline hover:text-primary text-white focus:bg-transparent focus:text-primary data-[active]:bg-transparent data-[active]:text-black"
                           to={link.href}
                         >
                           {link.label}

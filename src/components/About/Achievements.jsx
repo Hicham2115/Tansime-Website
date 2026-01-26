@@ -16,7 +16,9 @@ export default function Achievements() {
           <h2 className="text-4xl md:text-5xl font-bold text-primary">
             Nos Réalisations
           </h2>
-          <p className="text-lg text-black max-w-2xl mx-auto">
+          <p className="lg:text-lg
+  leading-snug
+  sm:leading-relaxed text-black max-w-2xl mx-auto">
             Des chiffres qui reflètent notre engagement envers l'excellence
           </p>
         </FadeInUp>

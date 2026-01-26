@@ -62,7 +62,10 @@ export default function Hero() {
                 ease: "easeOut",
                 delay: 0.1,
               }}
-              className="text-5xl md:text-7xl font-bold tracking-tight text-white drop-shadow-lg"
+              className="text-5xl md:text-7xl  sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed font-bold tracking-tight text-white drop-shadow-lg"
             >
               TASNIME votre adresse d'exception au cœur <br />
               <span className="text-transparent bg-clip-text bg-[#b1cc4b]">
@@ -75,7 +78,11 @@ export default function Hero() {
               variants={container}
               initial="hidden"
               animate="visible"
-              className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed drop-shadow-md"
+              className=" text-sm
+  sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed text-white/90 max-w-3xl mx-auto drop-shadow-md"
             >
               {letters.map((char, index) => (
                 <motion.span
@@ -131,7 +138,17 @@ export default function Hero() {
         <div className="flex flex-col lg:flex-row gap-12 items-start w-full max-w-6xl">
           {/* Left Side - Existing Text */}
           <FadeInUp delay={0.2} className="flex-1 space-y-6">
-            <p className="text-black text-lg leading-relaxed font-semibold">
+            <p
+              className="
+  text-sm
+  sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed
+  text-gray-800
+  font-medium
+"
+            >
               Au cœur de la ville de Marrakech, Tasnime immobilier acteur de
               référence dans le domaine de l'immobilier lance deux projets
               exceptionnels résolument pensés dans une architecture
@@ -139,7 +156,17 @@ export default function Hero() {
               durable, qualité, innovation, et modernité :
             </p>
 
-            <p className="text-black text-lg leading-relaxed font-semibold">
+            <p
+              className="
+  text-sm
+  sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed
+  text-gray-800
+  font-medium
+"
+            >
               <span className="text-primary font-bold">
                 Le centre d'affaires TASNIME:
               </span>{" "}
@@ -149,7 +176,17 @@ export default function Hero() {
               besoins.
             </p>
 
-            <p className="text-black text-lg leading-relaxed font-semibold">
+            <p
+              className="
+  text-sm
+  sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed
+  text-gray-800
+  font-medium
+"
+            >
               <span className="text-primary font-bold">
                 Les résidences TASNIME:
               </span>{" "}
@@ -158,7 +195,17 @@ export default function Hero() {
               et jardins.
             </p>
 
-            <p className="text-black text-lg leading-relaxed font-semibold">
+            <p
+              className="
+  text-sm
+  sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed
+  text-gray-800
+  font-medium
+"
+            >
               Idéalement situés au croisement de deux boulevard structurants de
               la ville ocre (Bd de Safi et Av Charaf), les deux projets
               disposent d'un emplacement idéal avec une meilleure accessibilité
@@ -168,11 +215,31 @@ export default function Hero() {
 
           {/* Right Side - New Text */}
           <FadeInUp delay={0.4} className="flex-1 space-y-6">
-            <p className="text-black text-lg leading-relaxed font-semibold">
+            <p
+              className="
+  text-sm
+  sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed
+  text-gray-800
+  font-medium
+"
+            >
               l'accès autoroute Casa-Agadir, 5 min de la future gare TGV)
             </p>
 
-            <p className="text-black text-lg leading-relaxed font-semibold">
+            <p
+              className="
+  text-sm
+  sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed
+  text-gray-800
+  font-medium
+"
+            >
               Les deux projets se distinguent par la durabilité des matériaux de
               construction, la qualité des finitions et le caractère smart des
               équipements. L'efficacité énergétique est au cœur de la conception
@@ -180,7 +247,17 @@ export default function Hero() {
               constructives notamment :
             </p>
 
-            <p className="text-black text-lg leading-relaxed font-semibold">
+            <p
+              className="
+  text-sm
+  sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed
+  text-gray-800
+  font-medium
+"
+            >
               • Isolation thermique et phonique des bureaux avec double vitrages
               à faible émissivité thermique isolés par gaz d'argon Isolation
               thermique et phonique des appartements avec double vitrage au
@@ -192,7 +269,7 @@ export default function Hero() {
           </FadeInUp>
         </div>
       </section>
-     
+
       <div className="flex justify-center mt-10">
         <Button
           asChild

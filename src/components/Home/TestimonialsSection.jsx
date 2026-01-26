@@ -33,7 +33,13 @@ export default function TestimonialsSection() {
           <h2 className="text-4xl md:text-5xl font-bold text-primary">
             Expériences des Clients
           </h2>
-          <p className="text-lg text-black max-w-2xl mx-auto">
+          <p
+            className=" text-sm
+  sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed text-black max-w-2xl mx-auto"
+          >
             N'ayez pas juste notre parole. Voici ce que nos clients et
             partenaires précieux disent de leur expérience avec nous.
           </p>

@@ -36,12 +36,24 @@ export default function AboutSection() {
               À Propos de Tasnime Immobilier
             </h2>
             <div className="max-w-3xl mx-auto space-y-6">
-              <p className="text-lg text-black font-semibold leading-relaxed">
+              <p
+                className=" text-black font-semibold   text-sm
+  sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed"
+              >
                 Situé dans la ville dynamique de Marrakech, Tasnime Immobilier
                 est un développeur immobilier de premier plan engagé à livrer
                 des projets résidentiels et commerciaux exceptionnels.
               </p>
-              <p className="text-black text-base leading-relaxed">
+              <p
+                className="text-black  text-sm
+  sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed "
+              >
                 Avec plus d'une décennie d'expérience, nous sommes fiers de
                 transformer les visions en réalité. Notre portefeuille reflète
                 un mélange parfait d'architecture moderne, de pratiques durables
