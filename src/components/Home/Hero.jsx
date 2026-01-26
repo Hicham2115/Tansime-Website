@@ -29,7 +29,7 @@ export default function Hero() {
   };
   const handleScroll = () => {
     window.scrollBy({
-      top: 4900,
+      top: 5450,
       left: 0,
       behavior: "smooth",
     });
@@ -98,7 +98,7 @@ export default function Hero() {
               className="flex flex-col sm:flex-row gap-4 justify-center items-center"
             >
               <button
-                className="w-[260px] h-[56px] whitespace-nowrap py-4 px-8 flex gap-3 text-white font-bold text-md rounded-md shadow-lg transition-transform transform bg-transparent border-2 border-white hover:scale-105 hover:border-primary cursor-pointer hover:shadow-primary/50 hover:shadow-2xl focus:outline-none"
+                className="w-[260px] h-[56px] whitespace-nowrap py-4 px-8 flex gap-3 text-white font-bold text-md rounded-md shadow-lg transition-transform transform bg-transparent border-2 border-white hover:scale-105 hover:border-white cursor-pointer hover:shadow-primary/50 hover:shadow-2xl focus:outline-none"
                 id="startButton"
                 onClick={handleScroll}
               >
