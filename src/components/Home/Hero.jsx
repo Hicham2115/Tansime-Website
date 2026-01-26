@@ -62,14 +62,16 @@ export default function Hero() {
                 ease: "easeOut",
                 delay: 0.1,
               }}
-              className="text-5xl md:text-7xl  sm:text-base
-  lg:text-lg
-  leading-snug
-  sm:leading-relaxed font-bold tracking-tight text-white drop-shadow-lg"
+              className="text-center font-bold tracking-tight drop-shadow-lg"
             >
-              TASNIME votre adresse d'exception au cœur <br />
-              <span className="text-transparent bg-clip-text bg-[#b1cc4b]">
-                de Marrakech
+              {/* Big first line */}
+              <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-transparent bg-clip-text bg-[#daff54]">
+                TASNIME
+              </span>
+
+              {/* Smaller second line */}
+              <span className="block text-lg sm:text-xl md:text-2xl text-white mt-2">
+                votre adresse d'exception au cœur de Marrakech
               </span>
             </motion.h1>
 
