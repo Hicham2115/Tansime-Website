@@ -80,8 +80,9 @@ export default function Amenities() {
               vous ressourcer.
             </p>
             <p className="text-black font-semibold leading-relaxed text-lg">
-              From state-of-the-art conference rooms to relaxing lounge areas,
-              every detail is designed to enhance your workday.
+              Des salles de conférence ultramodernes aux espaces lounge
+              relaxants, chaque détail est conçu pour améliorer votre journée de
+              travail.
             </p>
           </FadeInUp>
 

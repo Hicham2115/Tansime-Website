@@ -5,7 +5,7 @@ export default function MissionStatement() {
     <section className="py-20 relative">
       <div className="container px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
-          <FadeInUp className="p-8 md:p-12 rounded-3xl bg-card/50 backdrop-blur-sm border border-white/10 hover:border-primary/30 transition-all duration-300">
+          <FadeInUp className="p-8 md:p-12 rounded-3xl bg-primary/90 backdrop-blur-sm border border-white/10 hover:border-primary/30 transition-all duration-300">
             <p className="text-lg md:text-xl text-white leading-relaxed text-center font-semibold">
               Tasnime Immobilier est un{" "}
               <span className="font-semibold text-[#b1cc4b]">
