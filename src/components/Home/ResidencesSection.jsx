@@ -1,9 +1,6 @@
 import { CheckCircle2 } from "lucide-react";
-import img1 from "@/assets/Imgs/A7409547.JPG";
-import img2 from "@/assets/Imgs/A7409553.JPG";
-import img3 from "@/assets/img77.jpg";
+
 import FadeInUp from "@/components/FadeInUp";
-import ScaleIn from "@/components/ScaleIn";
 
 export default function ResidencesSection() {
   return (
@@ -117,24 +114,6 @@ export default function ResidencesSection() {
               </p>
             </div>
           </FadeInUp>
-        </div>
-
-        {/* Image Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {[img1, img2, img3].map((img, idx) => (
-            <ScaleIn
-              key={idx}
-              delay={0.6 + idx * 0.2}
-              className="group relative aspect-[4/3] overflow-hidden rounded-2xl border border-white/10 shadow-2xl"
-            >
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-300 z-10" />
-              <img
-                src={img}
-                alt={`Tasnime Residence View ${idx + 1}`}
-                className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
-              />
-            </ScaleIn>
-          ))}
         </div>
       </div>
     </section>

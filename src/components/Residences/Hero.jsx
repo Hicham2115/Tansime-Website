@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Home, ArrowRight } from "lucide-react";
-import heroImg from "@/assets/Imgs/A7409497.jpg";
+import heroImg from "@/assets/img59.jpg";
 import FadeInUp from "@/components/FadeInUp";
 
 import A7409473 from "../../assets/Imgs/A7409578.JPG";
