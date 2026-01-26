@@ -43,18 +43,18 @@ export default function MissionStatement() {
             "
           >
             Tasnime Immobilier est un{" "}
-            <span className="font-semibold text-[#b1cc4b]">
+            <span className="font-semibold text-[#daff54]">
               acteur de référence
             </span>{" "}
             du secteur immobilier de Marrakech, livrant des projets qui
             combinent{" "}
-            <span className="font-semibold text-[#b1cc4b]">
+            <span className="font-semibold text-[#daff54]">
               l'architecture contemporaine
             </span>
             ,{" "}
-            <span className="font-semibold text-[#b1cc4b]">la durabilité</span>,
+            <span className="font-semibold text-[#daff54]">la durabilité</span>,
             et{" "}
-            <span className="font-semibold text-[#b1cc4b]">
+            <span className="font-semibold text-[#daff54]">
               l'artisanat supérieur
             </span>
             .

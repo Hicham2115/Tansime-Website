@@ -45,7 +45,7 @@ export default function Hero() {
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <FadeInUp className="flex justify-center">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/20 backdrop-blur-sm">
-                <Home className="w-4 h-4 text-[#b1cc4b]" />
+                <Home className="w-4 h-4 text-[#daff54]" />
                 <span className="text-sm font-medium text-white">
                   Vie Résidentielle
                 </span>
@@ -55,7 +55,7 @@ export default function Hero() {
             <FadeInUp delay={0.2}>
               <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white">
                 Résidences{" "}
-                <span className="text-transparent bg-clip-text bg-[#b1cc4b]">
+                <span className="text-transparent bg-clip-text bg-[#daff54]">
                   Tasnime
                 </span>
               </h1>

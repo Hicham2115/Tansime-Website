@@ -46,7 +46,7 @@ export default function Hero() {
             {/* Badge */}
             <FadeInUp className="flex justify-center -mt-16">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm">
-                <MapPin className="w-4 h-4 text-[#b1cc4b]" />
+                <MapPin className="w-4 h-4 text-[#daff54]" />
                 <span className="text-sm font-medium text-white">
                   Marrakech, Maroc
                 </span>
@@ -84,7 +84,7 @@ export default function Hero() {
   sm:text-base
   lg:text-lg
   leading-snug
-  sm:leading-relaxed text-white/90 max-w-3xl mx-auto drop-shadow-md"
+  sm:leading-relaxed text-white max-w-3xl mx-auto drop-shadow-md"
             >
               {letters.map((char, index) => (
                 <motion.span
@@ -103,9 +103,13 @@ export default function Hero() {
               className="flex flex-col sm:flex-row gap-4 justify-center items-center"
             >
               <button
+                onClick={() =>
+                  document
+                    .getElementById("FeaturedProjects")
+                    .scrollIntoView({ behavior: "smooth" })
+                }
                 className="w-[260px] h-[56px] whitespace-nowrap py-4 px-8 flex gap-3 text-white font-bold text-md rounded-md shadow-lg transition-transform transform bg-transparent border-2 border-white hover:scale-105 hover:border-white cursor-pointer hover:shadow-primary/50 hover:shadow-2xl focus:outline-none"
                 id="startButton"
-                onClick={handleScroll}
               >
                 Découvrir nos Projets
                 <ExternalLink className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />

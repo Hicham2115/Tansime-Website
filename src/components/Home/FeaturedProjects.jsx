@@ -34,7 +34,7 @@ export default function FeaturedProjects() {
   ];
 
   return (
-    <section className="py-24 relative -mt-20">
+    <section className="py-24 relative -mt-20" id="FeaturedProjects">
       <div className="container px-4 md:px-6">
         <FadeInUp className="text-center space-y-4 mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary">

@@ -3,6 +3,14 @@ import img1 from "@/assets/Imgs/A7409547.JPG";
 import img2 from "@/assets/Imgs/A7409507.JPG";
 import img3 from "@/assets/Imgs/A7409522.JPG";
 import img4 from "@/assets/Imgs/A7409473.JPG";
+
+import ch2App from "@/assets/Imgs/ch2-app.jpg";
+import chDup from "@/assets/Imgs/CH-DUP.jpg";
+import ch3Dup from "@/assets/Imgs/CH3-DUP.jpg";
+import espaceTv2 from "@/assets/Imgs/ESPACE TV 2.jpg";
+
+
+
 import FadeInUp from "@/components/FadeInUp";
 import ScaleIn from "@/components/ScaleIn";
 
@@ -109,7 +117,7 @@ export default function Amenities() {
                 className="rounded-2xl overflow-hidden h-48 border border-white/10 shadow-lg group hover:scale-[1.02] transition-transform duration-300"
               >
                 <img
-                  src={img1}
+                  src={espaceTv2}
                   alt="Business Center Interior"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
@@ -119,7 +127,7 @@ export default function Amenities() {
                 className="rounded-2xl overflow-hidden h-64 border border-white/10 shadow-lg group hover:scale-[1.02] transition-transform duration-300"
               >
                 <img
-                  src={img3}
+                  src={ch3Dup}
                   alt="Lounge Area"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
@@ -131,7 +139,7 @@ export default function Amenities() {
                 className="rounded-2xl overflow-hidden h-64 border border-white/10 shadow-lg group hover:scale-[1.02] transition-transform duration-300"
               >
                 <img
-                  src={img2}
+                  src={ch2App}
                   alt="Meeting Room"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
@@ -141,7 +149,7 @@ export default function Amenities() {
                 className="rounded-2xl overflow-hidden h-48 border border-white/10 shadow-lg group hover:scale-[1.02] transition-transform duration-300"
               >
                 <img
-                  src={img4}
+                  src={chDup}
                   alt="Office Space"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />

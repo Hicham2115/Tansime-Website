@@ -138,3 +138,29 @@
   left: 90% !important;
   transform: translateX(-50%);
 }
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #122124;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #256641 0%, #2d5a2f 100%);
+  border-radius: 10px;
+  border: 2px solid #122124;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #2d5a2f 0%, #3a7a3d 100%);
+  box-shadow: 0 0 10px rgba(232, 195, 46, 0.3);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #256641 #122124;
+}

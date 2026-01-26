@@ -11,6 +11,13 @@ import A7409558 from "../../assets/Imgs/A7409558.JPG";
 import A7409473 from "../../assets/Imgs/A7409473.JPG";
 import A7409562 from "../../assets/Imgs/A7409562.JPG";
 
+import kitchenette from "../../assets/Imgs/KITCHENETTE.jpg";
+import salon1 from "../../assets/Imgs/SALON 1.jpg";
+import salonDup from "../../assets/Imgs/SALON DUP.jpg";
+import salonSamKitch from "../../assets/Imgs/SALON-SAM-KITCH.jpg";
+import sam from "../../assets/Imgs/SAM.jpg";
+import samDup from "../../assets/Imgs/SAM-DUP.jpg";
+
 import { motion } from "framer-motion";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -46,7 +53,7 @@ export default function Hero() {
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <FadeInUp className="flex justify-center">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#328a93]/20 backdrop-blur-sm">
-                <Building2 className="w-4 h-4 text-[#b1cc4b]" />
+                <Building2 className="w-4 h-4 text-[#daff54]" />
                 <span className="text-sm font-medium text-white">
                   Immobilier Commercial
                 </span>
@@ -56,7 +63,7 @@ export default function Hero() {
             <FadeInUp delay={0.2}>
               <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white">
                 Centre d'Affaires{" "}
-                <span className="text-transparent bg-clip-text bg-[#b1cc4b]">
+                <span className="text-transparent bg-clip-text bg-[#daff54]">
                   Tasnime
                 </span>
               </h1>
@@ -111,7 +118,8 @@ export default function Hero() {
         <div className="flex flex-col lg:flex-row gap-12 items-start w-full max-w-6xl">
           {/* Left Side - Existing Text */}
           <FadeInUp delay={0.2} className="flex-1 space-y-6">
-<p className="
+            <p
+              className="
   text-sm
   sm:text-base
   lg:text-lg
@@ -119,14 +127,16 @@ export default function Hero() {
   sm:leading-relaxed
   text-gray-800
   font-medium
-">
+"
+            >
               Le centre d'affaires TASNIME est composé de 72 plateaux bureaux
               avec des surfaces allant de 56 m2 à 126 m2 offrant une large
               fourchette de superficies qui s'adaptent aux différents besoins et
               budgets.
             </p>
 
-<p className="
+            <p
+              className="
   text-sm
   sm:text-base
   lg:text-lg
@@ -134,13 +144,15 @@ export default function Hero() {
   sm:leading-relaxed
   text-gray-800
   font-medium
-">
+"
+            >
               Les plateaux bureaux sont dotés de finitions raffinées et de tous
               les équipements nécessaires au bon déroulement des activités
               professionnelles (climatisation centralisée, connexions
               électriques et informatiques, ....)
             </p>
-<p className="
+            <p
+              className="
   text-sm
   sm:text-base
   lg:text-lg
@@ -148,7 +160,8 @@ export default function Hero() {
   sm:leading-relaxed
   text-gray-800
   font-medium
-">
+"
+            >
               Le centre d'affaires Tasnime est conçue selon une architecture
               sobre et moderne pensée autour des valeurs de qualité et de
               développement durable. La construction du projet a été réalisée
@@ -182,22 +195,22 @@ export default function Hero() {
                 className="mySwiper2 w-full h-full"
               >
                 <SwiperSlide>
-                  <img src={A7409562} alt="Transportation" />
+                  <img src={samDup} alt="Transportation" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={A7409473} alt="Transportation" />
+                  <img src={sam} alt="Transportation" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={A7409558} alt="Transportation" />
+                  <img src={salonSamKitch} alt="Transportation" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={A7409515} alt="Transportation" />
+                  <img src={salonDup} alt="Transportation" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={A7409545} alt="Transportation" />
+                  <img src={salon1} alt="Transportation" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={A7409538} alt="Transportation" />
+                  <img src={kitchenette} alt="Transportation" />
                 </SwiperSlide>
               </Swiper>
             </div>
