@@ -21,7 +21,7 @@ import RUR04395 from "../assets/Imgs/RUR04395.jpg";
 // Interior / 3D visuals
 import chambre from "../assets/Imgs/CHAMBRE.jpg";
 import chambre2 from "../assets/Imgs/CHAMBRE 2.jpg";
-import ch2 from "../assets/Imgs/CH-2.jpg";
+import ch2 from "../assets/Imgs/CH-2s.jpg";
 import chApp from "../assets/Imgs/ch-app.jpg";
 import ch2App from "../assets/Imgs/ch2-app.jpg";
 import chDup from "../assets/Imgs/CH-DUP.jpg";
