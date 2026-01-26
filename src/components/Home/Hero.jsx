@@ -4,9 +4,9 @@ import { ArrowRight, ExternalLink, MailOpen, MapPin } from "lucide-react";
 import HeroPic from "@/assets/Imgs/RUR04229.jpg";
 import { motion } from "motion/react";
 import FadeInUp from "@/components/FadeInUp";
-import img1 from "@/assets/Imgs/A7409547.JPG";
-import img2 from "@/assets/Imgs/A7409553.JPG";
-import img3 from "@/assets/Imgs/A7409576.jpg";
+// import img1 from "@/assets/Imgs/A7409547.JPG";
+// import img2 from "@/assets/Imgs/A7409553.JPG";
+// import img3 from "@/assets/Imgs/A7409576.jpg";
 import ScaleIn from "@/components/ScaleIn";
 
 export default function Hero() {
