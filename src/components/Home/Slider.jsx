@@ -69,7 +69,7 @@ export default function Slider() {
               l'innovation et la conception sophistiquée.
             </p>
             <p
-              className="text-base text-gray-700  text-sm
+              className="text-base text-black  text-sm
   sm:text-base
   lg:text-lg
   leading-snug
@@ -163,19 +163,6 @@ export default function Slider() {
                   </div>
                 </div>
               </div>
-
-              <p
-                className="text-black  text-sm
-  sm:text-base
-  lg:text-lg
-  leading-snug
-  sm:leading-relaxed font-semibold pt-4 border-t border-primary/30"
-              >
-                Chaque résidence est conçue pour offrir une expérience de vie
-                exceptionnelle, fusionnant harmonieusement le design
-                contemporain avec l'élégance intemporelle et la responsabilité
-                environnementale.
-              </p>
             </FadeInUp>
 
             <FadeInUp delay={0.4} className="space-y-8">
@@ -206,6 +193,18 @@ export default function Slider() {
                   </SwiperSlide>
                 ))}
               </Swiper>
+              <p
+                className="text-black  text-sm
+  sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed font-semibold pt-4 border-t border-primary/30"
+              >
+                Chaque résidence est conçue pour offrir une expérience de vie
+                exceptionnelle, fusionnant harmonieusement le design
+                contemporain avec l'élégance intemporelle et la responsabilité
+                environnementale.
+              </p>
             </FadeInUp>
           </div>
         </div>

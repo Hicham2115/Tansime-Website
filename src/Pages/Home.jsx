@@ -14,7 +14,7 @@ export default function Home() {
       <AboutSection />
       <ResidencesSection />
       <Slider />
-      <StatsSection />
+      {/* <StatsSection /> */}
       <TestimonialsSection />
       <FeaturedProjects />
     </PageTransition>

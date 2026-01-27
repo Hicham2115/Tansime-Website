@@ -35,7 +35,7 @@ export default function AboutSection() {
             <h2 className="text-4xl md:text-5xl font-bold text-primary">
               À Propos de Tasnime Immobilier
             </h2>
-            <div className="max-w-3xl mx-auto space-y-6">
+            {/* <div className="max-w-3xl mx-auto space-y-6">
               <p
                 className=" text-black font-semibold   text-sm
   sm:text-base
@@ -61,7 +61,7 @@ export default function AboutSection() {
                 chaque propriété ne soit pas seulement une structure, mais une
                 maison.
               </p>
-            </div>
+            </div> */}
           </FadeInUp>
 
           {/* 3 Cards */}
@@ -99,8 +99,9 @@ export default function AboutSection() {
           <FadeInUp delay={0.6} className="text-center pt-8">
             <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/60 backdrop-blur-md border border-[#d9ac6f]/20 shadow-lg">
               <MapPin className="w-5 h-5 text-primary" />
-              <span className="text-black font-medium">
-                Situé stratégiquement à Bd de Safi & Av Charaf, Marrakech
+              <span className="text-black font-medium whitespace-nowrap">
+                Situé stratégiquement à Bd de Safi & Av Charaf quartier
+                Alizdihar, Marrakech
               </span>
             </div>
           </FadeInUp>
