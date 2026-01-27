@@ -9,7 +9,7 @@ import {
   Building2,
   MessageSquare,
 } from "lucide-react";
-import chambreImage from "@/assets/Imgs/SAM-DUP.jpg";
+import chambreImage from "@/assets/Imgs2/2.jpg";
 import PageTransition from "@/components/PageTransition";
 import FadeInUp from "@/components/FadeInUp";
 
@@ -47,12 +47,12 @@ export default function Contact() {
   return (
     <PageTransition className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat -mt-20"
           style={{ backgroundImage: `url(${chambreImage})` }}
         />
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-black/30" />
         <div className="absolute inset-0 bg-[linear-gradient(rgba(201,169,97,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(201,169,97,0.03)_1px,transparent_1px)] bg-[length:64px_64px]" />
 
         <div className="container relative z-10 px-4 md:px-6 py-16 sm:py-20">
@@ -100,7 +100,10 @@ export default function Contact() {
                   </h2>
                 </div>
 
-                <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+                <form
+                  onSubmit={handleSubmit}
+                  className="space-y-4 sm:space-y-6"
+                >
                   <div>
                     <label className="block text-sm font-semibold text-white mb-2">
                       Nom Complet *

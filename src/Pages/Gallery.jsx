@@ -55,6 +55,11 @@ export default function Gallery() {
 
   const galleryItems = [
     // Real photos
+    { id: 9, category: "residences", image: RUR04229 },
+    { id: 9, category: "residences", image: two },
+    { id: 9, category: "residences", image: RUR04395 },
+    { id: 8, category: "residences", image: LAST },
+
     { id: 1, category: "residences", image: A7409471 },
     { id: 2, category: "residences", image: A7409479 },
     { id: 3, category: "residences", image: A7409482 },
@@ -86,12 +91,7 @@ export default function Gallery() {
     { id: 27, category: "residences", image: samSalon },
     { id: 28, category: "residences", image: studioSalon },
 
-    { id: 9, category: "residences", image: RUR04395 },
-    { id: 9, category: "residences", image: RUR04229 },
 
-    { id: 9, category: "residences", image: two },
-
-    { id: 8, category: "residences", image: LAST },
   ];
 
   const filteredItems =

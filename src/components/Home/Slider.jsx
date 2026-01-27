@@ -14,11 +14,10 @@ import { EffectCards, Pagination, Navigation } from "swiper/modules";
 import { CheckCircle2 } from "lucide-react";
 import FadeInUp from "@/components/FadeInUp";
 
-import salonDup from "../../assets/Imgs/A7409578.JPG";
-import salonSamKitch from "../../assets/Imgs/A7409585.JPG";
-import samDup from "../../assets/Imgs/A7409574.JPG";
-import samSalon from "../../assets/Imgs/A7409576.JPG";
-import sam from "../../assets/Imgs/A7409471.JPG";
+import salonDup from "../../assets/Imgs2/A7409535.JPG";
+import salonSamKitch from "../../assets/Imgs2/2.jpg";
+import samDup from "../../assets/Imgs2/A7409570.JPG";
+import samSalon from "../../assets/Imgs2/A7409471.JPG";
 
 const sliderImages = [
   {
@@ -41,11 +40,6 @@ const sliderImages = [
     src: samSalon,
     title: "Espace Divertissement",
     description: "Espace dédié à la détente et aux loisirs",
-  },
-  {
-    src: sam,
-    title: "Chambre d'Invités",
-    description: "Hébergement confortable pour vos invités",
   },
 ];
 
@@ -186,13 +180,11 @@ export default function Slider() {
 
             <FadeInUp delay={0.4} className="space-y-8">
               <Swiper
-                className="mySwiper"
-                effect={"cards"}
-                grabCursor={true}
+                effect="cards"
+                grabCursor
                 pagination={{ clickable: true }}
-                navigation={true}
-                modules={[EffectCards, Pagination, Navigation]}
-                loop={true}
+                modules={[EffectCards, Pagination]}
+                loop={false}
               >
                 {sliderImages.map((slide, index) => (
                   <SwiperSlide key={index} className="relative">
@@ -202,14 +194,14 @@ export default function Slider() {
                         alt={slide.title}
                         className="w-full h-full object-cover"
                       />
-                      <div className="absolute bottom-5 left-0 right-0  p-4">
+                      {/* <div className="absolute bottom-5 left-0 right-0  p-4">
                         <h3 className="text-white font-bold text-lg">
                           {slide.title}
                         </h3>
                         <p className="text-white text-sm">
                           {slide.description}
                         </p>
-                      </div>
+                      </div> */}
                     </div>
                   </SwiperSlide>
                 ))}
