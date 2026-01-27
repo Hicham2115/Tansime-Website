@@ -14,15 +14,15 @@ import ScrollToTopButton from "./components/MainSection/ScrollToTopButton.jsx";
 import { AnimatePresence } from "motion/react";
 import { Toaster } from "@/components/ui/sonner";
 
-// function ScrollToTop() {
-//   const { pathname } = useLocation();
+function ScrollToTop() {
+  const { pathname } = useLocation();
 
-//   useEffect(() => {
-//     window.scrollTo(0, 0);
-//   }, [pathname]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
-//   return null;
-// }
+  return null;
+}
 
 export default function App() {
   const location = useLocation();
@@ -31,7 +31,7 @@ export default function App() {
     <>
       <Background />
       <NavBar />
-      {/* <ScrollToTop /> */}
+      <ScrollToTop />  
       <ScrollToTopButton />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>

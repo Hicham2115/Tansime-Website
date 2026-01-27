@@ -1,10 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Building2, ArrowRight } from "lucide-react";
-import bussinesspic from "@/assets/img77.jpg";
+import bussinesspic from "@/assets/bureau1 (1).png";
 import FadeInUp from "@/components/FadeInUp";
 
-import sam from "../../assets/bureau1 (1).png";
 import samDup from "../../assets/bureau1 (2).png";
 
 import { motion } from "framer-motion";
@@ -33,10 +32,10 @@ export default function Hero() {
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover -mt-20 bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${bussinesspic})` }}
+          style={{ backgroundImage: `url("${bussinesspic}")` }}
         ></div>
         <div className="absolute inset-0 bg-black/40"></div>
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(201,169,97,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(201,169,97,0.03)_1px,transparent_1px)] bg-size-[64px_64px]" />
+        {/* <div className="absolute inset-0 bg-[linear-gradient(rgba(201,169,97,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(201,169,97,0.03)_1px,transparent_1px)] bg-size-[64px_64px]" /> */}
 
         <div className="container relative z-10 px-4 md:px-6 py-20">
           <div className="max-w-4xl mx-auto text-center space-y-8">
@@ -69,7 +68,7 @@ export default function Hero() {
             <FadeInUp delay={0.6} className="flex justify-center">
               <Link
                 to="/contact"
-                className="w-[360px] h-[56px] relative cursor-pointer py-4 px-4 text-center font-barlow inline-flex justify-center items-center text-base uppercase text-white rounded-lg border-solid transition-transform duration-300 ease-in-out group outline-offset-4 focus:outline focus:outline-2 focus:outline-white focus:outline-offset-4 overflow-hidden hover:scale-105 active:scale-95"
+                className="w-[360px] h-[56px] relative cursor-pointer py-4 px-4 text-center font-barlow inline-flex justify-center items-center text-base uppercase text-white rounded-lg border-solid transition-transform duration-300 ease-in-out group outline-offset-4 focus:outline-2 focus:outline-white focus:outline-offset-4 overflow-hidden hover:scale-105 active:scale-95"
               >
                 <span className="relative z-20 flex font-bold items-center gap-2">
                   Demander Plus d'Informations
@@ -187,7 +186,7 @@ export default function Hero() {
                   <img src={samDup} alt="Transportation" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={sam} alt="Transportation" />
+                  <img src={bussinesspic} alt="Transportation" />
                 </SwiperSlide>
                 {/* <SwiperSlide>
                   <img src={salonSamKitch} alt="Transportation" />
