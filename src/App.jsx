@@ -12,6 +12,7 @@ import Residences from "./Pages/Residences.jsx";
 import Gallery from "./Pages/Gallery.jsx";
 import ScrollToTopButton from "./components/MainSection/ScrollToTopButton.jsx";
 import { AnimatePresence } from "motion/react";
+import { Toaster } from "@/components/ui/sonner";
 
 // function ScrollToTop() {
 //   const { pathname } = useLocation();
@@ -44,6 +45,7 @@ export default function App() {
         </Routes>
       </AnimatePresence>
       <Footer />
+      <Toaster />
     </>
   );
 }

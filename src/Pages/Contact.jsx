@@ -1,48 +1,64 @@
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
+import { useForm } from "@tanstack/react-form";
+import React from "react";
+import { z } from "zod";
+import axios from "axios";
 import {
-  Mail,
-  Phone,
-  MapPin,
   Send,
   CheckCircle,
-  Building2,
   MessageSquare,
+  Building2,
+  Phone,
+  Mail,
+  MapPin,
 } from "lucide-react";
+import { toast } from "sonner";
 import chambreImage from "@/assets/Imgs2/2.jpg";
 import PageTransition from "@/components/PageTransition";
 import FadeInUp from "@/components/FadeInUp";
 
+// Zod schema
+const contactSchema = z.object({
+  fullName: z.string().min(2, "Nom complet requis"),
+  email: z.string().email("Adresse e-mail invalide"),
+  phone: z
+    .string()
+    .min(8, "Numéro de téléphone invalide")
+    .max(15, "Numéro de téléphone invalide"),
+  message: z.string().min(5, "Message trop court"),
+});
+
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    fullName: "",
-    email: "",
-    phone: "",
-    message: "",
+  const form = useForm({
+    defaultValues: {
+      fullName: "",
+      email: "",
+      phone: "",
+      message: "",
+      isSubmitted: false, // keeping this in form state effectively
+    },
+    onSubmit: async ({ value: values }) => {
+      // Logic from previous handleSubmit
+      try {
+        await axios.post("https://formspree.io/f/xkorkbna", {
+          fullName: values.fullName,
+          email: values.email,
+          phone: values.phone,
+          message: values.message,
+        });
+
+        setIsSuccess(true);
+        toast.success("Message envoyé avec succès !");
+        form.reset();
+        setTimeout(() => setIsSuccess(false), 3000);
+      } catch (error) {
+        console.error(error);
+        toast.error("Une erreur est survenue. Veuillez réessayer plus tard.");
+      }
+    },
   });
 
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-
-      setTimeout(() => {
-        setIsSubmitted(false);
-        setFormData({ fullName: "", email: "", phone: "", message: "" });
-      }, 3000);
-    }, 1500);
-  };
+  // Local state for success message to mimic user's intent
+  const [isSuccess, setIsSuccess] = React.useState(false);
 
   return (
     <PageTransition className="min-h-screen">
@@ -101,96 +117,178 @@ export default function Contact() {
                 </div>
 
                 <form
-                  onSubmit={handleSubmit}
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    form.handleSubmit();
+                  }}
                   className="space-y-4 sm:space-y-6"
                 >
-                  <div>
-                    <label className="block text-sm font-semibold text-white mb-2">
-                      Nom Complet *
-                    </label>
-                    <input
-                      type="text"
-                      name="fullName"
-                      value={formData.fullName}
-                      onChange={handleInputChange}
-                      required
-                      placeholder="Entrez votre nom complet"
-                      className="w-full px-4 py-3 bg-white/5 border-2 border-white rounded-xl focus:border-primary focus:outline-none transition-colors duration-300 text-white placeholder:text-white/60"
-                    />
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-semibold text-white mb-2">
-                        Adresse E-mail *
-                      </label>
-                      <input
-                        type="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        required
-                        placeholder="votre@email.com"
-                        className="w-full px-4 py-3 bg-white/5 border-2 border-white rounded-xl focus:border-primary focus:outline-none transition-colors duration-300 text-white placeholder:text-white/60"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-semibold text-white mb-2">
-                        Numéro de Téléphone *
-                      </label>
-                      <input
-                        type="tel"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleInputChange}
-                        required
-                        placeholder="+212 XXX XXX XXX"
-                        className="w-full px-4 py-3 bg-white/5 border-2 border-white rounded-xl focus:border-primary focus:outline-none transition-colors duration-300 text-white placeholder:text-white/60"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-semibold text-white mb-2">
-                      Message *
-                    </label>
-                    <textarea
-                      name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      required
-                      rows={5}
-                      placeholder="Parlez-nous de votre demande..."
-                      className="w-full px-4 py-3 bg-white/5 border-2 border-white rounded-xl focus:border-primary focus:outline-none transition-colors duration-300 resize-none text-white placeholder:text-white/60"
-                    />
-                  </div>
-
-                  <button
-                    type="submit"
-                    disabled={isSubmitting || isSubmitted}
-                    className={`group relative w-full px-6 py-3 rounded-xl font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 flex items-center justify-center gap-3 cursor-pointer ${
-                      isSubmitted
-                        ? "bg-primary/90 text-white"
-                        : "bg-primary/90 text-white hover:bg-primary/90"
-                    }`}
-                  >
-                    {isSubmitting ? (
-                      <>
-                        <div className="w-5 h-5 border-3 border-white border-t-transparent rounded-full animate-spin" />
-                        <span>Envoi en cours...</span>
-                      </>
-                    ) : isSubmitted ? (
-                      <>
-                        <CheckCircle className="w-6 h-6" />
-                        <span>Message Envoyé !</span>
-                      </>
-                    ) : (
-                      <>
-                        <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-                        <span>Envoyer le Message</span>
-                      </>
+                  {/* Full Name */}
+                  <form.Field
+                    name="fullName"
+                    validators={{
+                      onChange: ({ value }) => {
+                        const result =
+                          contactSchema.shape.fullName.safeParse(value);
+                        return result.success
+                          ? undefined
+                          : result.error.issues[0].message;
+                      },
+                    }}
+                    children={(field) => (
+                      <div>
+                        <label className="block text-sm font-semibold text-white mb-2">
+                          Nom Complet *
+                        </label>
+                        <input
+                          type="text"
+                          value={field.state.value}
+                          onBlur={field.handleBlur}
+                          onChange={(e) => field.handleChange(e.target.value)}
+                          placeholder="Entrez votre nom complet"
+                          className="w-full px-4 py-3 bg-white/5 border-2 border-white rounded-xl focus:border-primary focus:outline-none transition-colors duration-300 text-white placeholder:text-white/60"
+                        />
+                        {field.state.meta.errors ? (
+                          <p className="text-xs text-red-400 mt-1">
+                            {field.state.meta.errors.join(", ")}
+                          </p>
+                        ) : null}
+                      </div>
                     )}
-                  </button>
+                  />
+
+                  {/* Email & Phone */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <form.Field
+                      name="email"
+                      validators={{
+                        onChange: ({ value }) => {
+                          const result =
+                            contactSchema.shape.email.safeParse(value);
+                          return result.success
+                            ? undefined
+                            : result.error.issues[0].message;
+                        },
+                      }}
+                      children={(field) => (
+                        <div>
+                          <label className="block text-sm font-semibold text-white mb-2">
+                            Adresse E-mail *
+                          </label>
+                          <input
+                            type="email"
+                            value={field.state.value}
+                            onBlur={field.handleBlur}
+                            onChange={(e) => field.handleChange(e.target.value)}
+                            placeholder="votre@email.com"
+                            className="w-full px-4 py-3 bg-white/5 border-2 border-white rounded-xl focus:border-primary focus:outline-none transition-colors duration-300 text-white placeholder:text-white/60"
+                          />
+                          {field.state.meta.errors ? (
+                            <p className="text-xs text-red-400 mt-1">
+                              {field.state.meta.errors.join(", ")}
+                            </p>
+                          ) : null}
+                        </div>
+                      )}
+                    />
+
+                    <form.Field
+                      name="phone"
+                      validators={{
+                        onChange: ({ value }) => {
+                          const result =
+                            contactSchema.shape.phone.safeParse(value);
+                          return result.success
+                            ? undefined
+                            : result.error.issues[0].message;
+                        },
+                      }}
+                      children={(field) => (
+                        <div>
+                          <label className="block text-sm font-semibold text-white mb-2">
+                            Numéro de Téléphone *
+                          </label>
+                          <input
+                            type="tel"
+                            value={field.state.value}
+                            onBlur={field.handleBlur}
+                            onChange={(e) => field.handleChange(e.target.value)}
+                            placeholder="+212 XXX XXX XXX"
+                            className="w-full px-4 py-3 bg-white/5 border-2 border-white rounded-xl focus:border-primary focus:outline-none transition-colors duration-300 text-white placeholder:text-white/60"
+                          />
+                          {field.state.meta.errors ? (
+                            <p className="text-xs text-red-400 mt-1">
+                              {field.state.meta.errors.join(", ")}
+                            </p>
+                          ) : null}
+                        </div>
+                      )}
+                    />
+                  </div>
+
+                  {/* Message */}
+                  <form.Field
+                    name="message"
+                    validators={{
+                      onChange: ({ value }) => {
+                        const result =
+                          contactSchema.shape.message.safeParse(value);
+                        return result.success
+                          ? undefined
+                          : result.error.issues[0].message;
+                      },
+                    }}
+                    children={(field) => (
+                      <div>
+                        <label className="block text-sm font-semibold text-white mb-2">
+                          Message *
+                        </label>
+                        <textarea
+                          rows={5}
+                          value={field.state.value}
+                          onBlur={field.handleBlur}
+                          onChange={(e) => field.handleChange(e.target.value)}
+                          placeholder="Parlez-nous de votre demande..."
+                          className="w-full px-4 py-3 bg-white/5 border-2 border-white rounded-xl focus:border-primary focus:outline-none transition-colors duration-300 resize-none text-white placeholder:text-white/60"
+                        />
+                        {field.state.meta.errors ? (
+                          <p className="text-xs text-red-400 mt-1">
+                            {field.state.meta.errors.join(", ")}
+                          </p>
+                        ) : null}
+                      </div>
+                    )}
+                  />
+
+                  {/* Submit Button */}
+                  <form.Subscribe
+                    selector={(state) => [state.canSubmit, state.isSubmitting]}
+                    children={([canSubmit, isSubmitting]) => (
+                      <button
+                        type="submit"
+                        disabled={!canSubmit || isSubmitting}
+                        className="group relative w-full px-6 py-3 rounded-xl font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 flex items-center justify-center gap-3 cursor-pointer bg-primary/90 text-white disabled:opacity-50 disabled:cursor-not-allowed"
+                      >
+                        {isSubmitting ? (
+                          <>
+                            <div className="w-5 h-5 border-3 border-white border-t-transparent rounded-full animate-spin" />
+                            <span>Envoi en cours...</span>
+                          </>
+                        ) : isSuccess ? (
+                          <>
+                            <CheckCircle className="w-6 h-6" />
+                            <span>Message Envoyé !</span>
+                          </>
+                        ) : (
+                          <>
+                            <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                            <span>Envoyer le Message</span>
+                          </>
+                        )}
+                      </button>
+                    )}
+                  />
                 </form>
               </div>
             </FadeInUp>
@@ -258,7 +356,7 @@ export default function Contact() {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   className="w-full h-full"
-                ></iframe>
+                />
               </div>
             </FadeInUp>
           </div>

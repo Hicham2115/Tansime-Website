@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import axios from "axios";
 import {
   MapPin,
   Phone,
@@ -9,11 +11,35 @@ import {
   Building2,
   Home,
   ArrowRight,
+  Loader2,
+  CheckCircle,
 } from "lucide-react";
 import Logo from "../../assets/Logo.png";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState("idle"); // idle, loading, success, error
+
+  const handleSubscribe = async (e) => {
+    e.preventDefault();
+    if (!email) return;
+
+    setStatus("loading");
+    try {
+      await axios.post("https://formspree.io/f/xkorkbna", {
+        email: email,
+        message: "New newsletter subscription from footer",
+      });
+      setStatus("success");
+      setEmail("");
+      setTimeout(() => setStatus("idle"), 3000);
+    } catch (error) {
+      console.error("Subscription error:", error);
+      setStatus("error");
+      setTimeout(() => setStatus("idle"), 3000);
+    }
+  };
 
   const quickLinks = [
     { name: "Accueil", href: "/" },
@@ -66,16 +92,46 @@ function Footer() {
             {/* Newsletter */}
             <div className="space-y-3">
               <h4 className="font-bold text-sm text-white">Rester Informé</h4>
-              <div className="flex">
+              <form onSubmit={handleSubscribe} className="flex relative">
                 <input
                   type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   placeholder="Votre email"
-                  className="flex-1 px-4 py-2 bg-card border border-border rounded-l-lg focus:outline-none focus:border-primary transition-colors text-sm text-foreground"
+                  required
+                  disabled={status === "loading" || status === "success"}
+                  className="flex-1 px-4 py-2 bg-card border border-border rounded-l-lg focus:outline-none focus:border-primary transition-colors text-sm text-foreground disabled:opacity-70"
                 />
-                <button className="px-4 py-2 bg-[#b1cc4b] hover:bg-[#b1cc4b]/90 text-primary-foreground rounded-r-lg transition-all duration-300 flex items-center justify-center group">
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                <button
+                  type="submit"
+                  disabled={status === "loading" || status === "success"}
+                  className={`px-4 py-2 text-primary-foreground rounded-r-lg transition-all duration-300 flex items-center justify-center group ${
+                    status === "success"
+                      ? "bg-green-600"
+                      : status === "error"
+                        ? "bg-red-600"
+                        : "bg-[#b1cc4b] hover:bg-[#b1cc4b]/90"
+                  }`}
+                >
+                  {status === "loading" ? (
+                    <Loader2 className="w-4 h-4 animate-spin" />
+                  ) : status === "success" ? (
+                    <CheckCircle className="w-4 h-4" />
+                  ) : (
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  )}
                 </button>
-              </div>
+              </form>
+              {status === "success" && (
+                <p className="text-xs text-green-500 animate-in fade-in slide-in-from-top-1">
+                  Merci de votre inscription !
+                </p>
+              )}
+              {status === "error" && (
+                <p className="text-xs text-red-500 animate-in fade-in slide-in-from-top-1">
+                  Une erreur est survenue. Réessayez.
+                </p>
+              )}
             </div>
           </div>
 
