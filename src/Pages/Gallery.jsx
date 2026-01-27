@@ -4,39 +4,40 @@ import FadeInUp from "@/components/FadeInUp";
 import ScaleIn from "@/components/ScaleIn";
 
 // Real photos
-import A7409457 from "../assets/Imgs/A7409547.JPG";
-import A7409460 from "../assets/Imgs/A7409553.JPG";
-import A7409471 from "../assets/Imgs/A7409558.JPG";
-import A7409473 from "../assets/Imgs/A7409562.JPG";
-import A7409479 from "../assets/Imgs/A7409563.JPG";
-import A7409482 from "../assets/Imgs/A7409570.JPG";
-import A7409486 from "../assets/Imgs/A7409574.JPG";
-import A7409489 from "../assets/Imgs/A7409576.JPG";
-import A7409494 from "../assets/Imgs/A7409585.JPG";
-import A7409497 from "../assets/Imgs/A7409586.JPG";
-import A7409507 from "../assets/Imgs/A7409595.JPG";
-// import A7409515 from "../assets/Imgs/CH-2.JPG";
-import RUR04395 from "../assets/Imgs/RUR04395.jpg";
+import A7409471 from "@/assets/Imgs2/A7409471.JPG";
+import A7409457 from "@/assets/Imgs2/A7409457.JPG";
+import A7409479 from "@/assets/Imgs2/A7409479.JPG";
+import A7409482 from "@/assets/Imgs2/A7409482.JPG";
+import A7409494 from "@/assets/Imgs2/A7409494.JPG";
+import A7409535 from "@/assets/Imgs2/A7409535.JPG";
+import A7409563 from "@/assets/Imgs2/A7409563.JPG";
+import A7409570 from "@/assets/Imgs2/A7409570.JPG";
+import LAST from "@/assets/Imgs2/LAST.JPG";
+import two from "@/assets/Imgs2/2.jpg";
 
-// Interior / 3D visuals
-import chambre from "../assets/Imgs/CHAMBRE.jpg";
-import chambre2 from "../assets/Imgs/CHAMBRE 2.jpg";
-import ch2 from "../assets/Imgs/CH-2s.jpg";
-import chApp from "../assets/Imgs/ch-app.jpg";
-import ch2App from "../assets/Imgs/ch2-app.jpg";
-import chDup from "../assets/Imgs/CH-DUP.jpg";
-import ch3Dup from "../assets/Imgs/CH3-DUP.jpg";
-import ch4Dup from "../assets/Imgs/CH4-DUP.jpg";
-import escalierDup from "../assets/Imgs/ESCALIER DUP.jpg";
-import espaceTv2 from "../assets/Imgs/ESPACE TV 2.jpg";
-import kitchenette from "../assets/Imgs/KITCHENETTE.jpg";
-import salon1 from "../assets/Imgs/SALON 1.jpg";
-import salonDup from "../assets/Imgs/SALON DUP.jpg";
-import salonSamKitch from "../assets/Imgs/SALON-SAM-KITCH.jpg";
-import sam from "../assets/Imgs/SAM.jpg";
-import samDup from "../assets/Imgs/SAM-DUP.jpg";
-import samSalon from "../assets/Imgs/SAM-SALON.jpg";
-import studioSalon from "../assets/Imgs/STUDIO SALON.jpg";
+// Interior / 3D
+import chambre from "@/assets/Imgs/CHAMBRE.jpg";
+import chambre2 from "@/assets/Imgs/CHAMBRE 2.jpg";
+import ch2 from "@/assets/Imgs/CH-2s.jpg";
+import chApp from "@/assets/Imgs/ch-app.jpg";
+import ch2App from "@/assets/Imgs/ch2-app.jpg";
+import chDup from "@/assets/Imgs/CH-DUP.jpg";
+import ch3Dup from "@/assets/Imgs/CH3-DUP.jpg";
+import ch4Dup from "@/assets/Imgs/CH4-DUP.jpg";
+import escalierDup from "@/assets/Imgs/ESCALIER DUP.jpg";
+import espaceTv2 from "@/assets/Imgs/ESPACE TV 2.jpg";
+import kitchenette from "@/assets/Imgs/KITCHENETTE.jpg";
+import salon1 from "@/assets/Imgs/SALON 1.jpg";
+import salonDup from "@/assets/Imgs/SALON DUP.jpg";
+import salonSamKitch from "@/assets/Imgs/SALON-SAM-KITCH.jpg";
+import sam from "@/assets/Imgs/SAM.jpg";
+import samDup from "@/assets/Imgs/SAM-DUP.jpg";
+import samSalon from "@/assets/Imgs/SAM-SALON.jpg";
+import studioSalon from "@/assets/Imgs/STUDIO SALON.jpg";
+
+import RUR04229 from "@/assets/Imgs/RUR04229.jpg";
+import RUR04328 from "@/assets/Imgs/RUR04328.jpg";
+import RUR04395 from "@/assets/Imgs/RUR04395.jpg";
 
 import PageTransition from "@/components/PageTransition";
 
@@ -54,39 +55,43 @@ export default function Gallery() {
 
   const galleryItems = [
     // Real photos
-    { id: 1, category: "residences", image: A7409457 },
-    { id: 2, category: "residences", image: A7409460 },
-    { id: 3, category: "residences", image: A7409471 },
-    { id: 4, category: "residences", image: A7409473 },
-    { id: 5, category: "residences", image: A7409479 },
-    { id: 6, category: "residences", image: A7409482 },
-    { id: 7, category: "residences", image: A7409486 },
-    { id: 8, category: "residences", image: A7409489 },
-    { id: 9, category: "residences", image: A7409494 },
-    { id: 10, category: "residences", image: A7409497 },
-    { id: 11, category: "residences", image: A7409507 },
-    // { id: 12, category: "residences", image: A7409515 },
-    { id: 13, category: "residences", image: RUR04395 },
+    { id: 1, category: "residences", image: A7409471 },
+    { id: 2, category: "residences", image: A7409479 },
+    { id: 3, category: "residences", image: A7409482 },
+
+    { id: 3, category: "residences", image: A7409563 },
+    { id: 3, category: "residences", image: A7409535 },
+    { id: 3, category: "residences", image: A7409457 },
+
+    { id: 6, category: "residences", image: A7409494 },
+    { id: 7, category: "residences", image: A7409570 },
 
     // 3D / interior visuals
-    { id: 14, category: "residences", image: chambre },
-    { id: 15, category: "residences", image: chambre2 },
-    { id: 16, category: "residences", image: ch2 },
-    { id: 17, category: "residences", image: chApp },
-    { id: 18, category: "residences", image: ch2App },
-    { id: 19, category: "residences", image: chDup },
-    { id: 20, category: "residences", image: ch3Dup },
-    { id: 21, category: "residences", image: ch4Dup },
-    { id: 22, category: "residences", image: escalierDup },
-    { id: 23, category: "residences", image: espaceTv2 },
-    { id: 24, category: "residences", image: kitchenette },
-    { id: 25, category: "residences", image: salon1 },
-    { id: 26, category: "residences", image: salonDup },
-    { id: 27, category: "residences", image: salonSamKitch },
-    { id: 28, category: "residences", image: sam },
-    { id: 29, category: "residences", image: samDup },
-    { id: 30, category: "residences", image: samSalon },
-    { id: 31, category: "residences", image: studioSalon },
+    { id: 11, category: "residences", image: chambre },
+    { id: 12, category: "residences", image: chambre2 },
+    { id: 13, category: "residences", image: ch2 },
+    { id: 14, category: "residences", image: chApp },
+    { id: 15, category: "residences", image: ch2App },
+    { id: 16, category: "residences", image: chDup },
+    { id: 17, category: "residences", image: ch3Dup },
+    { id: 18, category: "residences", image: ch4Dup },
+    { id: 19, category: "residences", image: escalierDup },
+    { id: 20, category: "residences", image: espaceTv2 },
+    { id: 21, category: "residences", image: kitchenette },
+    { id: 22, category: "residences", image: salon1 },
+    { id: 23, category: "residences", image: salonDup },
+    { id: 24, category: "residences", image: salonSamKitch },
+    { id: 25, category: "residences", image: sam },
+    { id: 26, category: "residences", image: samDup },
+    { id: 27, category: "residences", image: samSalon },
+    { id: 28, category: "residences", image: studioSalon },
+
+    { id: 9, category: "residences", image: RUR04395 },
+    { id: 9, category: "residences", image: RUR04229 },
+
+    { id: 9, category: "residences", image: two },
+
+    { id: 8, category: "residences", image: LAST },
   ];
 
   const filteredItems =

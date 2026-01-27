@@ -1,5 +1,5 @@
 import { Target } from "lucide-react";
-import heroImg from "@/assets/Imgs/RUR04328.jpg";
+import heroImg from "@/assets/Imgs/RUR04229.jpg";
 import FadeInUp from "@/components/FadeInUp";
 
 export default function Hero() {

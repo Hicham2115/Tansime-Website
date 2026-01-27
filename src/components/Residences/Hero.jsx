@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 import { Home, ArrowRight } from "lucide-react";
 import heroImg from "@/assets/img59.jpg";
 import FadeInUp from "@/components/FadeInUp";
+import HeroVideo from "../../assets/VID TASNIME - SITEWEB 2.mp4";
 
-import A7409473 from "../../assets/Imgs/A7409578.JPG";
-import A7409479 from "../../assets/Imgs/A7409595.JPG";
-import A7409482 from "../../assets/Imgs/A7409497.JPG";
-import A7409486 from "../../assets/Imgs/A7409486.JPG";
-import A7409489 from "../../assets/Imgs/A7409586.JPG";
-import A7409494 from "../../assets/Imgs/A7409460.JPG";
+import A7409473 from "../../assets/Imgs2/A7409471.JPG";
+import A7409479 from "../../assets/Imgs2/A7409457.JPG";
+import A7409482 from "../../assets/Imgs2/A7409482.JPG";
+import A7409486 from "../../assets/Imgs2/A7409494.JPG";
+import A7409489 from "../../assets/Imgs2/A7409535.JPG";
+import A7409494 from "../../assets/Imgs2/A7409563.JPG";
 
 import { motion } from "framer-motion";
 
@@ -34,11 +35,20 @@ export default function Hero() {
   return (
     <>
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
-        <div
+        {/* Background Video */}
+        {/* <div
           className="absolute inset-0 bg-cover -mt-20 bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${heroImg})` }}
-        ></div>
+        ></div> */}
+
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          src={HeroVideo}
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
         <div className="absolute inset-0 bg-black/40"></div>
 
         <div className="container relative z-10 px-4 md:px-6 py-20">

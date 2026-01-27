@@ -4,6 +4,7 @@ import { ArrowRight, ExternalLink, MailOpen, MapPin } from "lucide-react";
 import HeroPic from "@/assets/Imgs/RUR04229.jpg";
 import { motion } from "motion/react";
 import FadeInUp from "@/components/FadeInUp";
+import HeroVideo from "../../assets/VID TASNIME - SITEWEB 2.mp4";
 
 export default function Hero() {
   const text =
@@ -33,11 +34,20 @@ export default function Hero() {
   return (
     <>
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
-        <div
+        {/* Background Video */}
+        {/* <div
           className="absolute inset-0 bg-cover -mt-20 bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${HeroPic})` }}
-        ></div>
+        ></div> */}
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          src={HeroVideo}
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
+
         {/* Dark Overlay for better text readability */}
         <div className="absolute inset-0 bg-black/40"></div>
 

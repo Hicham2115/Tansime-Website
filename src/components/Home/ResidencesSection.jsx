@@ -1,9 +1,12 @@
 import { CheckCircle2 } from "lucide-react";
 
 import FadeInUp from "@/components/FadeInUp";
-import img1 from "@/assets/Imgs/A7409547.JPG";
-import img2 from "@/assets/Imgs/A7409553.JPG";
-import img3 from "@/assets/Imgs/A7409576.JPG";
+
+import img1 from "@/assets/Imgs2/A7409482.JPG";
+import img2 from "@/assets/Imgs2/A7409494.JPG";
+import img3 from "@/assets/Imgs2/A7409479.JPG";
+
+
 import ScaleIn from "@/components/ScaleIn";
 
 export default function ResidencesSection() {
@@ -37,22 +40,26 @@ export default function ResidencesSection() {
             <h2 className="text-3xl md:text-4xl font-bold text-primary">
               RÉSIDENCES TASNIME
             </h2>
-            <p className="text-black  text-sm
+            <p
+              className="text-black  text-sm
   sm:text-base
   lg:text-lg
   leading-snug
-  sm:leading-relaxed font-semibold">
+  sm:leading-relaxed font-semibold"
+            >
               Les Résidences Tasnime se distinguent par la convivialité des
               espaces, la durabilité des matériaux de construction et la qualité
               des finitions. Le projet comprend la création de plus de 40
               commerces et showrooms en rez-de-chaussée pour l'activité
               commerciale, y compris un supermarché (marché MARJANE).
             </p>
-            <p className="text-black  text-sm
+            <p
+              className="text-black  text-sm
   sm:text-base
   lg:text-lg
   leading-snug
-  sm:leading-relaxed font-semibold">
+  sm:leading-relaxed font-semibold"
+            >
               Les Résidences TASNIME sont des résidences sécurisées conçues avec
               une architecture sobre et raffinée, offrant une expérience de vie
               exceptionnelle. Ces résidences Premium sont animées par un jeu de
