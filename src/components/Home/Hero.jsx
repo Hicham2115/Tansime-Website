@@ -33,7 +33,7 @@ export default function Hero() {
   };
   return (
     <>
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[30vh] sm:min-h-[50vh] lg:min-h-[90vh] flex items-center justify-center overflow-hidden">
         {/* Background Video */}
         {/* <div
           className="absolute inset-0 bg-cover -mt-20 bg-center bg-no-repeat"
