@@ -191,7 +191,16 @@ function Footer() {
         <div className="border-t border-border pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="white text-sm text-center md:text-left">
-              &copy; {currentYear} Tasnime Immobilier. Tous droits réservés.
+              &copy; {currentYear} – Designed & developed by{" "}
+              <a
+                className="underline"
+                href="https://wespeak.ma"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                WeSpeak Media
+              </a>
+              .
             </p>
 
             {/* <div className="flex flex-wrap justify-center md:justify-end gap-6 text-sm">

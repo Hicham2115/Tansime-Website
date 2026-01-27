@@ -4,19 +4,8 @@ import { Building2, ArrowRight } from "lucide-react";
 import bussinesspic from "@/assets/img77.jpg";
 import FadeInUp from "@/components/FadeInUp";
 
-import A7409538 from "../../assets/Imgs/A7409538.JPG";
-import A7409545 from "../../assets/Imgs/A7409545.JPG";
-import A7409515 from "../../assets/Imgs/A7409515.JPG";
-import A7409558 from "../../assets/Imgs/A7409558.JPG";
-import A7409473 from "../../assets/Imgs/A7409473.JPG";
-import A7409562 from "../../assets/Imgs/A7409562.JPG";
-
-import kitchenette from "../../assets/Imgs/KITCHENETTE.jpg";
-import salon1 from "../../assets/Imgs/SALON 1.jpg";
-import salonDup from "../../assets/Imgs/SALON DUP.jpg";
-import salonSamKitch from "../../assets/Imgs/SALON-SAM-KITCH.jpg";
-import sam from "../../assets/Imgs/SAM.jpg";
-import samDup from "../../assets/Imgs/SAM-DUP.jpg";
+import sam from "../../assets/bureau1 (1).png";
+import samDup from "../../assets/bureau1 (2).png";
 
 import { motion } from "framer-motion";
 
@@ -200,7 +189,7 @@ export default function Hero() {
                 <SwiperSlide>
                   <img src={sam} alt="Transportation" />
                 </SwiperSlide>
-                <SwiperSlide>
+                {/* <SwiperSlide>
                   <img src={salonSamKitch} alt="Transportation" />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -211,7 +200,7 @@ export default function Hero() {
                 </SwiperSlide>
                 <SwiperSlide>
                   <img src={kitchenette} alt="Transportation" />
-                </SwiperSlide>
+                </SwiperSlide> */}
               </Swiper>
             </div>
           </motion.div>
