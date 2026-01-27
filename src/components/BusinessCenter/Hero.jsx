@@ -58,7 +58,7 @@ export default function Hero() {
             </FadeInUp>
 
             <FadeInUp delay={0.4}>
-              <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-lg md:text-xl text-white max-w-3xl mx-auto leading-relaxed">
                 Destination Commerciale Premier de Marrakech – Architecture haut
                 de gamme, agencements flexibles et commodités modernes conçus
                 pour les entreprises de toutes tailles.
