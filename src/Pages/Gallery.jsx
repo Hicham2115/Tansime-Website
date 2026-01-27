@@ -12,7 +12,7 @@ import A7409494 from "@/assets/Imgs2/A7409494.JPG";
 import A7409535 from "@/assets/Imgs2/A7409535.JPG";
 import A7409563 from "@/assets/Imgs2/A7409563.JPG";
 import A7409570 from "@/assets/Imgs2/A7409570.JPG";
-import LAST from "@/assets/Imgs2/LAST.JPG";
+import LAST from "@/assets/Imgs2/LAST.jpg";
 import two from "@/assets/Imgs2/2.jpg";
 
 // Interior / 3D
