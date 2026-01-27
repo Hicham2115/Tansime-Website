@@ -250,7 +250,7 @@ function Footer() {
               &copy; {currentYear} – Designed & developed by{" "}
               <a
                 className="underline"
-                href="https://wespeak.ma"
+                href="https://wespeak.ma/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
