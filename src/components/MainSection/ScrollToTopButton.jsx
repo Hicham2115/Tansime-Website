@@ -16,7 +16,6 @@ export default function ScrollToTopButton() {
     };
 
     window.addEventListener("scroll", toggleVisibility);
-
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
@@ -33,19 +32,19 @@ export default function ScrollToTopButton() {
       {isVisible && (
         <Button
           onClick={scrollToTop}
+          size="icon"
           className="
             fixed 
-            bottom-0 
-            left-0 
-            w-full sm:w-12 sm:h-12 
+            bottom-4 left-4       /* small offset from edges on mobile */
             sm:bottom-8 sm:right-8 sm:left-auto 
             z-50 
-            rounded-none sm:rounded-full 
+            w-12 h-12 
+            rounded-full 
             bg-primary 
             text-primary-foreground 
             shadow-lg 
             hover:bg-primary/90 
-            hover:scale-105 
+            hover:scale-110 
             transition-all 
             duration-300 
             flex 
@@ -54,7 +53,7 @@ export default function ScrollToTopButton() {
           "
           aria-label="Scroll to top"
         >
-          <ArrowUp className="w-6 h-6 sm:w-5 sm:h-5" />
+          <ArrowUp className="w-6 h-6" />
         </Button>
       )}
     </>
