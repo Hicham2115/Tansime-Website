@@ -112,7 +112,7 @@ export default function Hero() {
               delay={0.3}
               className="flex flex-col sm:flex-row gap-4 justify-center items-center"
             >
-              <button
+              {/* <button
                 onClick={() =>
                   document
                     .getElementById("FeaturedProjects")
@@ -123,7 +123,7 @@ export default function Hero() {
               >
                 Découvrir nos Projets
                 <ExternalLink className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
-              </button>
+              </button> */}
 
               <Link
                 to="/contact"

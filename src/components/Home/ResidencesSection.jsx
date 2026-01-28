@@ -6,10 +6,41 @@ import img1 from "@/assets/Imgs2/A7409482.JPG";
 import img2 from "@/assets/Imgs2/A7409494.JPG";
 import img3 from "@/assets/Imgs2/A7409479.JPG";
 
+//Icons
+// import ascenseur from "@/assets/ascenseur.png";
+// import climatiseur from "@/assets/climatiseur.png";
+// import cuisine from "@/assets/cuisine.png";
+// import filtre from "@/assets/filtre.png";
+// import lumiere from "@/assets/lumiere-led.png";
+// import parking from "@/assets/parking.png";
+// import piscine from "@/assets/piscine.png";
+// import structure from "@/assets/structure.png";
+
+import {
+  Building2,
+  Wind,
+  CookingPot,
+  Layers,
+  Lightbulb,
+  ParkingSquare,
+  Waves,
+  ArrowUpDown,
+} from "lucide-react";
 
 import ScaleIn from "@/components/ScaleIn";
 
 export default function ResidencesSection() {
+  const features = [
+    { label: "STRUCTURE EN DALLE PLEINE", icon: Building2 },
+    { label: "DOUBLE VITRAGE", icon: Layers },
+    { label: "CLIMATISATION INVERTER", icon: Wind },
+    { label: "Éclairage LED", icon: Lightbulb },
+    { label: "CUISINES ÉQUIPÉES", icon: CookingPot },
+    { label: "ASCENSEURS KONE", icon: ArrowUpDown },
+    { label: "PISCINES", icon: Waves },
+    { label: "PARKING", icon: ParkingSquare },
+  ];
+
   return (
     <section className="py-20 relative border-t border-white/10 -mt-10">
       <div className="container px-4 md:px-6 space-y-16">
@@ -19,7 +50,7 @@ export default function ResidencesSection() {
             INTRODUCTION
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
-          <p
+          {/* <p
             className=" text-black  text-sm
   sm:text-base
   lg:text-lg
@@ -31,7 +62,7 @@ export default function ResidencesSection() {
             conçus avec une architecture contemporaine et construits autour des
             valeurs de développement durable, de qualité, d'innovation et de
             modernité : Le Centre d'Affaires TASNIME et Les Résidences TASNIME.
-          </p>
+          </p> */}
         </FadeInUp>
 
         {/* Residences Content */}
@@ -40,7 +71,7 @@ export default function ResidencesSection() {
             <h2 className="text-3xl md:text-4xl font-bold text-primary">
               RÉSIDENCES TASNIME
             </h2>
-            <p
+            {/* <p
               className="text-black  text-sm
   sm:text-base
   lg:text-lg
@@ -65,31 +96,31 @@ export default function ResidencesSection() {
               exceptionnelle. Ces résidences Premium sont animées par un jeu de
               jardins et de piscines, constituant une symphonie d'élégance et de
               confort.
-            </p>
+            </p> */}
 
             <div className="bg-primary/90 backdrop-blur-sm p-6 rounded-2xl hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 border border-white/10">
               <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
                 <CheckCircle2 className="w-6 h-6 text-[#f1c692]" />
-                Caractéristiques Clés de Durabilité
+                Nos Atouts
               </h3>
-              <ul className="space-y-3">
-                {[
-                  "Isolation thermique et acoustique avec double vitrage",
-                  "Structures de dalle pleine (inertie thermique)",
-                  "Climatisation INVERTER",
-                  "Éclairage LED",
-                  "Capteurs de mouvement dans les zones communes",
-                  "Ascenseurs de marque internationale KONE",
-                ].map((item, i) => (
+              <ul className="grid grid-cols-2 gap-4">
+                {features.map((item, i) => (
                   <li
                     key={i}
                     className="flex items-center gap-3 text-white text-sm"
                   >
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#f1c692] text-white shrink-0" />
-                    {item}
+                    <item.icon className="w-5 h-5 text-[#f1c692] shrink-0" />
+                    <span className="font-semibold">{item.label}</span>
                   </li>
                 ))}
               </ul>
+            </div>
+            {/* Additional Feature Highlight */}
+            <div className="p-6 rounded-2xl bg-primary/90 backdrop-blur-sm hover:scale-105 transition-all duration-500 border border-white/10">
+              <p className="text-white font-semibold italic text-center">
+                « L'efficacité énergétique est au cœur de la conception
+                architecturale et technique du projet. »
+              </p>
             </div>
           </FadeInUp>
 
@@ -129,14 +160,6 @@ export default function ResidencesSection() {
                   </p>
                 </div>
               </div>
-            </div>
-
-            {/* Additional Feature Highlight */}
-            <div className="p-6 rounded-2xl bg-primary/90 backdrop-blur-sm hover:scale-105 transition-all duration-500 border border-white/10">
-              <p className="text-white font-semibold italic text-center">
-                « L'efficacité énergétique est au cœur de la conception
-                architecturale et technique du projet. »
-              </p>
             </div>
           </FadeInUp>
         </div>
