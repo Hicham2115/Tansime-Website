@@ -75,7 +75,7 @@ export default function Contact() {
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <FadeInUp className="flex justify-center">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm">
-                <MessageSquare className="w-4 h-4 text-[#b1cc4b]" />
+                <MessageSquare className="w-4 h-4 text-[#daff54]" />
                 <span className="text-sm sm:text-base font-medium text-white">
                   Nous Contacter
                 </span>
@@ -85,7 +85,7 @@ export default function Contact() {
             <FadeInUp delay={0.2}>
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
                 Entrez en Contact avec{" "}
-                <span className="text-[#b1cc4b]">Tasnime Immobilier</span>
+                <span className="text-[#daff54]">Tasnime Immobilier</span>
               </h1>
             </FadeInUp>
 
@@ -338,8 +338,7 @@ export default function Contact() {
                     <div>
                       <p className="text-xs text-white mb-1">Adresse</p>
                       <p className="text-sm font-semibold text-white">
-                                         Quartier d’Al Izdihar, Marrakech – bd Safi x av. Acharaf
-
+                        Quartier d’Al Izdihar, Marrakech – bd Safi x av. Acharaf
                       </p>
                     </div>
                   </div>

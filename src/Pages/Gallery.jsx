@@ -191,7 +191,7 @@ export default function Gallery() {
           {filteredItems.map((item, index) => (
             <ScaleIn
               key={item.id}
-              delay={index * 0.05}
+              // delay={index * 0.05}
               className="group relative aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer bg-card/50 backdrop-blur-sm border border-white/10 hover:border-primary/50 transition-all duration-300"
               onClick={() => openLightbox(item)}
             >
@@ -200,7 +200,7 @@ export default function Gallery() {
                 src={item.image}
                 alt={`Gallery item ${item.id}`}
                 onLoad={handleImageLoad}
-                loading="lazy"
+                // loading="lazy"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 className="absolute inset-0 w-full h-full object-cover"
               />

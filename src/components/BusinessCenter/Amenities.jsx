@@ -105,7 +105,7 @@ export default function Amenities() {
             <div className="space-y-4">
               {" "}
               <ScaleIn
-                delay={0.4}
+                // delay={0.4}
                 className="rounded-2xl overflow-hidden h-64 border border-white/10 shadow-lg group hover:scale-[1.02] transition-transform duration-300"
               >
                 <img

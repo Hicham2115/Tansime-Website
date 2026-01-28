@@ -49,7 +49,7 @@ export default function ResidencesSection() {
           {/* <h2 className="text-3xl md:text-4xl font-bold text-primary">
             INTRODUCTION
           </h2> */}
-          <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
+          {/* <div className="w-20 h-1 bg-primary mx-auto rounded-full" /> */}
           {/* <p
             className=" text-black  text-sm
   sm:text-base
@@ -169,8 +169,9 @@ export default function ResidencesSection() {
           {[img1, img2, img3].map((img, idx) => (
             <ScaleIn
               key={idx}
-              delay={0.6 + idx * 0.2}
-              className="group relative aspect-[5/3] mx-4 overflow-hidden rounded-2xl border border-white/10 shadow-2xl"
+              // delay={0.6 + idx * 0.2}
+              // loading="lazy"
+              className="group relative aspect-[5/3] mx-4 overflow-hidden rounded-2xl shadow-2xl"
             >
               <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-300 z-10" />
               <img

@@ -111,7 +111,7 @@ export default function Slider() {
 
           {/* Slider */}
           <FadeInUp
-            delay={0.2}
+            // delay={0.2}
             className="space-y-6 w-full lg:w-1/2 flex flex-col items-center lg:items-start"
           >
             <Swiper

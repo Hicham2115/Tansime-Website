@@ -24,13 +24,8 @@ export default function Hero() {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
   };
-  const handleScroll = () => {
-    window.scrollBy({
-      top: 5450,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
+  const words = text.split(" "); // split by space
+
   return (
     <>
       <section className="relative min-h-[30vh] sm:min-h-[50vh] lg:min-h-[90vh] flex items-center justify-center overflow-hidden">
@@ -90,19 +85,15 @@ export default function Hero() {
               variants={container}
               initial="hidden"
               animate="visible"
-              className=" text-sm
-  sm:text-base
-  lg:text-lg
-  leading-snug
-  sm:leading-relaxed text-white max-w-3xl mx-auto drop-shadow-md"
+              className="text-sm sm:text-base lg:text-lg leading-snug sm:leading-relaxed text-white max-w-3xl mx-auto drop-shadow-md"
             >
-              {letters.map((char, index) => (
+              {words.map((word, index) => (
                 <motion.span
                   key={index}
                   variants={child}
-                  style={{ whiteSpace: "pre-wrap" }}
+                  className="inline-block mr-1"
                 >
-                  {char}
+                  {word}
                 </motion.span>
               ))}
             </motion.p>
@@ -151,7 +142,7 @@ export default function Hero() {
         PRÉAMBULE
       </h2>
 
-<section className="relative flex items-center justify-center overflow-hidden px-10 py-16 lg:py-20">
+      <section className="relative flex items-center justify-center overflow-hidden px-10 py-16 lg:py-20">
         <div className="flex flex-col lg:flex-row gap-12 items-start w-full max-w-6xl">
           {/* Left Side - Existing Text */}
           <FadeInUp delay={0.2} className="flex-1 space-y-6">
@@ -286,19 +277,18 @@ export default function Hero() {
           </FadeInUp>
         </div>
       </section>
-  <div className="flex justify-center mt-8 lg:mt-12">
-  <Button
-    asChild
-    className="group flex items-center gap-2 px-5 py-3 bg-primary text-white font-semibold rounded-md shadow-lg transition-all duration-300 hover:bg-primary/90 hover:shadow-primary/50 hover:scale-105"
-    size="md"
-  >
-    <Link to="/gallery" className="flex items-center gap-2">
-      Voir Notre Gallerie
-      <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
-    </Link>
-  </Button>
-</div>
-
+      <div className="flex justify-center mt-8 lg:mt-12">
+        <Button
+          asChild
+          className="group flex items-center gap-2 px-5 py-3 bg-primary text-white font-semibold rounded-md shadow-lg transition-all duration-300 hover:bg-primary/90 hover:shadow-primary/50 hover:scale-105"
+          size="md"
+        >
+          <Link to="/gallery" className="flex items-center gap-2">
+            Voir Notre Gallerie
+            <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+          </Link>
+        </Button>
+      </div>
     </>
   );
 }
