@@ -32,10 +32,10 @@ export default function Slider() {
       <div className="container px-4 md:px-6 space-y-16">
         {/* Header */}
         <FadeInUp className="max-w-4xl mx-auto text-center space-y-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary">
+          {/* <h2 className="text-3xl md:text-4xl font-bold text-primary">
             BIENVENUE À TASNIME
-          </h2>
-          <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
+          </h2> */}
+          {/* <div className="w-20 h-1 bg-primary mx-auto rounded-full" /> */}
         </FadeInUp>
 
         {/* Residences Section */}
