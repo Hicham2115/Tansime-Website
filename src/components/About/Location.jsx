@@ -47,13 +47,13 @@ export default function Location() {
                   "
                 >
                   Stratégiquement situé à l&apos;intersection de deux grands
-                  boulevards :{" "}
-                  <span className="text-[#b1cc4b] font-semibold">
+                  boulevards dans le quartier d’Al Izdihar ——{" "}
+                  <span className="text-[#daff54] font-semibold">
                     Boulevard de Safi
                   </span>{" "}
                   et{" "}
-                  <span className="text-[#b1cc4b] font-semibold">
-                    Avenue Charaf
+                  <span className="text-[#daff54] font-semibold">
+                    Avenue Charaf ——
                   </span>
                   , nos projets sont facilement accessibles et offrent un
                   environnement de vie et de travail premium.

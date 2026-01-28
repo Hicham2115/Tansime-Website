@@ -338,7 +338,8 @@ export default function Contact() {
                     <div>
                       <p className="text-xs text-white mb-1">Adresse</p>
                       <p className="text-sm font-semibold text-white">
-                        MARRAKECH - BD SAFI X AV. ACHARAF
+                                         Quartier d’Al Izdihar, Marrakech – bd Safi x av. Acharaf
+
                       </p>
                     </div>
                   </div>

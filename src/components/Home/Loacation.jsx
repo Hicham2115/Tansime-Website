@@ -40,7 +40,7 @@ export default function Loacation() {
   leading-snug
   sm:leading-relaxed text-black max-w-2xl mx-auto"
           >
-            Le projet TASNIME estidéalement situé au croisement de deux
+            Le projet TASNIME est idéalement situé dans le quartier Al Izdihar au croisement de deux
             boulevard structurants de la ville ocre (Bd de Safi et Av Charaf),
             les deux projets disposent d'un emplacement idéal avec une meilleure
             accessibilité (10 min du centre ville, 5 min de l'accès autoroute

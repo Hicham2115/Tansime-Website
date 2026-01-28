@@ -111,10 +111,11 @@ export default function Hero() {
           </div>
         </div>
       </section>
-      <h2 className="text-3xl md:text-4xl text-center mt-30 font-bold text-primary mb-20">
+      <h2 className="text-3xl md:text-4xl text-center mt-10 md:mt-14 lg:mt-16 font-bold text-primary">
         RÉSIDENCES TASNIME
       </h2>
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden px-10">
+
+      <section className="relative flex flex-col lg:flex-row gap-12 items-start w-full max-w-6xl px-6 md:px-10 py-16 lg:py-20 mx-auto">
         <div className="flex flex-col lg:flex-row gap-12 items-start w-full max-w-6xl">
           {/* Left Side - Existing Text */}
           <FadeInUp delay={0.2} className="flex-1 space-y-6">

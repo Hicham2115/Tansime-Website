@@ -187,7 +187,7 @@ function Footer() {
               <li className="flex items-start gap-3 white text-sm group">
                 <MapPin className="w-5 h-5 text-[#b1cc4b] shrink-0 mt-0.5 group-hover:text-[#b1cc4b] transition-colors" />
                 <span className="group-hover:text-[#b1cc4b] transition-colors">
-                  MARRAKECH - BD SAFI X AV. ACHARAF
+                  Quartier d’Al Izdihar, Marrakech – bd Safi x av. Acharaf
                 </span>
               </li>
               <li className="flex items-center gap-3 white text-sm group">
@@ -205,7 +205,7 @@ function Footer() {
                   href="mailto:contact@tasnime-immobilier.ma"
                   className="group-hover:text-[#b1cc4b] transition-colors break-all"
                 >
-                  TASNIMEKECH@GMAIL.COM
+                  tasnimekech@gmail.com
                 </a>
               </li>
             </ul>
