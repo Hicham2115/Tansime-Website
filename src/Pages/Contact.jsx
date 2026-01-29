@@ -15,6 +15,7 @@ import { toast } from "sonner";
 import chambreImage from "@/assets/Imgs2/2.jpg";
 import PageTransition from "@/components/PageTransition";
 import FadeInUp from "@/components/FadeInUp";
+import map from "../assets/map.png";
 
 // Zod schema
 const contactSchema = z.object({
@@ -366,7 +367,7 @@ export default function Contact() {
 
               {/* Map */}
               <div className="rounded-2xl overflow-hidden border border-white/10 shadow-md aspect-video">
-                <iframe
+                {/* <iframe
                   src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3395.9611727058036!2d-8.029307!3d31.662281999999998!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDM5JzQzLjIiTiA4wrAwMSc0OS40Ilc!5e0!3m2!1sen!2sus!4v1768611899120!5m2!1sen!2sus"
                   width="100%"
                   height="100%"
@@ -375,7 +376,8 @@ export default function Contact() {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   className="w-full h-full"
-                />
+                /> */}
+                <img src={map} alt="" />
               </div>
             </FadeInUp>
           </div>

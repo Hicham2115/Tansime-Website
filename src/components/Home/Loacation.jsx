@@ -1,5 +1,6 @@
 import { Quote, Star } from "lucide-react";
 import FadeInUp from "@/components/FadeInUp";
+import map from "../../assets/map.png";
 
 export default function Loacation() {
   const testimonials = [
@@ -40,17 +41,18 @@ export default function Loacation() {
   leading-snug
   sm:leading-relaxed text-black max-w-2xl mx-auto"
           >
-            Le projet TASNIME est idéalement situé dans le quartier Al Izdihar au croisement de deux
-            boulevard structurants de la ville ocre (Bd de Safi et Av Charaf),
-            les deux projets disposent d'un emplacement idéal avec une meilleure
-            accessibilité (10 min du centre ville, 5 min de l'accès autoroute
-            Casa-Agadir,5 min de la future gare TGV)
+            Le projet TASNIME est idéalement situé dans le quartier Al Izdihar
+            au croisement de deux boulevard structurants de la ville ocre (Bd de
+            Safi et Av Charaf), les deux projets disposent d'un emplacement
+            idéal avec une meilleure accessibilité (10 min du centre ville, 5
+            min de l'accès autoroute Casa-Agadir,5 min de la future gare TGV)
           </p>
         </FadeInUp>
 
         {/* Map */}
         <div className="rounded-2xl overflow-hidden border border-white/10 shadow-md aspect-video w-[70%] mx-auto">
-          <iframe
+          <img src={map} alt="" />
+          {/* <iframe
             src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3395.9611727058036!2d-8.029307!3d31.662281999999998!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDM5JzQzLjIiTiA4wrAwMSc0OS40Ilc!5e0!3m2!1sen!2sus!4v1768611899120!5m2!1sen!2sus"
             width="100%"
             height="100%"
@@ -59,7 +61,7 @@ export default function Loacation() {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             className="w-full h-full"
-          />
+          /> */}
         </div>
       </div>
     </section>
