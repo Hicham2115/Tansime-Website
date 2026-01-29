@@ -4,14 +4,17 @@ import Features from "@/components/Residences/Features";
 import SustainableConstruction from "@/components/Residences/SustainableConstruction";
 import CallToAction from "@/components/Residences/CallToAction";
 import PageTransition from "@/components/PageTransition";
+import Location from "../components/Home/Loacation";
 
 export default function Residences() {
   return (
     <PageTransition className="min-h-screen">
       <Hero />
-      <Features />
+      {/* <Features /> */}
       {/* <HousingTypes /> */}
-      <SustainableConstruction />
+      {/* <SustainableConstruction /> */}
+            <Location />
+
       <CallToAction />
     </PageTransition>
   );

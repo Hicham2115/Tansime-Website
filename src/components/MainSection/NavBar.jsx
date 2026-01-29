@@ -18,7 +18,8 @@ const navigationLinks = [
   { href: "/business-center", label: "Centre d'Affaires" },
   { href: "/residences", label: "Résidences" },
   { href: "/gallery", label: "Galerie" },
-  { href: "/about", label: "À Propos" },
+  // { href: "/about", label: "À Propos" },
+  { href: "/contact", label: "Nous Contacter" },
 ];
 
 export default function Component() {
@@ -78,7 +79,7 @@ export default function Component() {
                     </NavigationMenuItem>
                   ))}
                   <div className="flex flex-col-reverse gap-2 mt-2">
-                    <Button
+                    {/* <Button
                       asChild
                       className="group relative px-4 py-3 bg-primary text-white font-semibold rounded-md hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-primary/50 hover:scale-105 flex items-center gap-2 w-full justify-center"
                       size="sm"
@@ -89,7 +90,7 @@ export default function Component() {
                           <SendHorizontal className="w-5 h-5" />
                         </span>
                       </Link>
-                    </Button>
+                    </Button> */}
                   </div>
                 </NavigationMenuList>
               </NavigationMenu>
@@ -128,7 +129,7 @@ export default function Component() {
 
         {/* Right side - Contact Button */}
         <div className="max-md:hidden flex items-center gap-4">
-          <Button
+          {/* <Button
             asChild
             className="group relative px-6 py-5 bg-primary text-white font-semibold rounded-md hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-primary/50 hover:scale-105"
             size="sm"
@@ -139,7 +140,7 @@ export default function Component() {
                 <SendHorizontal className="w-5 h-5" />
               </span>
             </Link>
-          </Button>
+          </Button> */}
         </div>
       </div>
     </header>

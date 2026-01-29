@@ -2,9 +2,12 @@ import { CheckCircle2 } from "lucide-react";
 
 import FadeInUp from "@/components/FadeInUp";
 
-import img1 from "@/assets/Imgs2/A7409482.JPG";
-import img2 from "@/assets/Imgs2/A7409494.JPG";
-import img3 from "@/assets/Imgs2/A7409479.JPG";
+import img1 from "../../assets/Imgs2/2.jpg";
+import img2 from "../../assets/Imgs2/A7409494.JPG";
+import img3 from "../../assets/Imgs2/A7409563.JPG";
+import img4 from "../../assets/Imgs2/LAST.jpg";
+import img5 from "../../assets/Imgs/RUR04395.jpg";
+import img6 from "../../assets/Imgs/RUR04229.jpg";
 
 //Icons
 // import ascenseur from "@/assets/ascenseur.png";
@@ -46,10 +49,24 @@ export default function ResidencesSection() {
       <div className="container px-4 md:px-6 space-y-16">
         {/* Preamble */}
         <FadeInUp className="max-w-4xl mx-auto text-center space-y-6">
-          {/* <h2 className="text-3xl md:text-4xl font-bold text-primary">
-            INTRODUCTION
-          </h2> */}
-          {/* <div className="w-20 h-1 bg-primary mx-auto rounded-full" /> */}
+          <h2 className="text-3xl md:text-4xl font-bold text-primary">
+            Nos Atouts
+          </h2>
+          <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
+          <div className="bg-primary/90 backdrop-blur-sm p-8 rounded-3xl hover:scale-[1.0] hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 border border-white/20">
+            <ul className="grid grid-cols-2 gap-6">
+              {features.map((item, i) => (
+                <li
+                  key={i}
+                  className="flex flex-col items-center justify-center gap-4 text-white text-md text-center"
+                >
+                  <item.icon className="w-8 h-8 text-[#f1c692] shrink-0" />
+                  <span className="font-semibold">{item.label}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           {/* <p
             className=" text-black  text-sm
   sm:text-base
@@ -68,9 +85,9 @@ export default function ResidencesSection() {
         {/* Residences Content */}
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <FadeInUp delay={0.2} className="space-y-6">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary">
+            {/* <h2 className="text-3xl md:text-4xl font-bold text-primary">
               RÉSIDENCES TASNIME
-            </h2>
+            </h2> */}
             {/* <p
               className="text-black  text-sm
   sm:text-base
@@ -98,23 +115,59 @@ export default function ResidencesSection() {
               confort.
             </p> */}
 
-            <div className="bg-primary/90 backdrop-blur-sm p-6 rounded-2xl hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 border border-white/10">
-              <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                <CheckCircle2 className="w-6 h-6 text-[#f1c692]" />
-                Nos Atouts
-              </h3>
-              <ul className="grid grid-cols-2 gap-4">
-                {features.map((item, i) => (
-                  <li
-                    key={i}
-                    className="flex items-center gap-3 text-white text-sm"
-                  >
-                    <item.icon className="w-5 h-5 text-[#f1c692] shrink-0" />
-                    <span className="font-semibold">{item.label}</span>
-                  </li>
-                ))}
-              </ul>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-4">
+                {" "}
+                <ScaleIn
+                  // delay={0.4}
+                  className="rounded-2xl overflow-hidden h-64 border border-white/10 shadow-lg group hover:scale-[1.02] transition-transform duration-300"
+                >
+                  <img
+                    src={img1}
+                    alt="Meeting Room"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                </ScaleIn>
+              </div>
+              <div className="space-y-4 pt-8">
+                <ScaleIn
+                  delay={0.5}
+                  className="rounded-2xl overflow-hidden h-48 border border-white/10 shadow-lg group hover:scale-[1.02] transition-transform duration-300"
+                >
+                  <img
+                    src={img2}
+                    alt="Office Space"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                </ScaleIn>
+              </div>
+              <div className="space-y-4 pt-8">
+                <ScaleIn
+                  delay={0.5}
+                  className="rounded-2xl overflow-hidden h-48 border border-white/10 shadow-lg group hover:scale-[1.02] transition-transform duration-300"
+                >
+                  <img
+                    src={img3}
+                    alt="Office Space"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                </ScaleIn>
+              </div>
+              <div className="space-y-4">
+                {" "}
+                <ScaleIn
+                  // delay={0.4}
+                  className="rounded-2xl overflow-hidden h-64 border border-white/10 shadow-lg group hover:scale-[1.02] transition-transform duration-300"
+                >
+                  <img
+                    src={img4}
+                    alt="Meeting Room"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                </ScaleIn>
+              </div>
             </div>
+
             {/* Additional Feature Highlight */}
             <div className="p-6 rounded-2xl bg-primary/90 backdrop-blur-sm hover:scale-105 transition-all duration-500 border border-white/10">
               <p className="text-white font-semibold italic text-center">
@@ -165,7 +218,7 @@ export default function ResidencesSection() {
         </div>
 
         {/* Image Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mt-10">
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mt-10">
           {[img1, img2, img3].map((img, idx) => (
             <ScaleIn
               key={idx}
@@ -181,7 +234,7 @@ export default function ResidencesSection() {
               />
             </ScaleIn>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

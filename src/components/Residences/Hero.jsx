@@ -118,23 +118,13 @@ export default function Hero() {
       <section className="relative flex flex-col lg:flex-row gap-12 items-start w-full max-w-6xl px-6 md:px-10 py-16 lg:py-20 mx-auto">
         <div className="flex flex-col lg:flex-row gap-12 items-start w-full max-w-6xl">
           {/* Left Side - Existing Text */}
-          <FadeInUp delay={0.2} className="flex-1 space-y-6">
-            <p
-              className="
-  text-sm
-  sm:text-base
-  lg:text-lg
-  leading-snug
-  sm:leading-relaxed
-  text-gray-800
-  font-medium
-"
-            >
+          <FadeInUp className="flex-1 space-y-6">
+            <p className="text-sm sm:text-base lg:text-lg leading-snug sm:leading-relaxed text-gray-800 font-medium">
               Les résidences TASNIME sont des résidences sécurisées conçues
               selon une architecture sobre et raffinée offrant une expérience de
               vie exceptionnelle. Ces résidences Premium sont animées par un jeu
               de jardins et piscines constituant une symphonie d'élégance et de
-              confort. Les résidences disposent de pisccines communes pour
+              confort. Les résidences disposent de piscines communes pour
               adultes et enfants en plus des piscines privatives pour certains
               duplexes.
             </p>
@@ -143,43 +133,55 @@ export default function Hero() {
               Elles sont composées de différents typologies d'habitation à
               savoir:
             </p>
-            <p
-              className="
-  text-sm
-  sm:text-base
-  lg:text-lg
-  leading-snug
-  sm:leading-relaxed
-  text-gray-800
-  font-medium
-"
-            >
+            <p className="text-sm sm:text-base lg:text-lg leading-snug sm:leading-relaxed text-gray-800 font-medium">
               • Appartements F2 ou studios (1 chambre, salon et cuisine à
-              l'américaine)
+              l'américaine).
               <br />• Appartements F2 ou studios (1 chambre, salon et cuisine à
-              l'américaine) Appartements F3 (2 chambres, salon et cuisine){" "}
-              <br />• Appartements F4 (3 chambres, salon et cuisine). <br />•
-              Duplexes avec 2 salons, 3 ou 4 chambres à coucher.
+              l'américaine).
+              <br /> Appartements F3 (2 chambres, salon et cuisine) <br />•
+              Appartements F4 (3 chambres, salon et cuisine). <br />• Duplexes
+              avec 2 salons, 3 ou 4 chambres à coucher.
+              <br />
+              <br />
+              Les résidences Tasnime se distinguent par la convivialité des
+              espaces, la durabilité des matériaux de construction ainsi que la
+              qualité des finitions.
+              <br />
+              <br />
+              Le projet prévoit la réalisation de plus de 40 magasins et
+              showrooms en RDC pour l'animation commerciale des résidences dont
+              un supermarché (MARJANE market).
             </p>
-            <p
-              className="
-  text-sm
-  sm:text-base
-  lg:text-lg
-  leading-snug
-  sm:leading-relaxed
-  text-gray-800
-  font-medium
-"
-            >
+            <p className="text-sm sm:text-base lg:text-lg leading-snug sm:leading-relaxed text-gray-800 font-medium">
               Les résidences sont conçues selon les principes de développement
               durable et sont dotées des finitions de qualité supérieure. Elles
               offrent une large variété de superficies qui s'adaptent aux
               différents besoins et budgets:
             </p>
+
+            <p className="text-sm sm:text-base lg:text-lg leading-snug sm:leading-relaxed text-primary font-bold">
+              De 36 M2 à 55 M2 pour les studios <br />
+              De 68 M2 à 85 M2 pour les appartements F3 <br />
+              De 108 à 112 M2 pour les appartements F4 <br />
+              De 96 à 186 M2 pour les duplexes
+            </p>
           </FadeInUp>
-          <FadeInUp delay={0.2} className="flex-1 space-y-6">
-            {/* Right Side - New Text */}
+
+          <FadeInUp className="flex-1 space-y-6">
+            <p className="text-sm sm:text-base lg:text-lg leading-snug sm:leading-relaxed text-black font-semibold">
+              La construction du projet est mise en œuvre selon les principes de
+              développement durable avec l'utilisation de matériaux et
+              équipements de qualité supérieure:
+            </p>
+            <p className="text-sm sm:text-base lg:text-lg leading-snug sm:leading-relaxed text-primary font-bold">
+              • Isolation thermique et phonique avec double vitrage au niveau
+              des façades. <br /> • Structures en dalle pleine assurant une
+              bonne inertie thermique et isolation phonique. Climatisation
+              INVERTER. <br />• Eclairage LED. <br />• Detecteurs de présence
+              dans les circulations communes (escaliers et couloirs). <br />•
+              Ascenseurs de marque international KONE de capacité.
+            </p>
+       
             <motion.div
               className="flex-1 w-full max-w-lg lg:max-w-none"
               initial={{ opacity: 0, y: 30 }}
@@ -220,23 +222,6 @@ export default function Hero() {
                 </Swiper>
               </div>
             </motion.div>
-            <p
-              className="
-  text-sm
-  sm:text-base
-  lg:text-lg
-  leading-snug
-  sm:leading-relaxed
-  text-gray-800
-  font-medium 
-  ml-6
-"
-            >
-              De 36 M2 à 55 M2 pour les studios <br /> De 68 M2 à 85 M2 pour les
-              appartements F3 <br />
-              De 108 à 112 M2 pour les appartements F4 <br />
-              De 96 à 186 M2 pour les duplexes
-            </p>{" "}
           </FadeInUp>
         </div>
       </section>

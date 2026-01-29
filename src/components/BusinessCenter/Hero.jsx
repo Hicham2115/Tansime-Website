@@ -105,8 +105,7 @@ export default function Hero() {
 
       <section className="relative flex flex-col lg:flex-row gap-12 items-start w-full max-w-6xl px-10 py-16 lg:py-20 mx-auto">
         <div className="flex flex-col lg:flex-row gap-12 items-start w-full max-w-6xl">
-          {/* Left Side - Existing Text */}
-          <FadeInUp delay={0.2} className="flex-1 space-y-6">
+         <FadeInUp delay={0.2} className="flex-1 space-y-6">
             <p
               className="
   text-sm
@@ -140,30 +139,7 @@ export default function Hero() {
               professionnelles (climatisation centralisée, connexions
               électriques et informatiques, ....)
             </p>
-            <p
-              className="
-  text-sm
-  sm:text-base
-  lg:text-lg
-  leading-snug
-  sm:leading-relaxed
-  text-gray-800
-  font-medium
-"
-            >
-              Le centre d'affaires Tasnime est conçue selon une architecture
-              sobre et moderne pensée autour des valeurs de qualité et de
-              développement durable. La construction du projet a été réalisée
-              avec des matériaux durables alliant confort et efficacité
-              énergétique avec un double vitrage épais à faible émissivité
-              thermique isolés par gaz d'argon, structures en dalles pleines
-              assurant une bonne inertie thermique, portes avec isolation
-              phonique et thermique, éclairage LED, etc
-            </p>
           </FadeInUp>
-
-          {/* Right Side - New Text */}
-
           <motion.div
             className="flex-1 w-full max-w-lg lg:max-w-none"
             initial={{ opacity: 0, y: 30 }}
@@ -189,18 +165,7 @@ export default function Hero() {
                 <SwiperSlide>
                   <img src={bussinesspic} alt="Transportation" />
                 </SwiperSlide>
-                {/* <SwiperSlide>
-                  <img src={salonSamKitch} alt="Transportation" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={salonDup} alt="Transportation" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={salon1} alt="Transportation" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={kitchenette} alt="Transportation" />
-                </SwiperSlide> */}
+               
               </Swiper>
             </div>
           </motion.div>

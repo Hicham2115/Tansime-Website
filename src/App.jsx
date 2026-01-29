@@ -13,6 +13,7 @@ import Gallery from "./Pages/Gallery.jsx";
 import ScrollToTopButton from "./components/MainSection/ScrollToTopButton.jsx";
 import { AnimatePresence } from "motion/react";
 import { Toaster } from "@/components/ui/sonner";
+import WhatsAppButton from "./components/MainSection/WhatsAppButton.jsx";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -31,7 +32,8 @@ export default function App() {
     <>
       <Background />
       <NavBar />
-      <ScrollToTop />  
+      <ScrollToTop />
+      <WhatsAppButton />
       <ScrollToTopButton />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>

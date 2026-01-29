@@ -99,7 +99,11 @@ export default function AboutSection() {
           <FadeInUp delay={0.6} className="text-center pt-8">
             <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/60 backdrop-blur-md border border-[#d9ac6f]/20 shadow-lg">
               <MapPin className="w-5 h-5 text-primary" />
-              <span className="text-black font-medium whitespace-nowrap">
+              <span className="text-black font-medium text-sm
+  sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed">
                 Situé stratégiquement à quartier Al Izdihar - Bd de Safi & Av
                 Charaf , Marrakech{" "}
               </span>

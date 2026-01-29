@@ -103,36 +103,42 @@ export default function Hero() {
               delay={0.3}
               className="flex flex-col sm:flex-row gap-4 justify-center items-center"
             >
-              {/* <button
-                onClick={() =>
-                  document
-                    .getElementById("FeaturedProjects")
-                    .scrollIntoView({ behavior: "smooth" })
-                }
-                className="w-[260px] h-[56px] whitespace-nowrap py-4 px-8 flex gap-3 text-white font-bold text-md rounded-md shadow-lg transition-transform transform bg-transparent border-2 border-white hover:scale-105 hover:border-white cursor-pointer hover:shadow-primary/50 hover:shadow-2xl focus:outline-none"
-                id="startButton"
+              {/* Centre D'affaire Button */}
+              <Link
+                to="/business-center"
+                className="w-[220px] h-[56px] flex justify-center items-center text-white font-bold text-md uppercase rounded-md border-2 border-white bg-transparent shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-primary/50 focus:outline-none cursor-pointer"
               >
-                Découvrir nos Projets
-                <ExternalLink className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
-              </button> */}
+                Centre D'affaire
+                <ExternalLink className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 ml-3" />
+              </Link>
 
+              {/* Residences Button */}
+              <Link
+                to="/residences"
+                className="w-[220px] h-[56px] flex justify-center items-center text-white font-bold text-md uppercase rounded-md border-2 border-white bg-transparent shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-primary/50 focus:outline-none cursor-pointer"
+              >
+                Residences
+                <ExternalLink className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 ml-3" />
+              </Link>
+
+              {/* Contact Button with Icon */}
               <Link
                 to="/contact"
-                className="w-[260px] h-[56px] relative cursor-pointer py-4 px-4 text-center font-barlow inline-flex justify-center items-center text-base uppercase text-white rounded-lg border-solid transition-transform duration-300 ease-in-out group outline-offset-4 focus:outline focus:outline-2 focus:outline-white focus:outline-offset-4 overflow-hidden hover:scale-105 active:scale-95"
+                className="w-[220px] h-[56px] relative flex justify-center items-center text-white font-bold text-md uppercase rounded-md border-2 border-white bg-transparent shadow-lg overflow-hidden transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-primary/50 focus:outline-none cursor-pointer group"
               >
-                <span className="relative z-20 flex font-bold items-center gap-2">
+                <span className="flex items-center gap-2 z-20">
                   Nous Contacter
-                  <span className="transition-transform duration-300 group-hover:translate-x-1">
-                    <MailOpen className="w-5 h-5" />
-                  </span>
+                  <MailOpen className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
                 </span>
 
+                {/* Animated shine effect */}
                 <span className="absolute left-[-75%] top-0 h-full w-[50%] bg-white/20 rotate-12 z-10 blur-lg group-hover:left-[125%] transition-all duration-1000 ease-in-out"></span>
 
-                <span className="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#D4EDF9] absolute h-[20%] rounded-tl-lg border-l-2 border-t-2 top-0 left-0"></span>
-                <span className="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#D4EDF9] absolute group-hover:h-[90%] h-[60%] rounded-tr-lg border-r-2 border-t-2 top-0 right-0"></span>
-                <span className="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#D4EDF9] absolute h-[60%] group-hover:h-[90%] rounded-bl-lg border-l-2 border-b-2 left-0 bottom-0"></span>
-                <span className="w-1/2 drop-shadow-3xl transition-all duration-300 block border-[#D4EDF9] absolute h-[20%] rounded-br-lg border-r-2 border-b-2 right-0 bottom-0"></span>
+                {/* Borders */}
+                {/* <span className="absolute top-0 left-0 w-1/2 h-[20%] border-t-2 border-l-2 border-[#D4EDF9] rounded-tl-lg drop-shadow-3xl transition-all duration-300"></span>
+                <span className="absolute top-0 right-0 w-1/2 h-[60%] border-t-2 border-r-2 border-[#D4EDF9] rounded-tr-lg drop-shadow-3xl group-hover:h-[90%] transition-all duration-300"></span>
+                <span className="absolute bottom-0 left-0 w-1/2 h-[60%] border-b-2 border-l-2 border-[#D4EDF9] rounded-bl-lg drop-shadow-3xl group-hover:h-[90%] transition-all duration-300"></span>
+                <span className="absolute bottom-0 right-0 w-1/2 h-[20%] border-b-2 border-r-2 border-[#D4EDF9] rounded-br-lg drop-shadow-3xl transition-all duration-300"></span> */}
               </Link>
             </FadeInUp>
           </div>
@@ -289,6 +295,146 @@ export default function Hero() {
           </Link>
         </Button>
       </div>
+      <h2 className="text-3xl md:text-4xl text-center mt-10 md:mt-14 lg:mt-16 font-bold text-primary">
+        Centre D'Affaires
+      </h2>
+      <section className="relative flex items-center justify-center overflow-hidden px-10 py-16 lg:py-20">
+        <div className="flex flex-col lg:flex-row gap-12 items-start w-full max-w-6xl">
+          {/* Left Side - Existing Text */}
+          <FadeInUp delay={0.2} className="flex-1 space-y-6">
+            <p
+              className="
+  text-sm
+  sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed
+  text-gray-800
+  font-medium
+"
+            >
+              Le centre d'affaires TASNIME est composé de 72 plateaux bureaux
+              avec des surfaces allant de 56 m2 à 126 m2 offrant une large
+              fourchette de superficies qui s'adaptent aux différents besoins et
+              budgets.
+            </p>
+
+            <p
+              className="
+  text-sm
+  sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed
+  text-gray-800
+  font-medium
+"
+            >
+              Les plateaux bureaux sont dotés de finitions raffinées et de tous
+              les équipements nécessaires au bon déroulement des activités
+              professionnelles (climatisation centralisée, connexions
+              électriques et informatiques, ....)
+            </p>
+          </FadeInUp>
+          {/* Right Side - New Text */}
+          <FadeInUp delay={0.4} className="flex-1 space-y-6">
+            <p
+              className="
+  text-sm
+  sm:text-base
+  lg:text-lg
+  leading-snug
+  sm:leading-relaxed
+  text-gray-800
+  font-medium
+"
+            >
+              Le centre d'affaires Tasnime est conçue selon une architecture
+              sobre et moderne pensée autour des valeurs de qualité et de
+              développement durable. La construction du projet a été réalisée
+              avec des matériaux durables alliant confort et efficacité
+              énergétique avec un double vitrage épais à faible émissivité
+              thermique isolés par gaz d'argon, structures en dalles pleines
+              assurant une bonne inertie thermique, portes avec isolation
+              phonique et thermique, éclairage LED, etc
+            </p>
+          </FadeInUp>
+        </div>
+      </section>
+
+      <h2 className="text-3xl md:text-4xl text-center mt-10 md:mt-14 lg:mt-16 font-bold text-primary">
+        Residences
+      </h2>
+      <section className="relative flex flex-col items-center justify-center overflow-hidden px-10 py-16 lg:py-20">
+        <div className="flex flex-col lg:flex-row gap-12 items-start w-full max-w-6xl">
+          {/* Left Side - Existing Text */}
+          <FadeInUp delay={0.2} className="flex-1 space-y-6">
+            <p className="text-sm sm:text-base lg:text-lg leading-snug sm:leading-relaxed text-gray-800 font-medium">
+              Les résidences TASNIME sont des résidences sécurisées conçues
+              selon une architecture sobre et raffinée offrant une expérience de
+              vie exceptionnelle. Ces résidences Premium sont animées par un jeu
+              de jardins et piscines constituant une symphonie d'élégance et de
+              confort. Les résidences disposent de piscines communes pour
+              adultes et enfants en plus des piscines privatives pour certains
+              duplexes.
+            </p>
+
+            <p className="text-primary text-lg leading-relaxed font-bold">
+              Elles sont composées de différents typologies d'habitation à
+              savoir:
+            </p>
+            <p className="text-sm sm:text-base lg:text-lg leading-snug sm:leading-relaxed text-gray-800 font-medium">
+              • Appartements F2 ou studios (1 chambre, salon et cuisine à
+              l'américaine).
+              <br />• Appartements F2 ou studios (1 chambre, salon et cuisine à
+              l'américaine).
+              <br /> Appartements F3 (2 chambres, salon et cuisine) <br />•
+              Appartements F4 (3 chambres, salon et cuisine). <br />• Duplexes
+              avec 2 salons, 3 ou 4 chambres à coucher.
+              <br />
+              <br />
+              Les résidences Tasnime se distinguent par la convivialité des
+              espaces, la durabilité des matériaux de construction ainsi que la
+              qualité des finitions.
+              <br />
+              <br />
+              Le projet prévoit la réalisation de plus de 40 magasins et
+              showrooms en RDC pour l'animation commerciale des résidences dont
+              un supermarché (MARJANE market).
+            </p>
+          </FadeInUp>
+
+          <FadeInUp delay={0.2} className="flex-1 space-y-6">
+            <p className="text-sm sm:text-base lg:text-lg leading-snug sm:leading-relaxed text-gray-800 font-medium">
+              Les résidences sont conçues selon les principes de développement
+              durable et sont dotées des finitions de qualité supérieure. Elles
+              offrent une large variété de superficies qui s'adaptent aux
+              différents besoins et budgets:
+            </p>
+
+            <p className="text-sm sm:text-base lg:text-lg leading-snug sm:leading-relaxed text-primary font-bold">
+              De 36 M2 à 55 M2 pour les studios <br />
+              De 68 M2 à 85 M2 pour les appartements F3 <br />
+              De 108 à 112 M2 pour les appartements F4 <br />
+              De 96 à 186 M2 pour les duplexes
+            </p>
+            <p className="text-sm sm:text-base lg:text-lg leading-snug sm:leading-relaxed text-black font-semibold">
+              La construction du projet est mise en œuvre selon les principes de
+              développement durable avec l'utilisation de matériaux et
+              équipements de qualité supérieure:
+            </p>
+
+            <p className="text-sm sm:text-base lg:text-lg leading-snug sm:leading-relaxed text-primary font-bold">
+              • Isolation thermique et phonique avec double vitrage au niveau
+              des façades. <br /> • Structures en dalle pleine assurant une
+              bonne inertie thermique et isolation phonique. Climatisation
+              INVERTER. <br />• Eclairage LED. <br />• Detecteurs de présence
+              dans les circulations communes (escaliers et couloirs). <br />•
+              Ascenseurs de marque international KONE de capacité.
+            </p>
+          </FadeInUp>
+        </div>
+      </section>
     </>
   );
 }
