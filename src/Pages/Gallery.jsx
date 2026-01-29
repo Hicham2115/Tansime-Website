@@ -38,6 +38,8 @@ import studioSalon from "@/assets/Imgs/STUDIO SALON.jpg";
 import RUR04229 from "@/assets/Imgs/RUR04229.jpg";
 import RUR04328 from "@/assets/Imgs/RUR04328.jpg";
 import RUR04395 from "@/assets/Imgs/RUR04395.jpg";
+import bussinesspic from "@/assets/bureau1 (1).png";
+import bussinesspic2 from "@/assets/bureau1 (2).png";
 
 import PageTransition from "@/components/PageTransition";
 
@@ -47,30 +49,31 @@ export default function Gallery() {
   const [imagesLoaded, setImagesLoaded] = useState(0);
   const [totalImages, setTotalImages] = useState(0);
 
-  // const categories = [
-  //   { id: "all", label: "Tous les Projets" },
-  //   { id: "residences", label: "Résidences" },
-  //   // { id: "business", label: "Business Center" }, // Commented out as we mostly have residential images for now
-  // ];
+  const categories = [
+    { id: "all", label: "Tous les Projets" },
+    { id: "residences", label: "Résidences" },
+    { id: "business", label: "Business Center" }, // Commented out as we mostly have residential images for now
+  ];
 
   const galleryItems = [
     // Real photos
-    { id: 9, category: "residences", image: RUR04229 },
-    { id: 9, category: "residences", image: two },
-    { id: 9, category: "residences", image: RUR04395 },
-    { id: 8, category: "residences", image: LAST },
+    { id: "res-1", category: "residences", image: RUR04229 },
+    { id: "res-2", category: "residences", image: two },
+    { id: 2, category: "residences", image: RUR04395 },
+    { id: 3, category: "residences", image: LAST },
 
-    { id: 1, category: "residences", image: A7409471 },
-    { id: 2, category: "residences", image: A7409479 },
-    { id: 3, category: "residences", image: A7409482 },
+    { id: 4, category: "residences", image: A7409471 },
+    { id: 5, category: "residences", image: A7409479 },
+    { id: 6, category: "residences", image: A7409482 },
 
-    { id: 3, category: "residences", image: A7409563 },
-    { id: 3, category: "residences", image: A7409535 },
-    { id: 3, category: "residences", image: A7409457 },
+    { id: 7, category: "residences", image: A7409563 },
+    { id: 8, category: "residences", image: A7409535 },
+    { id: 9, category: "residences", image: A7409457 },
 
-    { id: 6, category: "residences", image: A7409494 },
-    { id: 7, category: "residences", image: A7409570 },
-
+    { id: 10, category: "residences", image: A7409494 },
+    { id: 90, category: "residences", image: A7409570 },
+    { id: "bus-1", category: "business", image: bussinesspic },
+    { id: "bus-2", category: "business", image: bussinesspic2 },
     // 3D / interior visuals
     { id: 11, category: "residences", image: chambre },
     { id: 12, category: "residences", image: chambre2 },
@@ -90,8 +93,6 @@ export default function Gallery() {
     { id: 26, category: "residences", image: samDup },
     { id: 27, category: "residences", image: samSalon },
     { id: 28, category: "residences", image: studioSalon },
-
-
   ];
 
   const filteredItems =
@@ -152,7 +153,7 @@ export default function Gallery() {
         </FadeInUp>
 
         {/* Category Filter */}
-        {/* <FadeInUp
+        <FadeInUp
           delay={0.2}
           className="flex flex-wrap justify-center gap-3 mb-12"
         >
@@ -169,7 +170,7 @@ export default function Gallery() {
               {category.label}
             </button>
           ))}
-        </FadeInUp> */}
+        </FadeInUp>
 
         {/* Loading Indicator */}
         {isLoading && (
