@@ -52,7 +52,7 @@ export default function Gallery() {
   const categories = [
     { id: "all", label: "Tous les Projets" },
     { id: "residences", label: "Résidences" },
-    { id: "business", label: "Business Center" }, // Commented out as we mostly have residential images for now
+    { id: "business", label: "Centre D'Affaires" }, // Commented out as we mostly have residential images for now
   ];
 
   const galleryItems = [
