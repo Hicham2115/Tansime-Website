@@ -74,6 +74,7 @@ export default function Gallery() {
     { id: 90, category: "residences", image: A7409570 },
     { id: "bus-1", category: "business", image: bussinesspic },
     { id: "bus-2", category: "business", image: bussinesspic2 },
+    
     // 3D / interior visuals
     { id: 11, category: "residences", image: chambre },
     { id: 12, category: "residences", image: chambre2 },
