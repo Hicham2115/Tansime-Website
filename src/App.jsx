@@ -11,7 +11,6 @@ import BusinessCenter from "./Pages/BusinessCenter.jsx";
 import Residences from "./Pages/Residences.jsx";
 import Gallery from "./Pages/Gallery.jsx";
 import ScrollToTopButton from "./components/MainSection/ScrollToTopButton.jsx";
-import { AnimatePresence } from "motion/react";
 import { Toaster } from "@/components/ui/sonner";
 import WhatsAppButton from "./components/MainSection/WhatsAppButton.jsx";
 
@@ -30,13 +29,12 @@ export default function App() {
 
   return (
     <>
-      <Background />
-      <NavBar />
-      <ScrollToTop />
-      <WhatsAppButton />
-      <ScrollToTopButton />
-      <AnimatePresence mode="wait">
-        <Routes location={location} key={location.pathname}>
+      <div className="relative">
+        <Background />
+        <ScrollToTop />
+        <NavBar />
+        <main className="pt-16">
+          <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
           <Route path="/business-center" element={<BusinessCenter />} />
           <Route path="/residences" element={<Residences />} />
@@ -45,8 +43,11 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </AnimatePresence>
+      </main>
       <Footer />
+        <WhatsAppButton />
+        <ScrollToTopButton />
+      </div>
       <Toaster />
     </>
   );

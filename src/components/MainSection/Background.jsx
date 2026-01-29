@@ -2,7 +2,7 @@ import React from "react";
 
 function Background() {
   return (
-    <div className="fixed inset-0 -z-10 bg-white overflow-hidden">
+    <div className="fixed inset-0 -z-10 bg-white">
       {/* Animated gradient overlay */}
       <div
         className="absolute inset-0 opacity-30"

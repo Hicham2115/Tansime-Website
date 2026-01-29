@@ -24,7 +24,7 @@ const navigationLinks = [
 
 export default function Component() {
   return (
-    <header className="px-4 md:px-6 sticky top-0 z-50 backdrop-blur-xl bg-white/80 border-b border-[#d9ac6f]/20 shadow-lg shadow-[#d9ac6f]/5">
+    <header className="px-4 md:px-6 fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-white/80 border-b border-[#d9ac6f]/20 shadow-lg shadow-[#d9ac6f]/5">
       <div className="relative flex h-16 items-center justify-between gap-4">
         {/* Left side  */}
         <div className="flex items-center gap-2">
