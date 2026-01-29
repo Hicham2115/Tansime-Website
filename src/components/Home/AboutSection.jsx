@@ -33,7 +33,7 @@ export default function AboutSection() {
           {/* Header */}
           <FadeInUp className="text-center space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold text-primary">
-              À Propos de Tasnime Immobilier
+              À Propos du Projet Tasnime
             </h2>
             {/* <div className="max-w-3xl mx-auto space-y-6">
               <p

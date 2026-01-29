@@ -46,6 +46,54 @@ export default function ResidencesSection() {
 
   return (
     <section className="py-20 relative border-t border-white/10 -mt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-[800px] mx-auto mb-16">
+        <div className="space-y-4">
+          <ScaleIn className="rounded-2xl overflow-hidden h-64 border border-white/10 shadow-lg group hover:scale-[1.02] transition-transform duration-300 max-w-full">
+            <img
+              src={img1}
+              alt="Meeting Room"
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+            />
+          </ScaleIn>
+        </div>
+
+        <div className="space-y-4 pt-8">
+          <ScaleIn
+            delay={0.5}
+            className="rounded-2xl overflow-hidden h-48 border border-white/10 shadow-lg group hover:scale-[1.02] transition-transform duration-300 max-w-full"
+          >
+            <img
+              src={img2}
+              alt="Office Space"
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+            />
+          </ScaleIn>
+        </div>
+
+        <div className="space-y-4 pt-8">
+          <ScaleIn
+            delay={0.5}
+            className="rounded-2xl overflow-hidden h-48 border border-white/10 shadow-lg group hover:scale-[1.02] transition-transform duration-300 max-w-full"
+          >
+            <img
+              src={img3}
+              alt="Office Space"
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+            />
+          </ScaleIn>
+        </div>
+
+        <div className="space-y-4">
+          <ScaleIn className="rounded-2xl overflow-hidden h-64 border border-white/10 shadow-lg group hover:scale-[1.02] transition-transform duration-300 max-w-full">
+            <img
+              src={img4}
+              alt="Meeting Room"
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+            />
+          </ScaleIn>
+        </div>
+      </div>
+
       <div className="container px-4 md:px-6 space-y-16">
         {/* Preamble */}
         <FadeInUp className="max-w-4xl mx-auto text-center space-y-6">
@@ -115,70 +163,16 @@ export default function ResidencesSection() {
               confort.
             </p> */}
 
-            <div className="grid grid-cols-2 gap-4">
-              <div className="space-y-4">
-                {" "}
-                <ScaleIn
-                  // delay={0.4}
-                  className="rounded-2xl overflow-hidden h-64 border border-white/10 shadow-lg group hover:scale-[1.02] transition-transform duration-300"
-                >
-                  <img
-                    src={img1}
-                    alt="Meeting Room"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                </ScaleIn>
-              </div>
-              <div className="space-y-4 pt-8">
-                <ScaleIn
-                  delay={0.5}
-                  className="rounded-2xl overflow-hidden h-48 border border-white/10 shadow-lg group hover:scale-[1.02] transition-transform duration-300"
-                >
-                  <img
-                    src={img2}
-                    alt="Office Space"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                </ScaleIn>
-              </div>
-              <div className="space-y-4 pt-8">
-                <ScaleIn
-                  delay={0.5}
-                  className="rounded-2xl overflow-hidden h-48 border border-white/10 shadow-lg group hover:scale-[1.02] transition-transform duration-300"
-                >
-                  <img
-                    src={img3}
-                    alt="Office Space"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                </ScaleIn>
-              </div>
-              <div className="space-y-4">
-                {" "}
-                <ScaleIn
-                  // delay={0.4}
-                  className="rounded-2xl overflow-hidden h-64 border border-white/10 shadow-lg group hover:scale-[1.02] transition-transform duration-300"
-                >
-                  <img
-                    src={img4}
-                    alt="Meeting Room"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                </ScaleIn>
-              </div>
-            </div>
-
             {/* Additional Feature Highlight */}
-            <div className="p-6 rounded-2xl bg-primary/90 backdrop-blur-sm hover:scale-105 transition-all duration-500 border border-white/10">
+            {/* <div className="p-6 rounded-2xl bg-primary/90 backdrop-blur-sm hover:scale-105 transition-all duration-500 border border-white/10">
               <p className="text-white font-semibold italic text-center">
                 « L'efficacité énergétique est au cœur de la conception
                 architecturale et technique du projet. »
               </p>
-            </div>
+            </div> */}
           </FadeInUp>
 
-          <FadeInUp delay={0.4} className="space-y-8">
-            {/* Typologies Card */}
+          {/* <FadeInUp delay={0.4} className="space-y-8">
             <div className="bg-primary/90 backdrop-blur-sm p-8 hover:scale-101 transition-all duration-500 rounded-3xl border border-white/10 shadow-xl">
               <h3 className="text-2xl font-bold text-white mb-6">
                 Typologies & Surfaces
@@ -214,7 +208,7 @@ export default function ResidencesSection() {
                 </div>
               </div>
             </div>
-          </FadeInUp>
+          </FadeInUp> */}
         </div>
 
         {/* Image Grid */}
