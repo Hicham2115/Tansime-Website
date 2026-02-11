@@ -36,7 +36,7 @@ export default function ResidencesSection() {
   const features = [
     { label: "STRUCTURE EN DALLE PLEINE", icon: Building2 },
     { label: "DOUBLE VITRAGE", icon: Layers },
-    { label: "CLIMATISATION INVERTER", icon: Wind },
+    { label: "CLIMATISATION GAINABLE", icon: Wind },
     { label: "Éclairage LED", icon: Lightbulb },
     // { label: "CUISINES ÉQUIPÉES", icon: CookingPot },
     { label: "ASCENSEURS KONE", icon: ArrowUpDown },

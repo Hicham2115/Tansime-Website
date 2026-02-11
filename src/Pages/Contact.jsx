@@ -41,10 +41,24 @@ export default function Contact() {
       // Logic from previous handleSubmit
       try {
         await axios.post("https://formspree.io/f/xkorkbna", {
+          _subject: `Nouveau message - Tasnime Immobilier`,
           fullName: values.fullName,
           email: values.email,
           phone: values.phone,
-          message: values.message,
+          message: `
+🏢 TASNIIME IMMOBILIER - CONTACT WEBSITE
+
+📌 Nom: ${values.fullName}
+📧 Email: ${values.email}
+📱 Téléphone: ${values.phone}
+
+📝 Message:
+${values.message}
+
+---
+Envoyé depuis le formulaire de contact officiel
+www.tasnime-immo.com/
+  `,
         });
 
         setIsSuccess(true);
@@ -316,7 +330,7 @@ export default function Contact() {
                     <div className="flex flex-col items-start gap-2">
                       <p className="text-xs text-white">Téléphone</p>
                       <span className="text-sm font-semibold text-white">
-                        +212 61 36 95 12
+                        +2126 61 36 95 12
                       </span>
                       <a
                         href="https://wa.me/212661369512"
@@ -379,11 +393,22 @@ export default function Contact() {
                 /> */}
                 <img src={map} alt="" />
               </div>
+              <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-transaprent ">
+                <MapPin className="w-4 h-4 text-primary" />
+                <a
+                  href="https://www.google.com/maps/place/31%C2%B039'43.2%22N+8%C2%B001'49.4%22W/@31.6627634,-8.0316838,17.01z/data=!4m4!3m3!8m2!3d31.6620102!4d-8.030395"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium text-primary hover:underline"
+                >
+                  Voir sur Google Maps
+                </a>
+              </div>
             </FadeInUp>
           </div>
 
           {/* Benefits */}
-          <div className="mt-12 max-w-3xl mx-auto">
+          {/* <div className="mt-12 max-w-3xl mx-auto">
             <FadeInUp
               delay={0.4}
               className="p-6 sm:p-8 rounded-2xl bg-primary/90 backdrop-blur-sm border border-white/10 text-center shadow-lg"
@@ -415,7 +440,7 @@ export default function Contact() {
                 ))}
               </div>
             </FadeInUp>
-          </div>
+          </div> */}
         </div>
       </section>
     </PageTransition>

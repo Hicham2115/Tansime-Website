@@ -3,30 +3,6 @@ import FadeInUp from "@/components/FadeInUp";
 import map from "../../assets/map.png";
 
 export default function Loacation() {
-  const testimonials = [
-    {
-      name: "Ahmed Benali",
-      role: "Propriétaire",
-      content:
-        "Acheter notre maison avec Tasnime Immobilier a été la meilleure décision que nous ayons prise. La qualité de la construction et l'attention aux détails sont incomparables à Marrakech.",
-      initials: "AB",
-    },
-    {
-      name: "Sarah Lahlou",
-      role: "Propriétaire d'Entreprise",
-      content:
-        "L'espace de bureau au Centre d'Affaires est parfait pour notre équipe en croissance. Installations modernes, excellent emplacement et gestion professionnelle.",
-      initials: "SL",
-    },
-    {
-      name: "Karim Tazi",
-      role: "Investisseur",
-      content:
-        "J'ai inverti dans plusieurs projets avec Tasnime. Leur engagement envers les délais et la qualité me donne une tranquillité d'esprit complète.",
-      initials: "KT",
-    },
-  ];
-
   return (
     <section className="py-24 relative overflow-hidden">
       <div className="container px-4 md:px-6">

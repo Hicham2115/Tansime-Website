@@ -15,6 +15,7 @@ import {
   CheckCircle,
 } from "lucide-react";
 import Logo from "../../assets/Logo.png";
+import { useLocation } from "react-router-dom";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -55,6 +56,18 @@ function Footer() {
     { name: "Résidences Tasnime", href: "/residences", icon: Home },
   ];
 
+  const location = useLocation();
+
+  const handleAccueilClick = (e) => {
+    if (location.pathname === "/") {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <footer className="bg-[#0b161c] border-t border-border relative overflow-hidden">
       {/* Decorative Elements */}
@@ -83,11 +96,11 @@ function Footer() {
               </Link>
               <div className="w-16 h-1 bg-[#b1cc4b] mt-2 rounded-full" />
             </div>
-            <p className="white leading-relaxed mb-6 text-sm">
+            {/* <p className="white leading-relaxed mb-6 text-sm">
               Un développeur immobilier de premier plan à Marrakech, livrant des
               projets résidentiels et commerciaux exceptionnels avec la
               durabilité, la qualité et la modernité au premier plan.
-            </p>
+            </p> */}
 
             {/* Newsletter */}
             <div className="space-y-3">
@@ -146,6 +159,7 @@ function Footer() {
                 <li key={index}>
                   <Link
                     to={link.href}
+                    onClick={link.href === "/" ? handleAccueilClick : undefined}
                     className="text-white hover:text-[#b1cc4b] transition-all duration-300 flex items-center group text-sm"
                   >
                     <span className="w-0 group-hover:w-2 h-0.5 bg-primary mr-0 group-hover:mr-2 transition-all duration-300 rounded-full" />
@@ -196,7 +210,7 @@ function Footer() {
                   href="tel:+212XXXXXXXXX"
                   className="group-hover:text-[#b1cc4b] transition-colors"
                 >
-                  +212 61 36 95 12
+                  +2126 61 36 95 12
                 </a>
               </li>
               <li className="flex items-center gap-3 white text-sm group">

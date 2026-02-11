@@ -12,13 +12,14 @@ export default function BusinessCenter() {
   return (
     <PageTransition className="min-h-screen text-black">
       <Hero />
+      <Location />
+
       <ResidencesSection />
 
       {/* <Features /> */}
       {/* <Amenities /> */}
       {/* <Location /> */}
       {/* <Specifications /> */}
-      <Location />
 
       <CallToAction />
     </PageTransition>

@@ -72,10 +72,11 @@ export default function Hero() {
             </FadeInUp>
 
             <FadeInUp delay={0.4}>
-              <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              {/* <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
                 La Vie de Luxe Redéfinie – Une expérience de vie sécurisée,
                 élégante et contemporaine au cœur de Marrakech.
-              </p>
+              </p> */}
+              <p className="text-sm sm:text-base lg:text-lg leading-snug sm:leading-relaxed text-white font-bold">TEXT2</p>
             </FadeInUp>
 
             <FadeInUp delay={0.6} className="flex justify-center">
@@ -181,7 +182,7 @@ export default function Hero() {
               dans les circulations communes (escaliers et couloirs). <br />•
               Ascenseurs de marque international KONE de capacité.
             </p>
-       
+
             <motion.div
               className="flex-1 w-full max-w-lg lg:max-w-none"
               initial={{ opacity: 0, y: 30 }}

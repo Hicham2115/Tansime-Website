@@ -5,6 +5,7 @@ import SustainableConstruction from "@/components/Residences/SustainableConstruc
 import CallToAction from "@/components/Residences/CallToAction";
 import PageTransition from "@/components/PageTransition";
 import Location from "../components/Home/Loacation";
+import ResidencesSection from "../components/BusinessCenter/ResidencesSection";
 
 export default function Residences() {
   return (
@@ -13,7 +14,9 @@ export default function Residences() {
       {/* <Features /> */}
       {/* <HousingTypes /> */}
       {/* <SustainableConstruction /> */}
-            <Location />
+      <Location />
+
+      <ResidencesSection />
 
       <CallToAction />
     </PageTransition>

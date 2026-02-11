@@ -58,10 +58,13 @@ export default function Hero() {
             </FadeInUp>
 
             <FadeInUp delay={0.4}>
-              <p className="text-lg md:text-xl text-white max-w-3xl mx-auto leading-relaxed">
+              {/* <p className="text-lg md:text-xl text-white max-w-3xl mx-auto leading-relaxed">
                 Destination Commerciale Premier de Marrakech – Architecture haut
                 de gamme, agencements flexibles et commodités modernes conçus
                 pour les entreprises de toutes tailles.
+              </p> */}
+              <p className="text-sm sm:text-base lg:text-lg leading-snug sm:leading-relaxed text-white font-bold">
+                TEXT2
               </p>
             </FadeInUp>
 
@@ -105,7 +108,7 @@ export default function Hero() {
 
       <section className="relative flex flex-col lg:flex-row gap-12 items-start w-full max-w-6xl px-10 py-16 lg:py-20 mx-auto">
         <div className="flex flex-col lg:flex-row gap-12 items-start w-full max-w-6xl">
-         <FadeInUp delay={0.2} className="flex-1 space-y-6">
+          <FadeInUp delay={0.2} className="flex-1 space-y-6">
             <p
               className="
   text-sm
@@ -165,7 +168,6 @@ export default function Hero() {
                 <SwiperSlide>
                   <img src={bussinesspic} alt="Transportation" />
                 </SwiperSlide>
-               
               </Swiper>
             </div>
           </motion.div>

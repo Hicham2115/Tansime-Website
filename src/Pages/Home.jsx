@@ -12,13 +12,14 @@ export default function Home() {
   return (
     <PageTransition className="min-h-screen">
       <Hero />
+      <Location />
+
       <ResidencesSection />
-      <AboutSection />
+      {/* <AboutSection /> */}
 
       {/* <Slider /> */}
       {/* <StatsSection /> */}
-      <TestimonialsSection />
-      <Location />
+      {/* <TestimonialsSection /> */}
       {/* <FeaturedProjects /> */}
     </PageTransition>
   );
