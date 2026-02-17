@@ -35,7 +35,7 @@ export default function Contact() {
       email: "",
       phone: "",
       message: "",
-      isSubmitted: false, // keeping this in form state effectively
+      isSubmitted: false,
     },
     onSubmit: async ({ value: values }) => {
       // Logic from previous handleSubmit

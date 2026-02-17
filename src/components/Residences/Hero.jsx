@@ -76,7 +76,9 @@ export default function Hero() {
                 La Vie de Luxe Redéfinie – Une expérience de vie sécurisée,
                 élégante et contemporaine au cœur de Marrakech.
               </p> */}
-              <p className="text-sm sm:text-base lg:text-lg leading-snug sm:leading-relaxed text-white font-bold">TEXT2</p>
+              <p className="text-sm sm:text-base lg:text-lg leading-snug sm:leading-relaxed text-white font-bold">
+                votre havre de paix au sein de marrakech
+              </p>
             </FadeInUp>
 
             <FadeInUp delay={0.6} className="flex justify-center">

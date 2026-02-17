@@ -64,7 +64,7 @@ export default function Hero() {
                 pour les entreprises de toutes tailles.
               </p> */}
               <p className="text-sm sm:text-base lg:text-lg leading-snug sm:leading-relaxed text-white font-bold">
-                TEXT2
+                installez votre ambition au cœur de Marrakech
               </p>
             </FadeInUp>
 

@@ -46,7 +46,7 @@ export default function ResidencesSection() {
 
   return (
     <section className="py-20 relative border-t border-white/10 -mt-10">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-[800px] mx-auto mb-16">
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-[800px] mx-auto mb-16">
         <div className="space-y-4">
           <ScaleIn className="rounded-2xl overflow-hidden h-64 border border-white/10 shadow-lg group hover:scale-[1.02] transition-transform duration-300 max-w-full">
             <img
@@ -92,7 +92,7 @@ export default function ResidencesSection() {
             />
           </ScaleIn>
         </div>
-      </div>
+      </div> */}
 
       <div className="container px-4 md:px-6 space-y-16">
         {/* Preamble */}

@@ -283,7 +283,7 @@ export default function Hero() {
           </FadeInUp>
         </div>
       </section>
-      <div className="flex justify-center mt-8 lg:mt-12">
+      <div className="flex justify-center">
         <Button
           asChild
           className="group flex items-center gap-2 px-5 py-3 bg-primary text-white font-semibold rounded-md shadow-lg transition-all duration-300 hover:bg-primary/90 hover:shadow-primary/50 hover:scale-105"
@@ -295,7 +295,7 @@ export default function Hero() {
           </Link>
         </Button>
       </div>
-      <h2 className="text-3xl md:text-4xl text-center mt-10 md:mt-14 lg:mt-16 font-bold text-primary">
+      <h2 className="text-3xl md:text-4xl text-center mt-10 md:mt-14 lg:mt-26 font-bold text-primary">
         Centre D'Affaires
       </h2>
       <section className="relative flex items-center justify-center overflow-hidden px-10 py-16 lg:py-20">
@@ -361,8 +361,20 @@ export default function Hero() {
           </FadeInUp>
         </div>
       </section>
+      <div className="flex justify-center">
+        <Button
+          asChild
+          className="group flex items-center gap-2 px-5 py-3 bg-primary text-white font-semibold rounded-md shadow-lg transition-all duration-300 hover:bg-primary/90 hover:shadow-primary/50 hover:scale-105"
+          size="md"
+        >
+          <Link to="/gallery" className="flex items-center gap-2">
+            Voir Notre Gallerie
+            <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+          </Link>
+        </Button>
+      </div>
 
-      <h2 className="text-3xl md:text-4xl text-center mt-10 md:mt-14 lg:mt-16 font-bold text-primary">
+      <h2 className="text-3xl md:text-4xl text-center mt-10 md:mt-14 lg:mt-26 font-bold text-primary">
         Residences
       </h2>
       <section className="relative flex flex-col items-center justify-center overflow-hidden px-10 py-16 lg:py-20">
@@ -435,6 +447,18 @@ export default function Hero() {
           </FadeInUp>
         </div>
       </section>
+      <div className="flex justify-center">
+        <Button
+          asChild
+          className="group flex items-center gap-2 px-5 py-3 bg-primary text-white font-semibold rounded-md shadow-lg transition-all duration-300 hover:bg-primary/90 hover:shadow-primary/50 hover:scale-105"
+          size="md"
+        >
+          <Link to="/gallery" className="flex items-center gap-2">
+            Voir Notre Gallerie
+            <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+          </Link>
+        </Button>
+      </div>
     </>
   );
 }
