@@ -102,8 +102,8 @@ export default function Gallery() {
     { id: 38, category: "residences", image: samSalon },
     { id: 39, category: "residences", image: studioSalon },
 
-    { id: 40, category: "business", image: marjane },
-    { id: 41, category: "business", image: marjane2 },
+    { id: 40, category: "all", image: marjane },
+    { id: 41, category: "all", image: marjane2 },
 
     { id: 19, category: "business", image: lab1 },
   ];
